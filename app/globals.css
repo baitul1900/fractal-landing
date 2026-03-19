@@ -7,7 +7,6 @@
   --color-brand-gold: #b49375;
   --color-brand-black: #000000;
 }
-
 body {
   @apply bg-black text-[#FFE3C9];
   padding: 0px;
