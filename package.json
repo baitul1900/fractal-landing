@@ -37,7 +37,7 @@
     "@tailwindcss/postcss": "^4",
     "@types/node": "25.2.3",
     "@types/react": "19.2.14",
-    "baseline-browser-mapping": "^2.8.32",
+    "baseline-browser-mapping": "^2.10.9",
     "tailwindcss": "^4",
     "typescript": "5.9.3"
   }
