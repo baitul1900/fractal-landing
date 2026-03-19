@@ -19,7 +19,7 @@ import { pages } from "@/util/route";
 
 const styles = {
   baseLink:
-    "text-[#FFE3C9] text-base font-normal leading-6 hover:text-[#5d2be9] transition-colors duration-200 py-2 md:py-0 font-[var(--font-founders)]",
+    "text-[#FFE3C9] text-base font-normal leading-6 hover:text-[#ffe6d0] transition-colors duration-200 py-2 md:py-0 font-[var(--font-founders)]",
   nav: "hidden md:flex space-x-8 lg:space-x-10 items-center",
   mobileMenu:
     "fixed inset-0 z-[60] bg-gray-900/95 backdrop-blur-xl md:hidden p-6 pt-20 flex flex-col items-start space-y-6",
@@ -31,7 +31,7 @@ const styles = {
   header:
     "fixed left-0 w-full z-50 top-0 border-b border-[#F0EDF8] md:border-b-0",
   container:
-    "container mx-auto px-4 sm:px-[74px] py-4 flex justify-between items-center relative h-20",
+    "container mx-auto px-4 sm:px-2 py-4 flex justify-between items-center relative h-20",
   logoLink: "flex items-center space-x-2",
   rightActions: "flex items-center gap-2 md:gap-4",
   menuButton:
@@ -246,7 +246,7 @@ export default function Navbar() {
           <div className={styles.rightActions}>
             <a
               href={pages.contactUs}
-              className="hidden md:flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#5d2be9] transition-colors duration-200"
+              className="hidden md:flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#ffe6d0] transition-colors duration-200"
             >
               <svg
                 width="18"
