@@ -1,0 +1,1229 @@
+{
+    "serviceHero": {
+        "badgeText": "Delivering Scalable Apps with 40% Boost in Retention",
+        "headerText": {
+            "fullText": "Future-Ready Mobile App Development - Built to Scale",
+            "highlight": "Ready Mobile App Development"
+        },
+        "subText": {
+            "fullText": "Say goodbye to lagging performance and disengaged users. Our scalable, growth-driven, AI-powered mobile app development process ensures seamless functionality, user engagement, and long-term growth. We Build Mobile Apps That Engage, Retain, and Drive Revenue.",
+            "highlight": [
+                "AI-powered mobile app",
+                "functionality, user engagement, and long-term growth.",
+                "Engage, Retain, and Drive Revenue."
+            ]
+        },
+        "buttonText": "Unlock Your App’s True Potential",
+        "buttonUrl": "/contact",
+        "featureOne": {
+            "text": "Our Unique framework + AI deliver results 2X faster",
+            "icon": "/images/service-ux/fluent.webp"
+        },
+        "featureTwo": {
+            "text": "Based on 100% Job Success on 50+ Projects",
+            "icon": "/images/service-ux/github-project.webp"
+        }
+    },
+    "serviceFeature": {
+        "mainText": "For over 5+ years, we’ve helped 25+ SaaS founders turn their vision into scalable, user-focused digital products. Success is a team play, and we’re here to help you drive retention, boost conversions, and aim for the top together",
+        "profile": {
+            "name": "Mosaddiqur Rahim",
+            "designation": "Founder & CEO",
+            "image": "/images/about-us/mishu.webp"
+        },
+        "caseCards": [
+            {
+                "id": 1,
+                "img": "/images/service-mobile/feature-card-img-1.webp",
+                "tag": "Mobile App Design & Development",
+                "title": "Cliniplus AI Symptom Healthcare Medical Mobile App",
+                "description": "deatedLab partnered with a leading educational institution to design and develop a unified School Management System that streamlined academic operations, improved communication, and enhanced decision-making across departments.",
+                "duration": "40 Days",
+                "revenue": "10X Business",
+                "ctaText": "View Case Studies",
+                "ctaLink": "#",
+                "cardBg": "#EBF8EE"
+            },
+            {
+                "id": 2,
+                "img": "/images/service-mobile/feature-card-img-2.webp",
+                "tag": "Mobile App Design",
+                "title": "Propertify - AI Powered Real Estate Mobile App",
+                "description": "IdeatedLab partnered with a leading educational institution to design and develop a unified School Management System that streamlined academic operations, improved communication, and enhanced decision-making across departments.",
+                "duration": "30 Days",
+                "revenue": "10X Business",
+                "ctaText": "View Case Studies",
+                "ctaLink": "#",
+                "cardBg": "#F9F5E1"
+            }
+        ]
+    },
+    "serviceProbSection": {
+        "headerText": {
+            "fullText": "We Tackle Your Challenges, You Reap the Excellence.",
+            "highlight": "Reap the Excellence."
+        },
+        "cards": [
+            {
+                "id": 1,
+                "iconImage": "/images/service-ux/s-p-1.webp",
+                "title": "Your Website or App Isn't Converting? Let's Fix That.",
+                "fixHeadline": "Many businesses fail to move forward due to unclear market fit or user needs. We help you validate your idea with data-driven strategies.",
+                "details": [
+                    {
+                        "title": "Market Research",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Product Discovery Workshops",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Idea Validation Reports",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "iconImage": "/images/service-ux/s-p-2.webp",
+                "title": "Facing Engagement and Retention Issues?",
+                "fixHeadline": "AI can transform your app, but integrating it effectively can be overwhelming. Our AI expertise ensures seamless and impactful implementation.",
+                "details": [
+                    {
+                        "title": "AI-Powered Features",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Chatbots & Predictive Analytics",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Personalization Algorithms",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "iconImage": "/images/service-ux/s-p-3.webp",
+                "title": "Facing Engagement and Retention Issues? ",
+                "fixHeadline": "Poor user engagement can hurt your app's success. We design user-first experiences that keep users coming back",
+                "details": [
+                    {
+                        "title": "User-Centric UX/UI Design",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Behavioral Analytics Integration",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Retention-Boosting Features",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "iconImage": "/images/service-ux/s-p-4.webp",
+                "title": "Worried About Scalability?",
+                "fixHeadline": "Growth shouldn’t break your app. We build scalable solutions that perform seamlessly as your business expands.",
+                "details": [
+                    {
+                        "title": "Scalable Cloud Architecture",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "High-Performance Backend Systems",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Load Testing Services",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "iconImage": "/images/service-ux/s-p-5.webp",
+                "title": "Need to Integrate Cutting-Edge Technology?",
+                "fixHeadline": "Adopting advanced technologies like IoT, AR/VR, and blockchain can feel complex. We make it simple and impactful.",
+                "details": [
+                    {
+                        "title": "LoT Integration",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "AI Integration",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "AR/VR Development",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Blockchain Solutions",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "iconImage": "/images/service-ux/s-p-6.webp",
+                "title": "Delayed Timelines Affecting Your Business?",
+                "fixHeadline": "Missed deadlines disrupt your plans. Our agile processes ensure projects are delivered on time without compromising quality.",
+                "details": [
+                    {
+                        "title": "Agile Development Processes",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Dedicated Project Managers",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "On-Time Delivery Assurance",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "iconImage": "/images/service-ux/s-p-7.webp",
+                "title": "Struggling  With Monetization?",
+                "fixHeadline": "Turning users into paying customers can be tricky. We implement proven strategies to maximize your app’s earning potential.",
+                "details": [
+                    {
+                        "title": "In-App Purchases Setup",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Subscription Models",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Ad Monetization Strategies",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "iconImage": "/images/service-ux/s-p-8.webp",
+                "title": "Unsure About Post-Launch Performance?",
+                "fixHeadline": "Maintaining your app’s relevance and performance post-launch is critical. We offer continuous optimization and support.",
+                "details": [
+                    {
+                        "title": "Performance Monitoring Tools",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Bug Fixes & Updates",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "User Feedback Implementation",
+                        "subtitle": ""
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "iconImage": "/images/service-ux/s-p-8.webp",
+                "title": "Dealing with Development Complexity?",
+                "fixHeadline": "Managing multiple technologies and integrations can feel overwhelming. We streamline processes to make it easier for you.",
+                "details": [
+                    {
+                        "title": "Simplified Workflows",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Custom API Development",
+                        "subtitle": ""
+                    },
+                    {
+                        "title": "Seamless Third-Party Integrations",
+                        "subtitle": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "serviceWeOffer": {
+        "headerText": {
+            "fullText": "What We Can Do For You Service We Offer",
+            "highlight": "Service We Offer"
+        },
+        "subtext": "For over 5+ years, we’ve helped 25+ SaaS founders turn their vision into scalable, user-focused digital products. Success is a team play, and we’re here to help you drive retention, boost conversions, and aim for the top together",
+        "buttonText": "Become a Client",
+        "services": [
+            {
+                "id": 1,
+                "title": "Services That Deliver Results",
+                "content": [
+                    {
+                        "title": "App Ideation & Strategy Development",
+                        "description": "Collaborate to define your app's purpose, target audience, and core features. Conduct market research and competitor analysis to create a robust product roadmap.",
+                        "tags": [
+                            "IDEA VALIDATION REPORT",
+                            "TARGET AUDIENCE PERSONAS",
+                            "INTERACTION & VISUAL DESIGN",
+                            "USABILITY TESTING"
+                        ],
+                        "checklist": [
+                            "Collaborate to define your app’s purpose, target audience, and core features.",
+                            "Conduct market research and competitor analysis to create a robust product roadmap"
+                        ],
+                        "footer": "EMPOWER USERS WITH STREAMLINED, HIGH-PERFORMING DASHBOARDS."
+                    },
+                    {
+                        "title": "MVP Development & Rapid Prototyping",
+                        "description": "Build a functional Minimum Viable Product (MVP) to test your app’s potential. Create rapid prototypes to gather early feedback and refine your concept.",
+                        "tags": [
+                            "CLICKABLE PROTOTYPES",
+                            "FUNCTIONAL MVP",
+                            "FEEDBACK INTEGRATION PLAN"
+                        ],
+                        "checklist": [
+                            "Build a functional Minimum Viable Product (MVP) to test your app's potential.",
+                            "Create rapid prototypes to gather early feedback and refine your concept."
+                        ],
+                        "footer": "TEST YOUR IDEA WITH A FUNCTIONAL MVP."
+                    },
+                    {
+                        "title": "Native & Cross-Platform App Development",
+                        "description": "Build high-performance apps tailored for iOS, Android, or both, using cutting-edge frameworks.",
+                        "tags": [
+                            "NATIVE IOS AND ANDROID APPS",
+                            "CROSS-PLATFORM APPLICATIONS (FLUTTER, REACT NATIVE)",
+                            "PROGRESSIVE WEB APPS (PWAS)"
+                        ],
+                        "checklist": [
+                            "Build high-performance apps tailored for iOS, Android, or both.",
+                            "Utilize cutting-edge frameworks for native and cross-platform results."
+                        ],
+                        "footer": "DELIVER SEAMLESS EXPERIENCES ACROSS ALL PLATFORMS."
+                    },
+                    {
+                        "title": "AI-Powered App Features",
+                        "description": "Enhance apps with AI-driven solutions like chatbots, predictive analytics, and smart recommendations.",
+                        "tags": [
+                            "AI-DRIVEN CHATBOTS",
+                            "PREDICTIVE ANALYTICS INTEGRATION",
+                            "PERSONALIZATION ALGORITHMS"
+                        ],
+                        "checklist": [
+                            "Integrate AI-driven solutions like chatbots and predictive analytics.",
+                            "Implement smart recommendations to enhance user engagement."
+                        ],
+                        "footer": "FUTURE-PROOF YOUR APP WITH AI-POWERED SOLUTIONS."
+                    },
+                    {
+                        "title": "Advance Technology Integration",
+                        "description": "Leverage AI, IoT, AR/VR, and blockchain technologies to create innovative, next-gen apps.",
+                        "tags": [
+                            "IOT DEVICE COMPATIBILITY",
+                            "AR/VR FUNCTIONALITIES",
+                            "BLOCKCHAIN INTEGRATION FRAMEWORK"
+                        ],
+                        "checklist": [
+                            "Leverage IoT, AR/VR, and blockchain for innovative apps.",
+                            "Stay ahead of the curve with cutting-edge technology integration."
+                        ],
+                        "footer": "STAY AHEAD WITH ADVANCED TECHNOLOGY SOLUTIONS."
+                    },
+                    {
+                        "title": "Backend Development & Cloud Infrastructure",
+                        "description": "Build secure, scalable backend systems and cloud-based architectures for robust app performance.",
+                        "tags": [
+                            "SCALABLE CLOUD ARCHITECTURE",
+                            "AWS, GOOGLE CLOUD, AZURE",
+                            "CUSTOM API DOCUMENTATION",
+                            "SECURE DATABASE SOLUTIONS"
+                        ],
+                        "checklist": [
+                            "Build secure and scalable backend systems.",
+                            "Implement cloud-based architectures for robust performance."
+                        ],
+                        "footer": "POWER YOUR APP WITH A ROBUST AND SECURE BACKEND."
+                    },
+                    {
+                        "title": "App Monetization Strategies",
+                        "description": "Implement revenue-driving strategies like in-app purchases, subscription models, and ad integration.",
+                        "tags": [
+                            "IN-APP PURCHASE INTEGRATION",
+                            "SUBSCRIPTION MODELS CONFIGURATION",
+                            "AD MONETIZATION SETUP"
+                        ],
+                        "checklist": [
+                            "Implement in-app purchases and subscription models.",
+                            "Optimize revenue with strategic ad integration."
+                        ],
+                        "footer": "MAXIMIZE YOUR APP'S REVENUE POTENTIAL."
+                    },
+                    {
+                        "title": "App Maintenance & Post-Launch Support",
+                        "description": "Provide ongoing support, updates, and optimizations to keep your app competitive and relevant.",
+                        "tags": [
+                            "PERFORMANCE MONITORING REPORTS",
+                            "REGULAR BUG FIXES & UPDATES",
+                            "POST-LAUNCH SUPPORT PLAN",
+                            "USABILITY TESTING"
+                        ],
+                        "checklist": [
+                            "Provide ongoing support and regular updates.",
+                            "Optimize app performance to keep it competitive and relevant."
+                        ],
+                        "footer": "ENSURE LONG-TERM SUCCESS WITH CONTINUOUS SUPPORT."
+                    },
+                    {
+                        "title": "Analytics & Growth Optimization",
+                        "description": "Use advanced analytics tools to track performance, identify user trends, and optimize your app for growth.",
+                        "tags": [
+                            "INTEGRATED ANALYTICS DASHBOARD",
+                            "USER BEHAVIOR REPORTS",
+                            "CONVERSION OPTIMIZATION STRATEGIES"
+                        ],
+                        "checklist": [
+                            "Track performance and identify user trends with advanced analytics.",
+                            "Optimize your app for sustained growth and engagement."
+                        ],
+                        "footer": "DRIVE GROWTH WITH DATA-BACKED INSIGHTS."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "On Demand AI-Powered App Solutions",
+                "content": [
+                    {
+                        "title": "AI-Powered Chatbots",
+                        "description": "Integrate chatbots to enhance customer support and automate interactions with personalized, AI-driven responses.",
+                        "tags": [
+                            "REAL-TIME CHATBOT INTEGRATION",
+                            "MULTI-LANGUAGE SUPPORT",
+                            "USER BEHAVIOR TRACKING AND ANALYTICS"
+                        ],
+                        "checklist": [
+                            "Integrate chatbots to enhance customer support.",
+                            "Automate interactions with personalized, AI-driven responses."
+                        ],
+                        "footer": "ENGAGE USERS WITH INTELLIGENT, REAL-TIME SUPPORT."
+                    },
+                    {
+                        "title": "Voice Assistants Integration",
+                        "description": "Integrate voice technologies like Alexa, Siri, or Google Assistant to enable hands-free interaction and accessibility for your app.",
+                        "tags": [
+                            "VOICE RECOGNITION INTEGRATION",
+                            "CUSTOM VOICE COMMANDS SETUP",
+                            "COMPATIBILITY WITH LEADING VOICE PLATFORMS"
+                        ],
+                        "checklist": [
+                            "Enable hands-free interaction with leading voice platforms.",
+                            "Set up custom voice commands for enhanced accessibility."
+                        ],
+                        "footer": "ADD VOICE ACCESSIBILITY TO YOUR APP EXPERIENCE."
+                    },
+                    {
+                        "title": "Predictive Analytics Apps",
+                        "description": "Enable businesses to make data-driven decisions with AI-powered predictive models for trends, risks, and opportunities.",
+                        "tags": [
+                            "PREDICTIVE ALGORITHMS INTEGRATION",
+                            "DASHBOARD FOR INSIGHTS AND FORECASTS",
+                            "CUSTOM REPORTS GENERATION"
+                        ],
+                        "checklist": [
+                            "Make data-driven decisions with AI-powered predictive models.",
+                            "Identify trends, risks, and opportunities with custom reports."
+                        ],
+                        "footer": "HARNESS DATA FOR PREDICTIVE INSIGHTS AND FORECASTS."
+                    },
+                    {
+                        "title": "Personalized Recommendation Systems",
+                        "description": "Integrate AI-based recommendation engines to suggest personalized products, content, or services based on user behavior.",
+                        "tags": [
+                            "RECOMMENDATION ALGORITHM SETUP",
+                            "USER BEHAVIOR TRACKING MODULE",
+                            "REAL-TIME RECOMMENDATION INTEGRATION"
+                        ],
+                        "checklist": [
+                            "Integrate engines to suggest personalized products or content.",
+                            "Track user behavior in real-time for better accuracy."
+                        ],
+                        "footer": "BOOST CONVERSIONS WITH TAILORED USER EXPERIENCES."
+                    },
+                    {
+                        "title": "AI-Based Virtual Assistants",
+                        "description": "Develop virtual assistants to automate workflows, provide reminders, and manage tasks for users.",
+                        "tags": [
+                            "TASK SCHEDULING AND REMINDERS MODULE",
+                            "AI-DRIVEN CONVERSATIONAL CAPABILITIES",
+                            "INTEGRATION"
+                        ],
+                        "checklist": [
+                            "Develop assistants to automate workflows and manage tasks.",
+                            "Enhance user productivity with AI-driven reminders."
+                        ],
+                        "footer": "STREAMLINE WORKFLOWS WITH AI-DRIVEN VIRTUAL ASSISTANTS."
+                    },
+                    {
+                        "title": "Image Recognition and Processing Apps",
+                        "description": "Leverage AI to identify, analyze, and process images for use cases like facial recognition, object detection, and more.",
+                        "tags": [
+                            "IMAGE RECOGNITION INTEGRATION",
+                            "OBJECT DETECTION MODULE",
+                            "SECURE DATA HANDLING"
+                        ],
+                        "checklist": [
+                            "Identify and analyze images with advanced AI algorithms.",
+                            "Implement secure data handling for image processing."
+                        ],
+                        "footer": "EMPOWER YOUR APP WITH ADVANCED IMAGE RECOGNITION."
+                    },
+                    {
+                        "title": "Natural Language Processing (NLP) Apps",
+                        "description": "Develop apps with NLP capabilities to process and analyze text or speech, enabling better communication and insights.",
+                        "tags": [
+                            "NLP INTEGRATION FOR TEXT ANALYSIS",
+                            "SENTIMENT ANALYSIS MODULE",
+                            "MULTI-LANGUAGE SUPPORT"
+                        ],
+                        "checklist": [
+                            "Process and analyze text or speech for better communication.",
+                            "Extract insights with sentiment analysis and multi-language support."
+                        ],
+                        "footer": "UNLOCK INSIGHTS WITH NATURAL LANGUAGE PROCESSING."
+                    },
+                    {
+                        "title": "AI-Driven Automation Apps",
+                        "description": "Develop apps that automate repetitive tasks and processes to save time and boost productivity.",
+                        "tags": [
+                            "WORKFLOW AUTOMATION MODULE",
+                            "AI DECISION-MAKING ALGORITHMS",
+                            "INTEGRATION WITH THIRD-PARTY TOOLS"
+                        ],
+                        "checklist": [
+                            "Automate repetitive tasks to save time and boost productivity.",
+                            "Integrate AI decision-making algorithms for smarter workflows."
+                        ],
+                        "footer": "BOOST PRODUCTIVITY WITH AI-POWERED AUTOMATION."
+                    }
+                ]
+            }
+        ]
+    },
+    "serviceOurExpertise": {
+        "headerText": {
+            "fullText": "Our Expertise Building Next-Gen Apps for Your Growth",
+            "highlight": "Building Next-Gen Apps for Your Growth"
+        },
+        "accordionItems": [
+            {
+                "id": 1,
+                "title": "Tech & Design Excellence",
+                "contentProps": {
+                    "icon": "/images/service-mobile/teamwork-icon.webp",
+                    "subHeader": "Mastering Tools, Building Exceptional Apps",
+                    "description": "We leverage cutting-edge tools, frameworks, and design systems to create user-centric, high-performing apps built for scalability and growth.",
+                    "techSections": [
+                        {
+                            "title": "PROGRAMMING",
+                            "items": [
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/programming-1.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/programming-2.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/programming-3.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/programming-4.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/programming-5.webp"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "BACKEND",
+                            "items": [
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/backend-1.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/backend-2.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/backend-3.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/backend-4.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/backend-5.webp"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "CLOUD",
+                            "items": [
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/cloud-1.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/cloud-2.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/cloud-3.webp"
+                                },
+                                {
+                                    "name": "",
+                                    "icon": "/images/service-mobile/cloud-4.webp"
+                                }
+                            ]
+                        }
+                    ],
+                    "highlightText": "Our expertise ensures every app delivers exceptional performance, seamless usability, and measurable business growth."
+                }
+            },
+            {
+                "id": 2,
+                "title": "Support & Maintenance",
+                "contentProps": {
+                    "subHeader": "Your App's Lifelong Partner",
+                    "icon": "/images/service-mobile/teamwork-icon.webp",
+                    "description": "We ensure your app stays optimized, secure, and competitive with continuous support, updates, and performance enhancements",
+                    "excelSections": [
+                        {
+                            "title": "Post-Launch Support",
+                            "items": [
+                                {
+                                    "text": "/ Regular bug fixes and feature updates."
+                                },
+                                {
+                                    "text": "/ OS compatibility adjustments."
+                                },
+                                {
+                                    "text": "/ Security patches and performance monitoring."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Performance Optimization",
+                            "items": [
+                                {
+                                    "text": "/ New Relic, Sentry – Real-time monitoring for reliability."
+                                },
+                                {
+                                    "text": "/ Load testing and database scaling for seamless scalability."
+                                }
+                            ]
+                        }
+                    ],
+                    "highlightText": "Your app's success doesn't end at launch. We keep it secure, fast, and always evolving to meet user demands."
+                }
+            },
+            {
+                "id": 3,
+                "title": "Innovation for tomorrow",
+                "contentProps": {
+                    "subHeader": "Driving Innovation, Shaping the Future",
+                    "icon": "/images/service-mobile/teamwork-icon.webp",
+                    "description": "We future-proof your app with cutting-edge technologies and trend-driven solutions that keep it ahead of the curve",
+                    "excelSections": [
+                        {
+                            "title": "Emerging Technologies",
+                            "items": [
+                                {
+                                    "text": "/ AI & ML - Chatbots, predictive analytics, and personalization."
+                                },
+                                {
+                                    "text": "/ IoT Integration - Smart device compatibility."
+                                },
+                                {
+                                    "text": "/ AR/VR - Immersive, next-gen user experiences."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Trend Adaptation",
+                            "items": [
+                                {
+                                    "text": "/ Real-time updates for evolving market needs."
+                                },
+                                {
+                                    "text": "/ App Store Optimization (ASO) to boost visibility and downloads"
+                                }
+                            ]
+                        }
+                    ],
+                    "highlightText": "We ensure your app evolves with technology, positioning it to lead markets and exceed user expectations"
+                }
+            }
+        ]
+    },
+    "serviceProcess": {
+        "headerText": {
+            "fullText": "From Strategy to Success: Our App Development Process",
+            "highlight": "From Strategy to Success:"
+        },
+        "steps": [
+            {
+                "id": 1,
+                "number": "01.",
+                "title": "Discovery & Strategy",
+                "duration": "4-6 Days",
+                "contentProps": {
+                    "description": "We analyze market trends, user behavior, and competitors to craft a results-driven strategy. This phase lays the foundation for a scalable and impactful app.",
+                    "tags": [
+                        "MARKET RESEARCH REPORT",
+                        "USER PERSONAS",
+                        "STRATEGIC PRODUCT ROADMAP"
+                    ],
+                    "footerText": "A detailed action plan that aligns your app vision with user needs and market trends."
+                }
+            },
+            {
+                "id": 2,
+                "number": "02.",
+                "title": "Wireframing, Prototyping & MVP Development",
+                "duration": "4-6 Days",
+                "contentProps": {
+                    "description": "We map user journeys with wireframes and prototypes and build an MVP to test and validate core functionalities.",
+                    "tags": [
+                        "APP WIREFRAMES",
+                        "INTERACTIVE PROTOTYPES",
+                        "MVP BUILD"
+                    ],
+                    "footerText": "A functional, validated MVP ready for early market feedback and iteration."
+                }
+            },
+            {
+                "id": 3,
+                "number": "03.",
+                "title": "Design & Scalable Development",
+                "duration": "3-6 weeks",
+                "contentProps": {
+                    "description": "We create user-centric designs and develop a robust app optimized for scalability, performance, and growth.",
+                    "tags": [
+                        "HIGH-FIDELITY APP DESIGNS",
+                        "NATIVE OR CROSS-PLATFORM BUILDS",
+                        "ADVANCED INTEGRATIONS (AI, IOT, AR/VR)"
+                    ],
+                    "footerText": "A fully functional app with a scalable architecture and cutting-edge features."
+                }
+            },
+            {
+                "id": 4,
+                "number": "04.",
+                "title": "Testing, QA & Refinement",
+                "duration": "5-10 Days",
+                "contentProps": {
+                    "description": "Rigorous testing ensures your app is bug-free, secure, and performs seamlessly across all platforms.",
+                    "tags": [
+                        "QA-TESTED APP",
+                        "COMPATIBILITY REPORTS",
+                        "BUG FIXES"
+                    ],
+                    "footerText": "A production-ready app optimized for a seamless user experience."
+                }
+            },
+            {
+                "id": 5,
+                "number": "05.",
+                "title": "Launch, Deployment & App Store Optimization",
+                "duration": "3-2 Days",
+                "contentProps": {
+                    "description": "We manage the deployment process and optimize your app for maximum visibility and downloads.",
+                    "tags": [
+                        "APP STORE SUBMISSION",
+                        "OPTIMIZED LISTINGS (ASO)",
+                        "LAUNCH REPORT"
+                    ],
+                    "footerText": "A live app with high discoverability and a smooth user onboarding process."
+                }
+            },
+            {
+                "id": 6,
+                "number": "05.",
+                "title": "Post-Launch Support, Scaling & Growth",
+                "duration": "Ongoing",
+                "contentProps": {
+                    "description": "We provide continuous updates, monitor performance, and implement growth strategies to keep your app competitive.",
+                    "tags": [
+                        "PERFORMANCE TRACKING",
+                        "REGULAR UPDATES",
+                        "GROWTH ANALYTICS"
+                    ],
+                    "footerText": "A continuously evolving app aligned with market trends and user feedback for long-term success."
+                }
+            }
+        ]
+    },
+    "offerSection": {
+        "headerText": {
+            "fullText": "UX Audit + 1 Key Page Redesign — Just $199",
+            "highlight": [
+                "UX Audit + 1"
+            ]
+        },
+        "subText": "Limited-Time Offer for Startups & SMEs",
+        "buttonText": "Claim Your Spot Now",
+        "footerFeatures": [
+            "Money Back Guarantee",
+            "Limited to 3 Clients per Month"
+        ]
+    },
+    "serviceStruggle": {
+        "headerText": {
+            "fullText": "Struggling to Find the Right Design Partner?",
+            "highlight": "Right Design Partner?"
+        },
+        "subText": "We get it—it's frustrating, and here's why",
+        "cards": [
+            {
+                "id": 1,
+                "title": "Vision Misalignment",
+                "description": "You need a partner who truly understands your goals, not just another 'designer.'",
+                "image": "/images/service-ux/card-one.webp"
+            },
+            {
+                "id": 2,
+                "title": "Generic Solutions",
+                "description": "Industry expertise matters. Without it, designs miss your unique edge.",
+                "image": "/images/service-ux/card-2.webp"
+            },
+            {
+                "id": 3,
+                "title": "Communication Breakdowns",
+                "description": "Ever feel like your team's in the dark? Poor communication slows everything down.",
+                "image": "/images/service-ux/card-3.webp"
+            },
+            {
+                "id": 4,
+                "title": "Budget vs. Quality Dilemma",
+                "description": "Finding the balance between cost and great design is harder than it sounds.",
+                "image": "/images/service-ux/card-4.webp"
+            },
+            {
+                "id": 5,
+                "title": "Freelancer Risk",
+                "description": "Freelancers can be great, but can you rely on them for consistency and delivery?",
+                "image": "/images/service-ux/card-5.webp"
+            }
+        ]
+    },
+    "serviceTeam": {
+        "headerText": {
+            "fullText": "Need a Dedicated UX/UI  Team Without Hiring In-House? Let's Support Your Growth.",
+            "highlight": "Dedicated UX/UI  Team"
+        },
+        "teamImage": "/images/service-ux/team.png",
+        "problems": [
+            "Hiring full-time UX designers is costly & slow",
+            "Freelancers lack long-term consistency",
+            "Your team needs UX expertise, but without the overhead"
+        ],
+        "solutions": [
+            "Embedded UI/UX Designers → Integrated with your team",
+            "On-Demand UI/UX Experts → Flexible, scalable support",
+            "Full-Service UI/UX Partnership → Strategy, execution & optimization",
+            "Budget vs. Quality Dilemma → High-Quality Design Within Your Budget",
+            "Vision Misalignment → Designs That Truly Align with Your Goals"
+        ]
+    },
+    "serviceDemand": {
+        "headerText": {
+            "fullText": "Our On-Demand Mobile Solutions",
+            "highlight": "Mobile Solutions"
+        },
+        "cards": [
+            {
+                "id": 1,
+                "iconImage": "/images/service-mobile/s-d-1.webp",
+                "title": "Logistics & Courier Apps",
+                "details": [
+                    {
+                        "title": "Logistics & Courier Apps",
+                        "subtitle": [
+                            "Enable real-time shipment tracking, automated dispatch, and secure payment systems for logistics and courier services."
+                        ],
+                        "tags": [
+                            "REAL-TIME PARCEL TRACKING",
+                            "DISPATCH AUTOMATION",
+                            "PAYMENT GATEWAY INTEGRATION"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "iconImage": "/images/service-mobile/s-d-2.webp",
+                "title": "Sustainable Shopping Apps",
+                "details": [
+                    {
+                        "title": "Sustainable Shopping Apps",
+                        "subtitle": [
+                            "Design eco-conscious e-commerce platforms that promote sustainable products, ethically sourced goods, and green delivery options."
+                        ],
+                        "tags": [
+                            "MARKETPLACE FOR SUSTAINABLE PRODUCTS",
+                            "CARBON FOOTPRINT TRACKER"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "iconImage": "/images/service-mobile/s-d-3.webp",
+                "title": "Food Delivery Apps",
+                "details": [
+                    {
+                        "title": "Food Delivery Apps",
+                        "subtitle": [
+                            "Enable users to browse restaurants, place orders, and track deliveries in real-time with seamless payment options."
+                        ],
+                        "tags": [
+                            "RESTAURANT LISTING AND ORDERING",
+                            "GPS TRACKER",
+                            "PAYMENT GATEWAY INTEGRATION"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "iconImage": "/images/service-mobile/s-d-4.webp",
+                "title": "Healthcare & Telemedicine",
+                "details": [
+                    {
+                        "title": "Healthcare & Telemedicine",
+                        "subtitle": [
+                            "Provide online consultations, appointment scheduling, and patient record management for patients and healthcare providers."
+                        ],
+                        "tags": [
+                            "VIRTUAL DOCTOR CONSULTATION",
+                            "SECURE DATA STORAGE",
+                            "APPOINTMENT BOOKING AND MANAGEMENT"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "iconImage": "/images/service-mobile/s-d-5.webp",
+                "title": "Grocery Delivery Apps",
+                "details": [
+                    {
+                        "title": "Grocery Delivery Apps",
+                        "subtitle": [
+                            "Simplify grocery shopping with features like personalized lists, delivery slot scheduling, and contactless payments."
+                        ],
+                        "tags": [
+                            "PRODUCT CATALOG",
+                            "REAL-TIME DELIVERY TRACKING",
+                            "DELIVERY SLOT SCHEDULING"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "iconImage": "/images/service-mobile/s-d-6.webp",
+                "title": "Ride-Sharing Apps",
+                "details": [
+                    {
+                        "title": "Ride-Sharing Apps",
+                        "subtitle": [
+                            "Facilitate real-time ride-booking with driver tracking, fare estimation, and user-friendly payment options."
+                        ],
+                        "tags": [
+                            "RIDE-BOOKING SYSTEM",
+                            "DRIVER & ROUTE MANAGEMENT",
+                            "GPS TRACKER"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "iconImage": "/images/service-mobile/s-d-7.webp",
+                "title": "Fitness & Wellness Apps",
+                "details": [
+                    {
+                        "title": "Fitness & Wellness Apps",
+                        "subtitle": [
+                            "Provide personalized workout routines, virtual classes, and AI-powered health tracking tools."
+                        ],
+                        "tags": [
+                            "PERSONALIZED WORKOUT RECOMMENDATIONS",
+                            "CUSTOM WORKOUTS",
+                            "TRANSFORMATION TRACKING"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "iconImage": "/images/service-mobile/s-d-8.webp",
+                "title": "E-Learning Apps",
+                "details": [
+                    {
+                        "title": "E-Learning Apps",
+                        "subtitle": [
+                            "Deliver interactive video lessons, quizzes, and progress tracking for learners of all ages."
+                        ],
+                        "tags": [
+                            "VIDEO LESSON STREAMING",
+                            "QUIZ",
+                            "USER PROGRESS TRACKING"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "iconImage": "/images/service-mobile/s-d-9.webp",
+                "title": "Home Service Apps",
+                "details": [
+                    {
+                        "title": "Home Service Apps",
+                        "subtitle": [
+                            "Allow users to book on-demand professional services, cleaners, and other repair specialists."
+                        ],
+                        "tags": [
+                            "SERVICE LISTING",
+                            "USER-PROVIDER COMMUNICATION",
+                            "REAL-TIME BOOKING"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "iconImage": "/images/service-mobile/s-d-10.webp",
+                "title": "Subscription-Based Apps",
+                "details": [
+                    {
+                        "title": "Subscription-Based Apps",
+                        "subtitle": [
+                            "Provide users with access to music or music streaming platforms with personalized recommendations and offline access."
+                        ],
+                        "tags": [
+                            "CONTENT STREAMING INFRASTRUCTURE",
+                            "SUBSCRIPTION MODEL",
+                            "SECURE DATA STORAGE"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "iconImage": "/images/service-mobile/s-d-11.webp",
+                "title": "Renewable Energy Apps",
+                "details": [
+                    {
+                        "title": "Renewable Energy Apps",
+                        "subtitle": [
+                            "Enable users to monitor solar panel energy yields, wind turbines, and battery storage systems with real-time energy tracking."
+                        ],
+                        "tags": [
+                            "DASHBOARD",
+                            "ENERGY MONITORING",
+                            "INTEGRATION WITH SMART HOME SYSTEMS"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "iconImage": "/images/service-mobile/s-d-12.webp",
+                "title": "Electric Vehicle (EV) Charging Apps",
+                "details": [
+                    {
+                        "title": "Electric Vehicle (EV) Charging Apps",
+                        "subtitle": [
+                            "Provide real-time EV charging station availability, scheduling, and payment options for seamless charging experiences."
+                        ],
+                        "tags": [
+                            "CHARGING STATION FINDER",
+                            "RESERVATIONS",
+                            "PAYMENT GATEWAY INTEGRATION"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "servicePlan": {
+        "mainText": "At Ideated Lab, our web design seamlessly integrates your brand strategy and business goals. We focus on creating designs that not only look great but also align with your brands and objectives, ensuring every element works to engage your audience and drive results.",
+        "profile": {
+            "name": "Mosaddiqur Rahim",
+            "designation": "Founder & CEO",
+            "image": "/images/about-us/mishu.webp"
+        },
+        "steps": [
+            {
+                "number": "/01",
+                "title": "Discovery"
+            },
+            {
+                "number": "/02",
+                "title": "Strategic Design"
+            },
+            {
+                "number": "/03",
+                "title": "User Focus"
+            },
+            {
+                "number": "/04",
+                "title": "Brand Consistency"
+            },
+            {
+                "number": "/05",
+                "title": "Result-Driven"
+            }
+        ]
+    },
+    "supportCollaboration": {
+        "headerText": {
+            "fullText": "Support & Collaboration – Partnering for Success",
+            "highlight": "Partnering for Success"
+        },
+        "cards": [
+            {
+                "id": 1,
+                "number": "/01",
+                "title": "Full Transparency & Communication",
+                "description": "Clear, ongoing communication with direct access to the team."
+            },
+            {
+                "id": 2,
+                "number": "/02",
+                "title": "Tailored Design Solutions",
+                "description": "Custom designs that align with your unique business goals."
+            },
+            {
+                "id": 3,
+                "number": "/03",
+                "title": "Ongoing Support & Maintenance",
+                "description": "Continuous updates, performance optimization, and support."
+            },
+            {
+                "id": 4,
+                "number": "/04",
+                "title": "Agile & Flexible Process",
+                "description": "Adaptable timelines and iterative development to suit evolving needs."
+            },
+            {
+                "id": 5,
+                "number": "/05",
+                "title": "Scale Your Brand",
+                "description": "Scalable solutions for sustainable growth."
+            }
+        ]
+    },
+    "whyPartnerWithUs": {
+        "headerText": {
+            "fullText": "Why Partner with\nideatedlab?",
+            "highlight": "ideatedlab?"
+        },
+        "cards": [
+            {
+                "id": 1,
+                "icon": "/images/service-ux/expert-led.png",
+                "title": "Expert-Led, ROI-Driven\nDesign",
+                "description": "We create user-first experiences that convert and engage.",
+                "descriptionHighlight": "convert and engage."
+            },
+            {
+                "id": 2,
+                "icon": "/images/service-ux/high-impact.svg",
+                "title": "High-Impact, Future-\nReady Solutions",
+                "description": "Performance-optimized, SEO-friendly, and designed to grow.",
+                "descriptionHighlight": "designed to grow."
+            },
+            {
+                "id": 3,
+                "icon": "/images/service-ux/friction-less.svg",
+                "title": "Frictionless\nExecution",
+                "description": "No delays, no surprises—just results."
+            },
+            {
+                "id": 4,
+                "icon": "/images/service-ux/seamless.svg",
+                "title": "Seamless, Scalable\nCollaboration",
+                "description": "Hire us for a project or an ongoing partnership.",
+                "descriptionHighlight": "ongoing partnership."
+            }
+        ]
+    },
+    "faq": {
+        "title": "Have Questions? We’ve Got Answers.",
+        "firstPera": "",
+        "secondPera": "",
+        "faqs": [
+            {
+                "id": 1,
+                "question": "What industries do you specialize in for app development?",
+                "answer": "We cater to a wide range of industries, including e-commerce, healthcare, renewable energy, logistics, real estate, and more. Our expertise ensures we can adapt to your specific industry needs."
+            },
+            {
+                "id": 2,
+                "question": "How long does it take to develop an app?",
+                "answer": "The timeline depends on the complexity of the project: \n\t• MVP Development: Typically takes 3–6 months. \n\t• Full-Scale App Development: Ranges from 6–12 months based on feature requirements. \nWe prioritize efficiency without compromising quality."
+            },
+            {
+                "id": 3,
+                "question": "What is the estimated cost for app development?",
+                "answer": "The cost varies based on the app’s scope and features: \n\t• MVP Development: Starts from $25,000–$30,000. \n\t• Full-Scale Apps: Pricing depends on the feature set and complexity. \nWe provide detailed estimates during the discovery phase."
+            },
+            {
+                "id": 4,
+                "question": "Do you provide post-launch support and maintenance?",
+                "answer": "Yes! We offer comprehensive post-launch services, including: \n\t• Regular updates and bug fixes. \n\t• Performance monitoring and optimization. \n\t• Feature upgrades based on user feedback."
+            },
+            {
+                "id": 5,
+                "question": "Can you integrate AI into our app, and what are the benefits?",
+                "answer": "Absolutely! We specialize in AI integration, offering features like: \n\t• AI chatbots for customer support. \n\t• Predictive analytics for decision-making. \n\t• Personalized recommendations for user engagement. \nWhy It Matters: AI enhances user experience, improves efficiency, and drives higher ROI."
+            },
+            {
+                "id": 6,
+                "question": "Do you handle both design and development?",
+                "answer": "Yes, we provide end-to-end solutions, covering: \n\t• User-centric UI/UX design to enhance engagement. \n\t• Scalable development using cutting-edge technologies like Flutter, React Native, and Node.js. \nThis ensures a seamless process from concept to launch."
+            },
+            {
+                "id": 7,
+                "question": "How do you ensure scalability and future-proofing of apps?",
+                "answer": "We build apps with scalability in mind by: \n\t• Using cloud-based infrastructures like AWS and Google Cloud. \n\t• Modular architecture for easy upgrades. \n\t• Integrating advanced technologies like IoT, AI, and blockchain for future-readiness."
+            },
+            {
+                "id": 8,
+                "question": "Can you collaborate with our in-house team or third-party vendors?",
+                "answer": "Yes, we excel in collaborative partnerships, including: \n\t• Seamless integration with in-house teams or external vendors. \n\t• Transparent communication for aligned goals. \n\t• Agile workflows to ensure efficient project management."
+            },
+            {
+                "id": 9,
+                "question": "Why should we choose your agency for app development?",
+                "answer": "\t• Proven Expertise: Over 5 years of experience delivering scalable, high-quality apps. \n\t• Custom Solutions: Tailored to your unique business needs and goals. \n\t• ROI-Driven Results: Our apps are designed to boost engagement, retention, and revenue. \n\t• End-to-End Support: From ideation to post-launch, we’ve got you covered."
+            }
+        ]
+    }
+}

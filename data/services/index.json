@@ -1,0 +1,82 @@
+{
+    "ui-ux": {
+        "title": "UI/UX Design Services",
+        "description": "Expert UI/UX design services focused on conversion, engagement, and user satisfaction",
+        "slug": "ui-ux",
+        "enabled": true,
+        "metaTitle": "UI/UX Design Services | IdeatedLab",
+        "metaDescription": "Transform your digital products with our expert UI/UX design services. We create user-centric designs that drive conversions and boost engagement."
+    },
+    "development": {
+        "title": "Development Services",
+        "description": "Full-stack development services to bring your ideas to life",
+        "slug": "development",
+        "enabled": true,
+        "metaTitle": "Development Services | IdeatedLab",
+        "metaDescription": "Professional web and mobile development services. We build scalable, high-performance applications tailored to your business needs."
+    },
+    "mobile-app": {
+        "title": "Mobile App Development Services",
+        "description": "Custom mobile app development services to create engaging and interactive user experiences",
+        "slug": "mobile-app",
+        "enabled": true,
+        "metaTitle": "Mobile App Development Services | IdeatedLab",
+        "metaDescription": "Transform your mobile app with our expert mobile app development services. We create engaging and interactive user experiences that drive conversions and boost engagement."
+    },
+    "cloud": {
+        "title": "Cloud Engineering & Infrastructure Services",
+        "description": "Reliable cloud infrastructure design, migration, and operations for modern enterprises",
+        "slug": "cloud",
+        "enabled": true,
+        "metaTitle": "Cloud Engineering & Infrastructure Services | IdeatedLab",
+        "metaDescription": "Build dependable cloud infrastructure with our expert services. We help organizations design, migrate, and operate cloud infrastructure that remains stable, secure, and cost-efficient."
+    },
+    "custom-enterprise": {
+        "title": "Custom Enterprise Software Development Services",
+        "description": "Expert design and development of custom enterprise software for real operational workflows",
+        "slug": "custom-enterprise",
+        "enabled": true,
+        "metaTitle": "Custom Enterprise Software Development Services | IdeatedLab",
+        "metaDescription": "We design and build custom enterprise software that replaces fragile systems and supports real operational workflows. Reliable software for real systems."
+    },
+    "system-architecture": {
+        "title": "System Design & Architecture Services",
+        "description": "Expert system architecture design for scalable and maintainable software solutions",
+        "slug": "system-architecture",
+        "enabled": true,
+        "metaTitle": "System Design & Architecture Services | IdeatedLab",
+        "metaDescription": "Design robust and scalable system architectures with our expert services. We focus on clarity, scalability, and long-term maintainability for your digital products."
+    },
+    "consulting-governance": {
+        "title": "IT Consulting & Project Governance Services",
+        "description": "Expert IT strategy, project governance, and delivery control for complex technology initiatives",
+        "slug": "consulting-governance",
+        "enabled": true,
+        "metaTitle": "IT Consulting & Project Governance Services | IdeatedLab",
+        "metaDescription": "Optimize your technology initiatives with our expert IT consulting and project governance services. We focus on clear ownership, controlled risk, and operational alignment."
+    },
+    "data-analytics": {
+        "title": "Data Strategy & Analytics Services",
+        "description": "Expert data architecture, pipeline design, and business intelligence for data-driven organizations",
+        "slug": "data-analytics",
+        "enabled": true,
+        "metaTitle": "Data Strategy & Analytics Services | IdeatedLab",
+        "metaDescription": "Turn your data into actionable insights with our expert data strategy and analytics services. We focus on pipeline reliability, data quality, and scalable infrastructure."
+    },
+    "cyber-security": {
+        "title": "Cyber Security & Compliance Services",
+        "description": "Expert security risk reduction, compliance control, and access protection for complex technology initiatives",
+        "slug": "cyber-security",
+        "enabled": true,
+        "metaTitle": "Cyber Security & Compliance Services | IdeatedLab",
+        "metaDescription": "Secure your technology initiatives with our expert cyber security and compliance services. We focus on risk reduction, compliance control, and operational continuity."
+    },
+    "iot": {
+        "title": "IoT Integration Services",
+        "description": "Expert IoT strategy, integration, and operational visibility for complex technology environments",
+        "slug": "iot",
+        "enabled": true,
+        "metaTitle": "IoT Integration Services | IdeatedLab",
+        "metaDescription": "Optimize your operations with our expert IoT integration services. We focus on real-time visibility, system connectivity, and operational efficiency."
+    }
+}

@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --color-offwhite: #fafafa;
+  --color-peach: #ffe6d0;
+  --color-brand-gray: #828282;
+  --color-brand-gold: #b49375;
+  --color-brand-black: #000000;
+}
+
+body {
+  background-color: var(--color-brand-gold);
+  background-image: url("/images/home/home-hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @apply text-brand-black;
+  padding: 0px;
+  margin: 0px;
+  font-family: var(--font-founders), sans-serif;
+  box-sizing: border-box;
+}
+
+.home-hero {
+  background-image: url("/images/home/home-hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mobile-app-hero {
+  background-image: url("/images/home/home-hero-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ui-app-hero {
+  background-image: url("/images/home/home-hero-ui.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-text {
+  @apply text-[#0E121D] text-center font-bold text-3xl xl:text-6xl md:leading-[1.2] leading-normal;
+  font-family: var(--font-founders);
+}
+
+.section-header {
+  @apply text-[#0E121D] font-bold md:text-[48px] text-[32px] md:leading-[57.6px] leading-[38px];
+  font-family: var(--font-founders);
+}
+
+.section-header-white {
+  @apply text-white font-bold md:text-[48px] text-[32px] md:leading-[57.6px] leading-[38px];
+  font-family: var(--font-founders);
+}
+
+.pos-and-billing-system-wrapper {
+  border-radius: 24px;
+  background: linear-gradient(180deg, #c6daf0 0%, #dceafa 100%);
+}
+
+.cta-section {
+  background-image: url("/images/cta/cta-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left-faq-card {
+  background-image: url("/images/home/faq-left-card-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pro-card-bg {
+  background-image: url("/images/pricing-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+}
+
+.animated-border {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 2px;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #8f73e4, #e98225, #1b63f0, #8f73e4);
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+/* Hide scrollbar for mobile swipeable carousels */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}

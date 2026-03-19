@@ -1,0 +1,515 @@
+{
+    "serviceHero": {
+        "badgeText": "Empowering Brands to Thrive with 3X Higher Recognition",
+        "headerText": {
+            "fullText": "A Showcase of Our Finest Creations",
+            "highlight": "Finest Creations"
+        },
+        "subText": {
+            "fullText": "Explore a curated collection of our finest projects, where creativity, innovation, and user-centered design seamlessly blend to craft exceptional digital experiences that inspire, engage, and leave a lasting impact.",
+            "highlight": []
+        }
+    },
+    "categories": [
+        "All Industries",
+        "SaaS",
+        "Mobile App",
+        "Real Estate",
+        "Ecommerce"
+    ],
+    "projects": [
+        {
+            "id": "p1",
+            "title": "Transforming Education with an Intelligent School Management System",
+            "industry": "SaaS | Edtech",
+            "category": "SaaS",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p2",
+            "title": "AI-Powered Real Estate Analytics Platform",
+            "industry": "PropTech | AI",
+            "category": "Real Estate",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p3",
+            "title": "Next-Gen Fintech App for Digital Banking",
+            "industry": "FinTech",
+            "category": "Finance",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p4",
+            "title": "E-commerce Optimization for Fashion Brands",
+            "industry": "Ecommerce | Retail",
+            "category": "Ecommerce",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p5",
+            "title": "Telehealth Platform for Remote Care",
+            "industry": "HealthTech",
+            "category": "Healthcare",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p6",
+            "title": "Supply Chain Visibility Software",
+            "industry": "Logistics",
+            "category": "SaaS",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p7",
+            "title": "Fitness & Wellness Community App",
+            "industry": "Health & Fitness",
+            "category": "Mobile App",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p8",
+            "title": "Smart City Parking Solution",
+            "industry": "GovTech | Urban",
+            "category": "SaaS",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        },
+        {
+            "id": "p9",
+            "title": "Cybersecurity Dashboard for Enterprise",
+            "industry": "Cybersecurity",
+            "category": "SaaS",
+            "image": "/images/portfolio/project-mockup.webp",
+            "about": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance.",
+                "image": "/images/portfolio/portfolio-blank.webp"
+            },
+            "sidebar": {
+                "industry": "SaaS",
+                "service": [
+                    "UI/UX Design",
+                    "Software Development",
+                    "Support & Care"
+                ],
+                "timeline": "1 Month"
+            },
+            "problems": {
+                "description": "Founded with a vision to merge creativity with technology, Ideated Lab is a global IT solutions company helping organizations harness digital transformation.\n\nOur multidisciplinary teams combine strategic thinking, design innovation, and engineering precision to deliver solutions that drive measurable results. We don't just develop software — we design ecosystems that empower people, processes, and performance."
+            },
+            "solutions": {
+                "description": "We designed and developed a scalable cloud-based platform combining:",
+                "points": [
+                    "Real-time communication",
+                    "Member portal & admin dashboard",
+                    "Smart workflows & automation",
+                    "Data-driven insights & reporting"
+                ],
+                "footerText": "The product enables organizations to build stronger, more connected communities while improving operational efficiency.",
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            },
+            "impact": {
+                "title": "Impact & Outcomes",
+                "points": [
+                    "↑ 60% increase in member",
+                    "↓ 45% reduction in manual processes",
+                    "↑ 30% more attendance on averageSupport Tickets",
+                    "↓ 40% fewer manual inquiries"
+                ],
+                "images": [
+                    "/images/portfolio/portfolio-blank.webp",
+                    "/images/portfolio/portfolio-blank.webp"
+                ]
+            }
+        }
+    ],
+    "faq": {
+        "title": "Portfolio FAQs",
+        "faqs": [
+            {
+                "id": 1,
+                "question": "How do you handle project confidentiality?",
+                "answer": "We take data security and confidentiality very seriously. We usually sign NDAs before starting any project and ensure your data is protected."
+            },
+            {
+                "id": 2,
+                "question": "What is your typical project timeline?",
+                "answer": "Timelines vary depending on project scope. A simple website might take 4-6 weeks, while a complex enterprise application could take several months."
+            },
+            {
+                "id": 3,
+                "question": "Do you provide post-launch support?",
+                "answer": "Yes, we offer various support and maintenance packages to ensure your digital product continues to perform optimally."
+            },
+            {
+                "id": 4,
+                "question": "Can I request specific technologies for my project?",
+                "answer": "Absolutely! While we have our preferred tech stack, we are flexible and can adapt to your specific requirements and constraints."
+            }
+        ]
+    }
+}
