@@ -1,10 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
-// import Footer from "@/components/layouts/Footer";
-import Footer from "@/components/layouts/Footer";
-import { ToastProvider } from "@/components/ui/toast";
-import SmoothScroll from "@/components/ui/SmoothScroll";
 
 const foundersGrotesk = localFont({
   src: [
@@ -34,23 +30,23 @@ const foundersGrotesk = localFont({
 
 
 export const metadata = {
-  title: "IdeatedLab - Your Trusted IT Solutions Partner",
-  description: "Empowering Businesses with Innovative IT Services and Solutions",
+  title: "Fractal - Body Archives",
+  description: "Fractal is a contemporary tattoo practice based in Seville, Spain.",
 };
+
+import SmoothScroll from "@/components/ui/SmoothScroll";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${foundersGrotesk.variable} antialiased`}
+        className={`${foundersGrotesk.variable} antialiased font-[var(--font-founders)]`}
         suppressHydrationWarning
       >
-        <SmoothScroll />
-        <ToastProvider>
+        <SmoothScroll>
           <Navbar />
           {children}
-          <Footer />
-        </ToastProvider>
+        </SmoothScroll>
       </body>
     </html>
   );

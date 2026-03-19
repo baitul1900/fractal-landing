@@ -41,8 +41,6 @@ const styles = {
 
 const navItems = [
   { name: "ABOUT US", href: ABOUT },
-  { name: "ARTISTS", href: PORTFOLIO },
-  { name: "PROCESS", href: SOLUTION },
 ];
 
 const mobileNavItems = [
