@@ -21,7 +21,7 @@ body {
   background-color: black;
   background-image: url("/images/home/hero-bg.png");
   background-size: cover;
-  min-height: 100vh;
+  height: 1390px;
   background-position: center;
   background-repeat: no-repeat;
 }

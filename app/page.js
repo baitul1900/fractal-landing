@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import Hero from "./home-components/Hero";
 import Faq from "./home-components/faq/Faq";
 import CtaSection from "./home-components/cta-section/CtaSection";
-import AboutHome from "./home-components/about-home/AboutHome";
 import OurService from "./home-components/our-service/OurService";
 import IndustriesEmpower from "./home-components/industries-empower/IndustriesEmpower";
 import Portfolio from "./home-components/portfolio /Portfolio";
@@ -35,9 +34,6 @@ export default function Home() {
   return (
     <main>
       <Hero/>
-      <section id="about">
-        <AboutHome/>
-      </section>
       <section id="services">
         <OurService/>
       </section>
