@@ -7,13 +7,14 @@
   --color-brand-gold: #b49375;
   --color-brand-black: #000000;
 }
+
 body {
   @apply bg-black text-[#FFE3C9];
   padding: 0px;
   margin: 0px;
   font-family: var(--font-founders), sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 html.lenis,
@@ -51,6 +52,14 @@ html.lenis body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.second-section {
+  background-image: url("/images/home/section-2-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 3307px;
 }
 
 .ui-app-hero {
