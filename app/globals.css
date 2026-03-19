@@ -39,7 +39,7 @@ html.lenis body {
 
 .home-hero {
   background-color: black;
-  background-image: url("/images/home/hero-bg.png");
+  background-image: url("/images/home/hero-bg.webp");
   background-size: cover;
   height: 1390px;
   background-position: center;

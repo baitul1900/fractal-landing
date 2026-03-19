@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Play } from "lucide-react";
-import heroTextImage from "../../public/images/home/hero-text-image.png"
+import heroTextImage from "../../public/images/home/hero-text-image.webp"
 
 // Mockup image placeholders for the 4.9 rating section
 const avatar1 = "/images/avatars/avatar1.webp"; // These might not exist yet, I'll use placeholders if needed
 const avatar2 = "/images/avatars/avatar2.webp";
-import aboutHeroOne from "../../public/images/home/about-hero-1.png"
-import aboutHeroTwo from "../../public/images/home/about-hero-2.png"
+import aboutHeroOne from "../../public/images/home/about-hero-1.webp"
+import aboutHeroTwo from "../../public/images/home/about-hero-2.webp"
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";

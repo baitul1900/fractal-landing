@@ -13,7 +13,7 @@ import {
   SHOP,
 } from "../../util/pageRoute";
 import Image from "next/image";
-import logoImage from "@/public/images/logo/logo.png";
+import logoImage from "@/public/images/logo/logo.webp";
 import Button from "../ui/Button";
 import { pages } from "@/util/route";
 
