@@ -103,7 +103,7 @@ const Hero = () => {
       {/* About Us Section with Black Background */}
       <section
         ref={aboutRef}
-        className="bg-black w-full pb-32 overflow-hidden md:mt-[-100px] perspective-1000" id="about"
+        className="relative bg-black w-full pb-32 overflow-hidden md:mt-[-100px] perspective-1000" id="about"
       >
         <div className="relative w-full container mx-auto px-4 md:px-2 flex flex-col md:flex-row justify-between items-end gap-12">
           <motion.div
@@ -137,6 +137,7 @@ const Hero = () => {
                 src={aboutHeroOne}
                 alt="Tattoo Session"
                 fill
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 320px, 400px"
                 className="object-cover transition-transform duration-700 group-hover/img:scale-110 "
               />
               <div className="absolute inset-0 bg-black/10 group-hover/img:bg-transparent transition-colors duration-500"></div>
@@ -149,6 +150,7 @@ const Hero = () => {
                 src={aboutHeroTwo}
                 alt="Tattoo Art"
                 fill
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 320px, 400px"
                 className="object-cover transition-transform duration-700 group-hover/img:scale-110"
               />
               <div className="absolute inset-0 bg-black/10 group-hover/img:bg-transparent transition-colors duration-500"></div>
