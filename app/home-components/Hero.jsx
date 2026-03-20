@@ -34,15 +34,15 @@ const Hero = () => {
 
   return (
     <>
-      <section 
+      <section
         ref={heroRef}
         className="relative min-h-screen w-full home-hero flex flex-col justify-center overflow-hidden"
       >
         {/* Container to restrict content width but allow background to span full width */}
-        <div className="relative w-full container mx-auto px-4 md:px-2 pt-32 pb-20 flex flex-col h-full justify-center min-h-screen">
+        <div className="relative w-full container mx-auto px-4 md:px-2 pt-32 pb-20 flex flex-col h-full md:pt-[455px] min-h-screen">
 
           {/* Top Right Text (Absolute to the container) */}
-          <div className="absolute top-32 md:top-80 right-6 md:right-0 text-right">
+          <div className="absolute top-32 md:top-90 right-6 md:right-0 text-right">
             <div className="w-full max-w-[310px] h-auto text-[#ffe6d0] text-sm md:text-base font-medium font-[var(--font-founders)] leading-5 uppercase">
               TATTOOING IS NOT JUST WHAT WE DO,
               THIS IS WHO WE ARE — OUR WORK IS
@@ -51,9 +51,9 @@ const Hero = () => {
           </div>
 
           {/* Massive Center Text */}
-          <motion.div 
+          <motion.div
             style={{ y: logoY, scale: logoScale, opacity: logoOpacity }}
-            className="flex flex-col items-start justify-start w-full py-10  md:pl-20 pointer-events-none"
+            className="flex flex-col items-start justify-start w-full py-0  md:pl-[98px] pointer-events-none pr-[123px] mb-[84px]"
           >
             <Image
               src={heroTextImage}
@@ -101,12 +101,12 @@ const Hero = () => {
       </section>
 
       {/* About Us Section with Black Background */}
-      <section 
+      <section
         ref={aboutRef}
         className="bg-black w-full pb-32 overflow-hidden md:mt-[-100px] perspective-1000" id="about"
       >
         <div className="relative w-full container mx-auto px-4 md:px-2 flex flex-col md:flex-row justify-between items-end gap-12">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -129,7 +129,7 @@ const Hero = () => {
           </motion.div>
 
           <div className="flex gap-6 w-full md:w-auto">
-            <motion.div 
+            <motion.div
               style={{ y: imgY1, rotateZ: aboutRotate }}
               className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[3/4] overflow-hidden rounded-sm group/img shadow-2xl"
             >
@@ -137,11 +137,11 @@ const Hero = () => {
                 src={aboutHeroOne}
                 alt="Tattoo Session"
                 fill
-                className="object-cover transition-transform duration-700 group-hover/img:scale-110"
+                className="object-cover transition-transform duration-700 group-hover/img:scale-110 "
               />
               <div className="absolute inset-0 bg-black/10 group-hover/img:bg-transparent transition-colors duration-500"></div>
             </motion.div>
-            <motion.div 
+            <motion.div
               style={{ y: imgY2, rotateZ: aboutRotate }}
               className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[3/4] overflow-hidden rounded-sm group/img shadow-2xl"
             >
