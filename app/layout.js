@@ -34,6 +34,12 @@ export const metadata = {
   description: "Fractal is a contemporary tattoo practice based in Seville, Spain.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 import SmoothScroll from "@/components/ui/SmoothScroll";
 
 export default function RootLayout({ children }) {

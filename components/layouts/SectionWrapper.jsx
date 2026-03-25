@@ -4,7 +4,7 @@ export default function SectionWrapper({ children, className = "", id = "" }) {
       id={id} 
       className={`w-full ${className}`}
     >
-      <div className="container mx-auto px-4 md:px-2 h-full">
+      <div className="container mx-auto px-6 md:px-10 lg:px-16 h-full pb-10 md:pb-20">
         {children}
       </div>
     </section>

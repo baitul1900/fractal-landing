@@ -6,8 +6,8 @@ const SecondSection = () => {
   return (
     <SectionWrapper className="mt-[60px] pt-[149px] second-section relative">
       <div className="sticky top-[10vh] flex flex-col items-center justify-center w-full z-20 gap-10 mix-blend-difference pointer-events-none">
-        <div className="w-[938px] text-center text-[#FFE6D0] text-[80px] font-medium font-[var(--font-founders)] uppercase leading-[76px] tracking-[-8px]">
-          Our work<br />is not about ornament.<br />It is about alignment.
+        <div className="w-full max-w-[938px] px-4 md:px-0 text-center text-[#FFE6D0] text-[40px] md:text-[80px] font-medium font-[var(--font-founders)] uppercase leading-[44px] md:leading-[76px] tracking-[-2px] md:tracking-[-8px]">
+          Our work<br className="hidden md:block" /> is not about ornament.<br className="hidden md:block" /> It is about alignment.
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="70" height="69" viewBox="0 0 70 69" fill="none">

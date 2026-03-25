@@ -7,6 +7,7 @@ const avatar1 = "/images/avatars/avatar1.webp"; // These might not exist yet, I'
 const avatar2 = "/images/avatars/avatar2.webp";
 import aboutHeroOne from "../../public/images/home/about-hero-1.webp"
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp"
+import bgEffect from "../../public/images/home/bg-effect.png"
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -39,7 +40,7 @@ const Hero = () => {
         className="relative min-h-screen w-full home-hero flex flex-col justify-center overflow-hidden"
       >
         {/* Container to restrict content width but allow background to span full width */}
-        <div className="relative w-full container mx-auto px-4 md:px-2 pt-32 pb-20 flex flex-col h-full md:pt-[455px] min-h-screen">
+        <div className="relative w-full container mx-auto px-6 md:px-10 lg:px-16 pt-32 pb-20 flex flex-col h-full md:pt-[455px] min-h-screen">
 
           {/* Top Right Text (Absolute to the container) */}
           <div className="absolute top-32 md:top-90 right-6 md:right-0 text-right">
@@ -105,7 +106,7 @@ const Hero = () => {
         ref={aboutRef}
         className="relative bg-black w-full pb-32 overflow-hidden md:mt-[-100px] perspective-1000" id="about"
       >
-        <div className="relative w-full container mx-auto px-4 md:px-2 flex flex-col md:flex-row justify-between items-end gap-12">
+        <div className="relative w-full container mx-auto px-6 md:px-10 lg:px-16 flex flex-col md:flex-row justify-between items-end gap-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
