@@ -144,8 +144,30 @@ const ArtifactsSection = () => {
         </div>
       </div>
 
-    </>
+      {/* Marquee Section */}
+      <div className="w-full overflow-hidden bg-[#FFE6D0] py-3 md:py-4">
+        <motion.div
+          className="flex whitespace-nowrap w-fit"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
+        >
+          {/* We repeat the array sufficiently to always fill the screen and seamlessly loop */}
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="flex items-center whitespace-nowrap shrink-0">
+              {["Munich", "Amsterdam", "Paris", "Zurich", "Barcelona", "Stuttgart"].map((city, idx) => (
+                <span
+                  key={`${i}-${idx}`}
+                  className="px-6 md:px-12 text-black uppercase font-[var(--font-founders)] text-sm md:text-base font-semibold tracking-widest"
+                >
+                  {city}
+                </span>
+              ))}
+            </div>
+          ))}
+        </motion.div>
+      </div>
 
+    </>
   );
 };
 
