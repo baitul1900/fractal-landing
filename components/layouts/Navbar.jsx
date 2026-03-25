@@ -31,7 +31,7 @@ const styles = {
   header:
     "fixed left-0 w-full z-50 top-0 border-b border-[#F0EDF8] md:border-b-0",
   container:
-    "container mx-auto px-4 sm:px-2 py-4 flex justify-between items-center relative h-20",
+    "container mx-auto px-6 md:px-10 lg:px-16 py-4 flex justify-between items-center relative h-20",
   logoLink: "flex items-center space-x-2",
   rightActions: "flex items-center gap-2 md:gap-4",
   menuButton:

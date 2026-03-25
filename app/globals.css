@@ -75,12 +75,12 @@ html.lenis body {
 }
 
 .section-header {
-  @apply text-[#0E121D] font-bold md:text-[48px] text-[32px] md:leading-[57.6px] leading-[38px];
+  @apply text-[#0E121D] font-semibold text-[32px] leading-[38px] tracking-[-1.92px] uppercase;
   font-family: var(--font-founders);
 }
 
 .section-header-white {
-  @apply text-white font-bold md:text-[48px] text-[32px] md:leading-[57.6px] leading-[38px];
+  @apply text-white font-semibold text-[32px] leading-[38px] tracking-[-1.92px] uppercase;
   font-family: var(--font-founders);
 }
 
@@ -166,4 +166,24 @@ html.lenis body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
   /* Chrome, Safari and Opera */
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.pl-safe {
+  padding-left: env(safe-area-inset-left);
+}
+
+.pr-safe {
+  padding-right: env(safe-area-inset-right);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+
+.transition-colors-custom {
+  transition: background-color 0.8s ease, color 0.8s ease;
 }

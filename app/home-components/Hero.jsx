@@ -113,7 +113,7 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-[500px] text-left"
           >
-            <div className="self-stretch justify-center text-white text-[32px] font-medium font-[var(--font-founders)] uppercase leading-[38px] mb-10">
+            <div className="self-stretch justify-center text-white text-[32px] font-semibold font-[var(--font-founders)] uppercase leading-[38px] tracking-[-1.92px] mb-10">
               About US
             </div>
             <div className="self-stretch justify-start text-white text-xl font-normal font-[var(--font-founders)] leading-[30px] mb-12">
