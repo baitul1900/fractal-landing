@@ -62,6 +62,11 @@ html.lenis body {
   height: 3307px;
 }
 
+.fourth-section {
+  position: relative;
+  width: 100%;
+}
+
 .ui-app-hero {
   background-image: url("/images/home/home-hero-ui.webp");
   background-size: cover;
