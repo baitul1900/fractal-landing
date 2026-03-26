@@ -1,5 +1,5 @@
 import Image from "next/image";
-import artistImage from "../../public/images/home/Artist.png";
+import artistImage from "../../public/images/home/Artist.webp";
 
 const FourthSection = () => {
   return (
