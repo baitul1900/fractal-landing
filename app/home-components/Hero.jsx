@@ -7,7 +7,7 @@ const avatar1 = "/images/avatars/avatar1.webp"; // These might not exist yet, I'
 const avatar2 = "/images/avatars/avatar2.webp";
 import aboutHeroOne from "../../public/images/home/about-hero-1.webp"
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp"
-import bgEffect from "../../public/images/home/bg-effect.png"
+import bgEffect from "../../public/images/home/bg-effect.webp"
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";

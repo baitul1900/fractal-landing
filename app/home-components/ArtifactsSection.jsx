@@ -8,32 +8,32 @@ const ArtifactsSection = () => {
     {
       title: "Archive 01",
       description: "Linear studies on human anatomy and geometry.",
-      image: "/images/home/random-tatto-images.png",
+      image: "/images/home/random-tatto-images.webp",
     },
     {
       title: "Archive 02",
       description: "Spiritual narratives through contemporary ink.",
-      image: "/images/home/tatto-image.png",
+      image: "/images/home/tatto-image.webp",
     },
     {
       title: "Archive 03",
       description: "Experimental alignment and visual poetry.",
-      image: "/images/home/random-tatto-images.png",
+      image: "/images/home/random-tatto-images.webp",
     },
     {
       title: "Archive 04",
       description: "Ancestral patterns meeting modern form.",
-      image: "/images/home/tatto-image.png",
+      image: "/images/home/tatto-image.webp",
     },
     {
       title: "Archive 05",
       description: "The intersection of shadow and substance.",
-      image: "/images/home/random-tatto-images.png",
+      image: "/images/home/random-tatto-images.webp",
     },
     {
       title: "Archive 06",
       description: "Mythological echoes in permanent ink.",
-      image: "/images/home/tatto-image.png",
+      image: "/images/home/tatto-image.webp",
     },
   ];
 

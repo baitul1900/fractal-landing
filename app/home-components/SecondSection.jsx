@@ -1,5 +1,5 @@
 import SectionWrapper from "@/components/layouts/SectionWrapper";
-import randomImages from "../../public/images/home/random-tatto-images.png";
+import randomImages from "../../public/images/home/random-tatto-images.webp";
 import Image from "next/image";
 
 const SecondSection = () => {
