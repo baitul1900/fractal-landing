@@ -106,8 +106,7 @@ const FifthSection = () => {
           {/* Left Column: Title */}
           <div className="lg:col-span-3 pb-8 lg:pb-0">
             <h2 
-              className="text-white text-[28px] md:text-[32px] font-semibold lg:sticky lg:top-32 leading-[38px]"
-              style={{ fontFamily: '"Founders Grotesk", sans-serif' }}
+              className="text-white text-[28px] md:text-[32px] font-semibold lg:sticky lg:top-32 leading-[38px] font-[var(--font-founders)]"
             >
               Our Process
             </h2>
@@ -137,16 +136,14 @@ const FifthSection = () => {
                 <div className="flex flex-col md:flex-row flex-grow items-start gap-4 md:gap-8 lg:gap-16 w-full">
                   {/* Step Title */}
                   <h3 
-                    className="text-white text-[26px] md:text-[32px] font-medium md:w-[280px] shrink-0 whitespace-pre-line leading-[40px]"
-                    style={{ fontFamily: '"Founders Grotesk", sans-serif' }}
+                    className="text-white text-[26px] md:text-[32px] font-medium md:w-[280px] shrink-0 whitespace-pre-line leading-[40px] font-[var(--font-founders)]"
                   >
                     {step.title}
                   </h3>
                   
                   {/* Step Description */}
                   <p 
-                    className="text-white text-[16px] md:text-[18px] font-normal leading-[24px] w-full"
-                    style={{ fontFamily: '"Founders Grotesk", sans-serif' }}
+                    className="text-white text-[16px] md:text-[18px] font-normal leading-[24px] w-full font-[var(--font-founders)]"
                   >
                     {step.description}
                   </p>
