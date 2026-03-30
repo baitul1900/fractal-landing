@@ -6,6 +6,7 @@ import ArtifactsSection from "./home-components/ArtifactsSection";
 import FourthSection from "./home-components/FourthSection";
 import FifthSection from "./home-components/FifthSection";
 import SixthSection from "./home-components/SixthSection";
+import ContactSection from "./home-components/ContactSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
+      <ContactSection />
     </main>
   );
 }
