@@ -7,6 +7,7 @@ import FourthSection from "./home-components/FourthSection";
 import FifthSection from "./home-components/FifthSection";
 import SixthSection from "./home-components/SixthSection";
 import ContactSection from "./home-components/ContactSection";
+import CustomFooter from "./home-components/CustomFooter";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <FifthSection />
       <SixthSection />
       <ContactSection />
+      <CustomFooter />
     </main>
   );
 }

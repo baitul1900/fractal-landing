@@ -47,6 +47,14 @@ html.lenis body {
   background-repeat: no-repeat;
 }
 
+.custom-footer {
+  background-image: url('/images/home/Footer.webp') !important;
+  background-color: #0a0a0a !important;
+  background-size: cover !important;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+}
+
 .mobile-app-hero {
   background-image: url("/images/home/home-hero-mobile.webp");
   background-size: cover;
