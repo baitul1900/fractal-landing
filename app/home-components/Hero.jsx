@@ -134,7 +134,7 @@ const Hero = () => {
           <div className="flex gap-6 w-full md:w-auto">
             <motion.div
               style={{ y: imgY1, rotateZ: aboutRotate }}
-              className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[3/4] overflow-hidden rounded-sm group/img shadow-2xl"
+              className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[4/5] overflow-hidden rounded-sm group/img shadow-2xl"
             >
               <Image
                 src={aboutHeroOne}
@@ -147,7 +147,7 @@ const Hero = () => {
             </motion.div>
             <motion.div
               style={{ y: imgY2, rotateZ: aboutRotate }}
-              className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[3/4] overflow-hidden rounded-sm group/img shadow-2xl"
+              className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[4/5] overflow-hidden rounded-sm group/img shadow-2xl"
             >
               <Image
                 src={aboutHeroTwo}
