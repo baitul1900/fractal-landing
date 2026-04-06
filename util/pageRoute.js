@@ -5,3 +5,5 @@ export const SHOP = '#'
 export const ABOUT = '#about'
 export const CONTACT = '#contact'
 export const TEAM_PAGE = "#team"
+export const ARTISTS = "#artists"
+export const PROCESS = "#process"

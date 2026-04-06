@@ -40,10 +40,10 @@ const Hero = () => {
         className="relative min-h-screen w-full home-hero flex flex-col justify-center overflow-hidden"
       >
         {/* Container to restrict content width but allow background to span full width */}
-        <div className="relative w-full container mx-auto px-6 md:px-10 lg:px-16 pt-32 pb-20 flex flex-col h-full md:pt-[455px] min-h-screen">
+        <div className="relative w-full container mx-auto px-6 md:px-10 lg:px-6 pt-32 pb-20 flex flex-col h-full md:pt-[355px] min-h-screen">
 
           {/* Top Right Text (Absolute to the container) */}
-          <div className="absolute top-32 md:top-90 right-6 md:right-0 text-right">
+          <div className="absolute top-32 md:top-70 right-6 md:right-0 text-right">
             <div className="w-full max-w-[310px] h-auto text-[#ffe6d0] text-sm md:text-base font-medium font-[var(--font-founders)] leading-5 uppercase">
               TATTOOING IS NOT JUST WHAT WE DO,
               THIS IS WHO WE ARE — OUR WORK IS
@@ -63,6 +63,8 @@ const Hero = () => {
               priority
             />
           </motion.div>
+
+          
 
           {/* Bottom Section Layout */}
           <div className="flex flex-col md:flex-row justify-between items-end w-full mt-10 mb-10">

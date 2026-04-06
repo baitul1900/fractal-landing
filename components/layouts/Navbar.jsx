@@ -11,6 +11,8 @@ import {
   ABOUT,
   CONTACT,
   SHOP,
+  ARTISTS,
+  PROCESS,
 } from "../../util/pageRoute";
 import Image from "next/image";
 import logoImage from "@/public/images/logo/logo.webp";
@@ -41,6 +43,8 @@ const styles = {
 
 const navItems = [
   { name: "ABOUT US", href: ABOUT },
+  { name: "ARTISTS", href: ARTISTS },
+  { name: "PROCESS", href: PROCESS },
 ];
 
 const mobileNavItems = [
