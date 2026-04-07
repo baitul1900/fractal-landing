@@ -1,7 +1,7 @@
-import SectionWrapper from "@/components/layouts/SectionWrapper";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
+import SectionWrapper from "@/components/layouts/SectionWrapper";
 
 const ArtifactsSection = () => {
   const artifacts = [
@@ -37,18 +37,26 @@ const ArtifactsSection = () => {
     },
   ];
 
-  const repeatedArtifacts = [...artifacts, ...artifacts, ...artifacts, ...artifacts];
+  const repeatedArtifacts = [
+    ...artifacts,
+    ...artifacts,
+    ...artifacts,
+    ...artifacts,
+  ];
 
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-70%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
     <>
-      <SectionWrapper id="artifacts" className="bg-black pt-24 md:pt-40 overflow-visible">
+      <SectionWrapper
+        id="artifacts"
+        className="bg-black pt-24 md:pt-40 overflow-visible"
+      >
         <div className="flex flex-col gap-16 md:gap-32">
           {/* Header stays in container */}
           <div className="container mx-auto px-6 md:px-10 lg:px-16">
@@ -70,7 +78,8 @@ const ArtifactsSection = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="text-[#FFE6D0] text-sm md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight"
                 >
-                  Each piece you see here was not designed to decorate, but to represent.
+                  Each piece you see here was not designed to decorate, but to
+                  represent.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -78,7 +87,9 @@ const ArtifactsSection = () => {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="text-[#FFE6D0] text-sm md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight"
                 >
-                  These works are fragments of personal journeys — moments of transformation, remembrance, rebellion, or awakening translated into visual language.
+                  These works are fragments of personal journeys — moments of
+                  transformation, remembrance, rebellion, or awakening
+                  translated into visual language.
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -90,8 +101,21 @@ const ArtifactsSection = () => {
                     href="#reservation"
                     className="group flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#ffe6d0] transition-colors duration-200 uppercase tracking-[0.2em]"
                   >
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="transition-transform group-hover:translate-x-1">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="transition-transform group-hover:translate-x-1"
+                    >
+                      <path
+                        d="M7 17L17 7M17 7H7M17 7V17"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                     RESERVATION
                   </a>
@@ -101,34 +125,36 @@ const ArtifactsSection = () => {
           </div>
 
           {/* Fluid Horizontal Scroll Section */}
-
         </div>
       </SectionWrapper>
 
       {/* Fluid Horizontal Scroll Section */}
       <div ref={targetRef} className="relative h-[300vh] mt-[63px]">
         <div className="sticky top-0 h-screen flex items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex gap-0 h-[65vh] md:h-[75vh] items-stretch">
+          <motion.div
+            style={{ x }}
+            className="flex gap-0 h-[50vh] md:h-[60vh] items-stretch"
+          >
             {repeatedArtifacts.map((artifact, index) => {
               const pattern = index % 4;
               let heightClass = "h-[100%]";
               let alignClass = "self-center";
-              
+
               if (pattern === 1) {
-                heightClass = "h-[55%]";
+                heightClass = "h-[45%]";
                 alignClass = "self-center";
               } else if (pattern === 2) {
-                heightClass = "h-[85%]";
+                heightClass = "h-[70%]";
                 alignClass = "self-end";
               } else if (pattern === 0 || pattern === 3) {
-                heightClass = "h-[100%]";
+                heightClass = "h-[85%]";
                 alignClass = "self-center";
               }
 
               return (
                 <div
                   key={index}
-                  className={`relative flex-shrink-0 w-[80vw] md:w-[33.333vw] border-r border-black/50 ${heightClass} ${alignClass}`}
+                  className={`relative flex-shrink-0 w-[70vw] md:w-[25vw] border-r border-black/50 ${heightClass} ${alignClass}`}
                 >
                   <Image
                     src={artifact.image}
@@ -153,8 +179,18 @@ const ArtifactsSection = () => {
         >
           {/* We repeat the array sufficiently to always fill the screen and seamlessly loop */}
           {[...Array(10)].map((_, i) => (
-            <div key={i} className="flex items-center whitespace-nowrap shrink-0">
-              {["Munich", "Amsterdam", "Paris", "Zurich", "Barcelona", "Stuttgart"].map((city, idx) => (
+            <div
+              key={i}
+              className="flex items-center whitespace-nowrap shrink-0"
+            >
+              {[
+                "Munich",
+                "Amsterdam",
+                "Paris",
+                "Zurich",
+                "Barcelona",
+                "Stuttgart",
+              ].map((city, idx) => (
                 <span
                   key={`${i}-${idx}`}
                   className="px-6 md:px-12 text-black uppercase font-[var(--font-founders)] text-sm md:text-base font-semibold tracking-widest"
@@ -166,7 +202,6 @@ const ArtifactsSection = () => {
           ))}
         </motion.div>
       </div>
-
     </>
   );
 };
