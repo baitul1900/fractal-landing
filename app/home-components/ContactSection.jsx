@@ -55,7 +55,7 @@ const ContactSection = () => {
           <form className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-14">
             {/* Row 1 */}
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5">
-              <label className="text-white min-w-[140px] lg:min-w-[120px] shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
+              <label className="text-white   shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
                 Full Name *
               </label>
               <input
@@ -66,7 +66,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5">
-              <label className="text-white min-w-[140px] lg:min-w-[120px] shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
+              <label className="text-white   shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
                 City
               </label>
               <input
@@ -78,7 +78,7 @@ const ContactSection = () => {
 
             {/* Row 2 */}
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5">
-              <label className="text-white min-w-[140px] lg:min-w-[120px] shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
+              <label className="text-white   shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
                 Body Placement
               </label>
               <input
@@ -89,7 +89,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5">
-              <label className="text-white min-w-[140px] lg:min-w-[120px] shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
+              <label className="text-white   shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
                 Email *
               </label>
               <input
@@ -101,7 +101,7 @@ const ContactSection = () => {
 
             {/* Row 3 */}
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5">
-              <label className="text-white min-w-[140px] lg:min-w-[120px] shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
+              <label className="text-white   shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
                 Phone *
               </label>
               <input
@@ -112,7 +112,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5">
-              <label className="text-white min-w-[140px] lg:min-w-[120px] shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
+              <label className="text-white   shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
                 Inspiration
               </label>
               <input
@@ -124,7 +124,7 @@ const ContactSection = () => {
 
             {/* Row 4 - Full Width */}
             <div className="md:col-span-2 flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5">
-              <label className="text-white min-w-[140px] lg:min-w-[120px] shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
+              <label className="text-white   shrink-0 font-normal text-[20px] leading-[20px] font-[var(--font-founders)]">
                 Description
               </label>
               <input
@@ -135,7 +135,7 @@ const ContactSection = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="md:col-span-2 flex justify-end mt-4 md:mt-8">
+            <div className="md:col-span-2 flex justify-end mt-4 md:mt-12">
               <button
                 type="submit"
                 className="flex items-center gap-3 text-white hover:text-gray-300 transition-colors group cursor-pointer"

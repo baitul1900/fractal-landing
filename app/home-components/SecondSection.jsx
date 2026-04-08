@@ -27,34 +27,6 @@ const SecondSection = () => {
         </div>
 
         {/* Reservation Button - Sticking with text/icon */}
-        <div className="pointer-events-auto pt-[480px]">
-          <a
-            href="#reservation"
-            className="group flex items-center justify-center gap-3 text-white font-bold uppercase w-fit z-30 mix-blend-difference"
-          >
-            <div className="pb-1 border-b border-white flex items-center gap-3 transition-all group-hover:gap-5">
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="transition-transform duration-300"
-              >
-                <path
-                  d="M7 17L17 7M17 7H7M17 7V17"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className="text-sm tracking-[0.2em] font-[var(--font-founders)]">
-                RESERVATION
-              </span>
-            </div>
-          </a>
-        </div>
       </div>
 
       {/* Floating images background layer */}

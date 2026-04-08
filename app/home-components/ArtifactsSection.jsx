@@ -129,8 +129,8 @@ const ArtifactsSection = () => {
       </SectionWrapper>
 
       {/* Fluid Horizontal Scroll Section */}
-      <div ref={targetRef} className="relative h-[300vh] mt-[63px]">
-        <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+      <div ref={targetRef} className="relative h-[300vh]">
+        <div className="sticky top-0 h-[87vh] flex items-center overflow-hidden">
           <motion.div
             style={{ x }}
             className="flex gap-0 h-[50vh] md:h-[60vh] items-stretch"
@@ -141,13 +141,13 @@ const ArtifactsSection = () => {
               let alignClass = "self-center";
 
               if (pattern === 1) {
-                heightClass = "h-[45%]";
+                heightClass = "h-[95%]";
                 alignClass = "self-center";
               } else if (pattern === 2) {
                 heightClass = "h-[70%]";
                 alignClass = "self-end";
               } else if (pattern === 0 || pattern === 3) {
-                heightClass = "h-[85%]";
+                heightClass = "h-[65%]";
                 alignClass = "self-center";
               }
 

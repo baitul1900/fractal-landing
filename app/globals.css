@@ -39,19 +39,19 @@ html.lenis body {
 }
 
 .home-hero {
-
   background-image: url("/images/home/Hero-bg.webp");
   background-size: cover;
   height: 1390px;
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .custom-footer {
-  background-image: url('/images/home/Footer.webp') !important;
+  background-image: url("/images/home/Footer.webp") !important;
   background-color: #0a0a0a !important;
-  background-size: cover !important;
-  background-position: center bottom !important;
+  background-size: 100% auto !important;
+  background-position: bottom center !important;
   background-repeat: no-repeat !important;
 }
 
@@ -198,5 +198,7 @@ html.lenis body {
 }
 
 .transition-colors-custom {
-  transition: background-color 0.8s ease, color 0.8s ease;
+  transition:
+    background-color 0.8s ease,
+    color 0.8s ease;
 }

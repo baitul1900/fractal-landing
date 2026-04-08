@@ -1,14 +1,14 @@
 "use client";
-import React, { useRef } from "react";
-import Image from "next/image";
-import artistImage from "../../public/images/home/photo_fractal-dua.webp";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import React, { useRef } from "react";
+import artistImage from "../../public/images/home/photo_fractal-dua.webp";
 
 const TattooHeading = ({ children, className }) => {
   return (
     <div className={`relative ${className}`}>
-      <div 
-        className="absolute inset-0 text-transparent pointer-events-none" 
+      <div
+        className="absolute inset-0 text-transparent pointer-events-none"
         style={{ WebkitTextStroke: "1px rgba(0,0,0,0.4)" }}
       >
         {children}
@@ -42,10 +42,10 @@ const TattooText = ({ children, className }) => {
 
 const FourthSection = () => {
   const containerRef = useRef(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end start"],
   });
 
   const yLeftText = useTransform(scrollYProgress, [0, 1], [50, -50]);
@@ -57,10 +57,8 @@ const FourthSection = () => {
       ref={containerRef}
       className="w-full h-auto bg-[#ABA59F] flex justify-center items-center  md:pt-[98px] overflow-hidden"
     >
-      <div 
-        className="container mx-auto px-6 md:px-10 lg:px-16 h-full pb-10 md:pb-20 pb-safe grid grid-cols-1 md:grid-cols-12 gap-6"
-      >
-        <motion.div 
+      <div className="container mx-auto px-6 md:px-10 lg:px-16 h-full pb-10 md:pb-20 pb-safe grid grid-cols-1 md:grid-cols-12 gap-6">
+        <motion.div
           style={{ y: yLeftText }}
           className="col-span-12 md:col-span-4 pt-20"
         >
@@ -70,7 +68,7 @@ const FourthSection = () => {
           <TattooHeading className="text-4xl font-(--font-founders-grotesk) uppercase leading-[52px] text-end font-light">
             MANAGER & DESIGNER
           </TattooHeading>
-          <div className="w-[485px] md:mt-1.5 text-end ml-auto">
+          <div className="w-[485px] md:mt-1.5 text-start ml-auto">
             <TattooText className="text-black text-xl font-normal font-(--font-founders-grotesk) leading-7">
               With a background in graphic design and photography, Eliezer leads
               the creative direction of the project. He shapes the visual
@@ -85,16 +83,18 @@ const FourthSection = () => {
             </TattooText>
           </div>
 
-          <div className="flex justify-end">
-            <TattooText className="w-[110px] mt-[74.84px] h-4 justify-start text-black text-xl font-normal font-(--font-founders-grotesk) leading-6 underline">
+          <div className="flex justify-start">
+            <a
+              href="https://instagram.com/elicostart"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-[110px] mt-3.5 h-4 justify-start text-black text-xl font-normal font-(--font-founders-grotesk) leading-6 underline cursor-pointer"
+            >
               @ELICOSTART
-            </TattooText>
+            </a>
           </div>
         </motion.div>
-        <motion.div 
-          style={{ y: yImage }}
-          className="col-span-12 md:col-span-4"
-        >
+        <div className="col-span-12 md:col-span-4">
           <Image
             src={artistImage}
             alt="Artist"
@@ -102,9 +102,9 @@ const FourthSection = () => {
             height={500}
             className="w-full h-auto object-cover"
           />
-        </motion.div>
+        </div>
 
-        <motion.div 
+        <motion.div
           style={{ y: yRightText }}
           className="col-span-12 md:col-span-4 self-end pb-10 md:pb-20"
         >
@@ -114,7 +114,7 @@ const FourthSection = () => {
           <TattooHeading className="text-4xl font-(--font-founders-grotesk) uppercase leading-[52px] text-start font-light">
             TATTOO ARTIST
           </TattooHeading>
-          <div className="md:mt-1.5 text-start">
+          <div className="md:mt-1.5 text-end">
             <TattooText className="text-black text-xl font-normal font-(--font-founders-grotesk) leading-7">
               With more than a decade of experience, Nanook explored multiple
               styles before refining his own language within the craft. His
@@ -128,10 +128,15 @@ const FourthSection = () => {
             </TattooText>
           </div>
 
-          <div className="flex justify-start">
-            <TattooText className="mt-[74.84px] text-black text-xl font-normal font-(--font-founders-grotesk) leading-6 underline">
+          <div className="flex justify-end">
+            <a
+              href="https://instagram.com/nanook.ttt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-[12px] text-black text-xl font-normal font-(--font-founders-grotesk) leading-6 underline cursor-pointer"
+            >
               @NANOOK.TTT
-            </TattooText>
+            </a>
           </div>
         </motion.div>
       </div>
