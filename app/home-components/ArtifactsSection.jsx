@@ -2,8 +2,14 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import SectionWrapper from "@/components/layouts/SectionWrapper";
+import { pages } from "../../util/route";
+import { scrollToId } from "../../util/scroll";
 
 const ArtifactsSection = () => {
+  const handleReservation = (e) => {
+    e.preventDefault();
+    scrollToId(pages.contactUs);
+  };
   const artifacts = [
     {
       title: "Archive 01",
@@ -98,7 +104,8 @@ const ArtifactsSection = () => {
                   className="pt-4"
                 >
                   <a
-                    href="#reservation"
+                    href={pages.contactUs}
+                    onClick={handleReservation}
                     className="group flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#ffe6d0] transition-colors duration-200 uppercase tracking-[0.2em]"
                   >
                     <svg
@@ -154,7 +161,7 @@ const ArtifactsSection = () => {
               return (
                 <div
                   key={index}
-                  className={`relative flex-shrink-0 w-[70vw] md:w-[25vw] border-r border-black/50 ${heightClass} ${alignClass}`}
+                  className={`relative flex-shrink-0 w-[70vw] md:w-[45vw] lg:w-[25vw] border-r border-black/50 ${heightClass} ${alignClass}`}
                 >
                   <Image
                     src={artifact.image}

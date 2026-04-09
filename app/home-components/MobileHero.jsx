@@ -7,9 +7,17 @@ import aboutHeroOne from "../../public/images/home/about-hero-1.webp";
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
 import playbtn from "../../public/images/home/play-btn.png";
 
+import { pages } from "../../util/route";
+import { scrollToId } from "../../util/scroll";
+
 const MobileHero = () => {
+  const handleReservation = (e) => {
+    e.preventDefault();
+    scrollToId(pages.contactUs);
+  };
+
   return (
-    <section className="md:hidden text-white w-full overflow-hidden">
+    <section className="lg:hidden text-white w-full overflow-hidden">
       {/* Top Hero Section using original .home-hero class */}
       <div className="relative w-full px-6 pt-32 pb-[43px] flex flex-col home-hero !h-auto min-h-[500px] !bg-top">
         {/* Content starts here - index above background */}
@@ -110,7 +118,8 @@ const MobileHero = () => {
           </p>
 
           <a
-            href="/contact"
+            href={pages.contactUs}
+            onClick={handleReservation}
             className="w-full bg-[#FFE6D0] text-black rounded-full py-2 flex items-center justify-center gap-3 font-normal uppercase text-[16px] leading-[24px] tracking-wide font-[var(--font-founders)]"
           >
             <svg

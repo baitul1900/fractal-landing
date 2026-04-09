@@ -53,7 +53,7 @@ const FourthSection = () => {
   const yRightText = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
     <section
-      id="artist-team"
+      id="artists"
       ref={containerRef}
       className="w-full h-auto bg-[#ABA59F] flex justify-center items-center  md:pt-[98px] overflow-hidden"
     >

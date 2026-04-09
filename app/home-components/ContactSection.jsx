@@ -3,7 +3,7 @@ import React from "react";
 const ContactSection = () => {
   return (
     <section
-      id="contact-section"
+      id="contact"
       className="bg-[#050505] text-white w-full py-20 md:py-32 px-6 md:px-10 lg:px-16"
       style={{ background: "#0a0a0a" }}
     >

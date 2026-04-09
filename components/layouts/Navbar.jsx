@@ -17,11 +17,12 @@ import {
 import Image from "next/image";
 import logoImage from "@/public/images/logo/logo.webp";
 import { pages } from "@/util/route";
+import { scrollToId } from "../../util/scroll";
 
 const styles = {
   baseLink:
     "text-[#FFE3C9] text-base font-normal leading-6 hover:text-[#ffe6d0] transition-colors duration-200 py-2 md:py-0 font-[var(--font-founders)]",
-  nav: "hidden md:flex space-x-8 lg:space-x-10 items-center",
+  nav: "hidden lg:flex space-x-8 lg:space-x-10 items-center",
   mobileMenu:
     "fixed inset-0 z-[60] bg-black/60 backdrop-blur-md md:hidden flex flex-col items-center px-4 pt-24 font-[var(--font-founders)]",
   closeButton:
@@ -37,7 +38,7 @@ const styles = {
   logoLink: "flex items-center space-x-2",
   rightActions: "flex items-center gap-2 md:gap-4",
   menuButton:
-    "md:hidden text-white p-2 transition-colors",
+    "lg:hidden text-white p-2 transition-colors",
   menuButtonOpen: "",
 };
 
@@ -47,20 +48,19 @@ const navItems = [
   { name: "PROCESS", href: PROCESS },
 ];
 
+const handleScroll = (e, href, onHit) => {
+  if (href.startsWith("#")) {
+    e.preventDefault();
+    scrollToId(href);
+    onHit?.();
+  }
+};
+
 // Link that smooth-scrolls to in-page section and (optionally) triggers onHit (to close mobile menu)
 const NavLink = ({ name, href, onHit, className = "" }) => (
   <a
     href={href}
-    onClick={(e) => {
-      const id = href.startsWith("#") ? href.slice(1) : null;
-      const el = id && document.getElementById(id);
-      if (el) {
-        e.preventDefault();
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        // history.replaceState(null, "", href); // Keeping history manipulation optional
-        onHit?.();
-      }
-    }}
+    onClick={(e) => handleScroll(e, href, onHit)}
     className={clsx(styles.baseLink, className)}
   >
     {name}
@@ -118,7 +118,11 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <a href={pages.contactUs} onClick={toggleMenu} className={styles.reservationCard}>
+              <a 
+                href={pages.contactUs} 
+                onClick={(e) => handleScroll(e, pages.contactUs, toggleMenu)} 
+                className={styles.reservationCard}
+              >
                 <svg
                   width="20"
                   height="20"
@@ -211,7 +215,8 @@ export default function Navbar() {
           <div className={styles.rightActions}>
             <a
               href={pages.contactUs}
-              className="hidden md:flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#ffe6d0] transition-colors duration-200"
+              onClick={(e) => handleScroll(e, pages.contactUs)}
+              className="hidden lg:flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#ffe6d0] transition-colors duration-200"
             >
               <svg
                 width="18"

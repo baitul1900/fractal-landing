@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { pages } from "../../util/route";
+import { scrollToId } from "../../util/scroll";
 
 const CustomFooter = () => {
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    scrollToId(id);
+  };
+
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -39,14 +46,14 @@ const CustomFooter = () => {
   }, [text, isDeleting, loopNum, typingSpeed, phrases]);
 
   return (
-    <footer className="custom-footer w-full h-[950px] px-6 md:px-10 lg:px-16 relative font-[var(--font-founders)] ">
+    <footer className="custom-footer w-full h-auto min-h-[600px] lg:h-[950px] px-6 md:px-10 lg:px-16 relative font-[var(--font-founders)] py-20 lg:py-0">
       <div className="container mx-auto max-w-[1440px] pt-16 md:pt-14 h-full flex flex-col justify-start relative z-10">
         {/* Merged Seventh Section Typography block */}
         <div className="flex flex-col justify-center mb-16 md:mb-24">
-          <h2 className="text-white text-[72px] font-medium leading-[72px] tracking-[-2.276px] mb-2 font-[var(--font-founders)]">
+          <h2 className="text-white text-[48px] md:text-[60px] lg:text-[72px] font-medium leading-[48px] md:leading-[60px] lg:leading-[72px] tracking-[-2.276px] mb-2 font-[var(--font-founders)]">
             Lets Create
           </h2>
-          <h3 className="text-[#828282] text-[72px] font-medium leading-[72px] tracking-[-2.276px] min-h-[80px] font-[var(--font-founders)]">
+          <h3 className="text-[#828282] text-[48px] md:text-[60px] lg:text-[72px] font-medium leading-[48px] md:leading-[60px] lg:leading-[72px] tracking-[-2.276px] min-h-[80px] font-[var(--font-founders)]">
             something {text}
             <span
               className="w-[4px] md:w-[6px] h-[64px] bg-[#828282] inline-block ml-2 animate-pulse align-middle opacity-80"
@@ -170,25 +177,29 @@ const CustomFooter = () => {
             </span>
             <div className="grid grid-cols-2 gap-x-12 gap-y-3 md:gap-y-4 max-w-[280px]">
               <a
-                href="#"
+                href="#about"
+                onClick={(e) => handleScroll(e, "#about")}
                 className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
               >
                 About us
               </a>
               <a
-                href="#"
+                href="#process"
+                onClick={(e) => handleScroll(e, "#process")}
                 className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
               >
                 Process
               </a>
               <a
-                href="#"
+                href={pages.contactUs}
+                onClick={(e) => handleScroll(e, pages.contactUs)}
                 className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
               >
                 Reservation
               </a>
               <a
-                href="#"
+                href="#artists"
+                onClick={(e) => handleScroll(e, "#artists")}
                 className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
               >
                 Artist

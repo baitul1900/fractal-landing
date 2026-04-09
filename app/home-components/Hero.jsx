@@ -15,9 +15,17 @@ import { useRef, useState } from "react";
 
 import MobileHero from "./MobileHero";
 
+import { pages } from "../../util/route";
+import { scrollToId } from "../../util/scroll";
+
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const heroRef = useRef(null);
+
+  const handleReservation = (e) => {
+    e.preventDefault();
+    scrollToId(pages.contactUs);
+  };
   const { scrollYProgress } = useScroll({
     target: heroRef,
     offset: ["start start", "end end"],
@@ -43,7 +51,7 @@ const Hero = () => {
       <MobileHero />
 
       {/* Desktop Version Rendering (untouched) */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <section
           ref={heroRef}
           className="relative min-h-screen w-full home-hero flex flex-col justify-center overflow-hidden"
@@ -172,7 +180,8 @@ const Hero = () => {
                 freedom.
               </div>
               <a
-                href="/contact"
+                href={pages.contactUs}
+                onClick={handleReservation}
                 className="group flex items-center gap-3 text-white font-bold uppercase w-fit"
               >
                 <div className="pb-1 border-b border-white flex items-center gap-3 transition-all group-hover:gap-5">
