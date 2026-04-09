@@ -16,7 +16,6 @@ import {
 } from "../../util/pageRoute";
 import Image from "next/image";
 import logoImage from "@/public/images/logo/logo.webp";
-import Button from "../ui/Button";
 import { pages } from "@/util/route";
 
 const styles = {
@@ -24,32 +23,28 @@ const styles = {
     "text-[#FFE3C9] text-base font-normal leading-6 hover:text-[#ffe6d0] transition-colors duration-200 py-2 md:py-0 font-[var(--font-founders)]",
   nav: "hidden md:flex space-x-8 lg:space-x-10 items-center",
   mobileMenu:
-    "fixed inset-0 z-[60] bg-gray-900/95 backdrop-blur-xl md:hidden p-6 pt-20 flex flex-col items-start space-y-6",
+    "fixed inset-0 z-[60] bg-black/60 backdrop-blur-md md:hidden flex flex-col items-center px-4 pt-24 font-[var(--font-founders)]",
   closeButton:
-    "absolute top-4 right-4 text-white p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors",
-  mobileLinksContainer: "flex flex-col space-y-6 w-full",
-  mobileLink: "text-white text-3xl font-bold block ",
-  mobileButtonContainer: "mt-6 w-full",
+    "absolute top-6 right-6 text-white p-2 transition-colors",
+  mobileLinksContainer: "flex flex-col w-full bg-white rounded-[24px] p-6 mb-4",
+  mobileLink: "text-black text-[18px] font-bold block py-4 border-b border-gray-100 last:border-b-0 uppercase font-[var(--font-founders)]",
+  mobileButtonContainer: "w-full",
+  reservationCard: "w-full bg-white rounded-full py-5 px-6 flex items-center justify-center gap-3 text-black font-bold uppercase text-[18px] font-[var(--font-founders)]",
   header:
-    "fixed left-0 w-full z-50 top-0 border-b border-[#F0EDF8] md:border-b-0",
+    "fixed left-0 w-full z-[70] top-0",
   container:
     "container mx-auto px-6 md:px-10 lg:px-16 py-4 flex justify-between items-center relative h-20",
   logoLink: "flex items-center space-x-2",
   rightActions: "flex items-center gap-2 md:gap-4",
   menuButton:
-    "md:hidden text-grey-600 p-2 rounded-full bg-grey-900 hover:bg-gray-600 transition-colors",
-  menuButtonOpen: "invisible pointer-events-none",
+    "md:hidden text-white p-2 transition-colors",
+  menuButtonOpen: "",
 };
 
 const navItems = [
   { name: "ABOUT US", href: ABOUT },
   { name: "ARTISTS", href: ARTISTS },
   { name: "PROCESS", href: PROCESS },
-];
-
-const mobileNavItems = [
-  ...navItems,
-  { name: "RESERVATION", href: pages.contactUs },
 ];
 
 // Link that smooth-scrolls to in-page section and (optionally) triggers onHit (to close mobile menu)
@@ -82,16 +77,8 @@ const NavLinks = () => (
 
 const MobileMenu = ({ isOpen, toggleMenu }) => {
   const menuVariants = {
-    closed: { x: "100%" },
-    open: { x: "0%" },
-  };
-  const linkVariants = {
-    closed: { opacity: 0, y: 20 },
-    open: (i) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.1 + i * 0.1, duration: 0.3 },
-    }),
+    closed: { opacity: 0, y: -20 },
+    open: { opacity: 1, y: 0 },
   };
 
   return (
@@ -102,75 +89,51 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
           animate="open"
           exit="closed"
           variants={menuVariants}
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className={styles.mobileMenu}
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"
         >
-          <button
-            onClick={toggleMenu}
-            className={styles.closeButton}
-            aria-label="Close menu"
-          >
-            <X size={24} />
-          </button>
-
-          <motion.div
-            className={styles.mobileLinksContainer}
-            initial="closed"
-            animate="open"
-            transition={{ staggerChildren: 0.1 }}
-          >
-            {/* Services Link */}
-            <motion.div variants={linkVariants} custom={0}>
-              <NavLink
-                name="Services"
-                href={SOLUTION}
-                className={styles.mobileLink}
-                onHit={toggleMenu}
-              />
-            </motion.div>
-
-            {/* Other Nav Items */}
-            {mobileNavItems.map((item, index) => (
-              <motion.div
-                key={item.name}
-                variants={linkVariants}
-                custom={index + 1}
-              >
+          <div className="w-full max-w-[400px]">
+            <motion.div
+              className={styles.mobileLinksContainer}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1 }}
+            >
+              {navItems.map((item, index) => (
                 <NavLink
+                  key={item.name}
                   {...item}
                   className={styles.mobileLink}
                   onHit={toggleMenu}
                 />
-              </motion.div>
-            ))}
-          </motion.div>
+              ))}
+            </motion.div>
 
-          <div className={styles.mobileButtonContainer}>
-            <Button
-              variant="fill"
-              size="md"
-              href={pages.contactUs}
-              className="w-full gap-2"
+            <motion.div 
+              className={styles.mobileButtonContainer}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g style={{ mixBlendMode: "difference" }}>
+              <a href={pages.contactUs} onClick={toggleMenu} className={styles.reservationCard}>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M20.5795 3.22123L4.11651 8.71023C4.0491 8.73264 3.99011 8.77504 3.94737 8.83178C3.90464 8.88853 3.88018 8.95693 3.87725 9.02791C3.87432 9.09888 3.89306 9.16907 3.93097 9.22914C3.96888 9.28922 4.02418 9.33633 4.08951 9.36423L10.1395 11.9572C10.1712 11.971 10.2059 11.9762 10.2403 11.9726C10.2746 11.9689 10.3074 11.9564 10.3355 11.9362L16.2665 7.69823C16.4505 7.56823 16.6765 7.79423 16.5465 7.97823L12.3085 13.9092C12.2887 13.9373 12.2765 13.97 12.273 14.0041C12.2695 14.0383 12.2748 14.0727 12.2885 14.1042L14.8805 20.1542C14.9083 20.2196 14.9553 20.2749 15.0154 20.3129C15.0754 20.3509 15.1455 20.3698 15.2165 20.3669C15.2875 20.3641 15.3559 20.3398 15.4127 20.2971C15.4695 20.2545 15.512 20.1956 15.5345 20.1282L21.0235 3.66423C21.0442 3.60252 21.0472 3.53627 21.0323 3.47293C21.0174 3.40958 20.9851 3.35165 20.9391 3.30564C20.8931 3.25962 20.8351 3.22735 20.7718 3.21244C20.7085 3.19753 20.6412 3.20057 20.5795 3.22123Z"
-                    fill="#FFE3C9"
+                    fill="black"
                   />
-                </g>
-              </svg>
-              RESERVATION
-            </Button>
+                </svg>
+                RESERVATION
+              </a>
+            </motion.div>
           </div>
         </motion.div>
       )}
@@ -274,24 +237,41 @@ export default function Navbar() {
                 styles.menuButton,
                 isMenuOpen && styles.menuButtonOpen,
               )}
-              aria-label="Open menu"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMenuOpen}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M10 5H20M4 12H20M4 19H14"
-                  stroke="#0E121D"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              {isMenuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18 6L6 18M6 6L18 18"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="18"
+                  viewBox="0 0 32 18"
+                  fill="none"
+                >
+                  <path
+                    d="M10 2H30M2 9H30M16 16H30"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              )}
             </button>
           </div>
         </div>
