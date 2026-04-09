@@ -61,12 +61,12 @@ const ArtifactsSection = () => {
     <>
       <SectionWrapper
         id="artifacts"
-        className="bg-black pt-24 md:pt-40 overflow-visible"
+        className="bg-black pt-6 md:pt-40 overflow-visible"
       >
         <div className="flex flex-col gap-16 md:gap-32">
           {/* Header stays in container */}
           <div className="container mx-auto px-0 md:px-10 lg:px-16">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-12 lg:gap-8 gap-0 items-start">
               <div className="md:col-span-12 lg:col-span-7">
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
@@ -77,12 +77,12 @@ const ArtifactsSection = () => {
                   The artifacts
                 </motion.h2>
               </div>
-              <div className="md:col-span-12 lg:col-span-5 flex flex-col items-start gap-8">
+              <div className="md:col-span-12 lg:col-span-5 flex flex-col items-start lg:gap-8 gap-0 mt-4 lg:mt-0">
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="text-[#FFE6D0] text-sm md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight"
+                  className="text-[#FFE6D0] text-lg md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight"
                 >
                   Each piece you see here was not designed to decorate, but to
                   represent.
@@ -91,7 +91,7 @@ const ArtifactsSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className="text-[#FFE6D0] text-sm md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight"
+                  className="text-[#FFE6D0] text-lg md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight lg:mt-0 mt-3.5"
                 >
                   These works are fragments of personal journeys — moments of
                   transformation, remembrance, rebellion, or awakening
@@ -101,12 +101,13 @@ const ArtifactsSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="pt-4"
+                  className="pt-10 lg:pt-4 w-full"
                 >
+                  {/* Desktop Version */}
                   <a
                     href={pages.contactUs}
                     onClick={handleReservation}
-                    className="group flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#ffe6d0] transition-colors duration-200 uppercase tracking-[0.2em]"
+                    className="hidden lg:flex group items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 hover:text-[#ffe6d0] transition-colors duration-200 uppercase tracking-[0.2em]"
                   >
                     <svg
                       width="18"
@@ -126,6 +127,27 @@ const ArtifactsSection = () => {
                     </svg>
                     RESERVATION
                   </a>
+
+                  {/* Mobile Version - Pill Button */}
+                  <a
+                    href={pages.contactUs}
+                    onClick={handleReservation}
+                    className="flex lg:hidden w-full bg-[#FFE6D0] text-black rounded-full py-[11px] items-center justify-center gap-3 text-base font-medium font-[var(--font-founders)] uppercase tracking-wide transition-all active:scale-95"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.5795 3.22123L4.11651 8.71023C4.0491 8.73264 3.99011 8.77504 3.94737 8.83178C3.90464 8.88853 3.88018 8.95693 3.87725 9.02791C3.87432 9.09888 3.89306 9.16907 3.93097 9.22914C3.96888 9.28922 4.02418 9.33633 4.08951 9.36423L10.1395 11.9572C10.1712 11.971 10.2059 11.9762 10.2403 11.9726C10.2746 11.9689 10.3074 11.9564 10.3355 11.9362L16.2665 7.69823C16.4505 7.56823 16.6765 7.79423 16.5465 7.97823L12.3085 13.9092C12.2887 13.9373 12.2765 13.97 12.273 14.0041C12.2695 14.0383 12.2748 14.0727 12.2885 14.1042L14.8805 20.1542C14.9083 20.2196 14.9553 20.2749 15.0154 20.3129C15.0754 20.3509 15.1455 20.3698 15.2165 20.3669C15.2875 20.3641 15.3559 20.3398 15.4127 20.2971C15.4695 20.2545 15.512 20.1956 15.5345 20.1282L21.0235 3.66423C21.0442 3.60252 21.0472 3.53627 21.0323 3.47293C21.0174 3.40958 20.9851 3.35165 20.9391 3.30564C20.8931 3.25962 20.8351 3.22735 20.7718 3.21244C20.7085 3.19753 20.6412 3.20057 20.5795 3.22123Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    RESERVATION
+                  </a>
                 </motion.div>
               </div>
             </div>
@@ -137,7 +159,7 @@ const ArtifactsSection = () => {
 
       {/* Fluid Horizontal Scroll Section */}
       <div ref={targetRef} className="relative h-[300vh]">
-        <div className="sticky top-0 h-[87vh] flex items-center overflow-hidden">
+        <div className="sticky top-0 md:h-[87vh] h-[67vh] flex items-center overflow-hidden">
           <motion.div
             style={{ x }}
             className="flex gap-0 h-[50vh] md:h-[60vh] items-stretch"
