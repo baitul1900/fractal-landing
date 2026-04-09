@@ -1,16 +1,20 @@
 import SectionWrapper from "@/components/layouts/SectionWrapper";
 import randomImages from "../../public/images/home/random-tatto-images.webp";
 import Image from "next/image";
+import MobileSecondSection from "./MobileSecondSection";
 
 const SecondSection = () => {
   return (
-    <SectionWrapper className="mt-[60px] pt-[149px] second-section relative">
+    <>
+      <MobileSecondSection />
+      <div className="hidden lg:block">
+        <SectionWrapper className="mt-[60px] pt-[149px] second-section relative">
       <div className="sticky top-[10vh] flex flex-col items-center justify-center w-full z-20 gap-10 mix-blend-difference pointer-events-none">
-        <div className="w-full max-w-[938px] px-4 md:px-0 text-center text-[#FFE6D0] text-[40px] md:text-[60px] lg:text-[80px] font-(--font-founders) uppercase leading-11 md:leading-[64px] lg:leading-[76px] tracking-[-2px] md:tracking-[-4px] lg:tracking-[-8px]">
-          Our work
-          <br className="hidden md:block" /> is not about ornament.
-          <br className="hidden md:block" /> It is about alignment.
-        </div>
+            <div className="w-full max-w-[938px] px-4 md:px-0 text-center text-[#FFE6D0] md:text-[60px] lg:text-[80px] font-normal font-[var(--font-founders)] uppercase md:leading-[64px] lg:leading-[76px] md:tracking-[-4px] lg:tracking-[-8px]">
+              Our work
+              <br className="hidden md:block" /> is not about ornament.
+              <br className="hidden md:block" /> It is about alignment.
+            </div>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,73 +34,75 @@ const SecondSection = () => {
       </div>
 
       {/* Floating images background layer */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 flex flex-col items-center">
-        <div className="absolute left-[8%] top-[500px] w-[140px] md:w-[180px] h-[220px] md:h-[260px] opacity-90">
-          <Image
-            src={randomImages}
-            alt="Tattoo"
-            fill
-            sizes="(max-width: 768px) 140px, 180px"
-            className="object-cover"
-          />
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 flex flex-col items-center lg:pt-[10%]">
+          <div className="absolute left-[8%] top-[500px] w-[180px] h-[260px] opacity-90">
+            <Image
+              src={randomImages}
+              alt="Tattoo"
+              fill
+              sizes="180px"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute left-[35%] top-[750px] w-[200px] h-[280px] opacity-90">
+            <Image
+              src={randomImages}
+              alt="Tattoo"
+              fill
+              sizes="200px"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute right-[25%] top-[600px] w-[210px] h-[300px] opacity-90">
+            <Image
+              src={randomImages}
+              alt="Tattoo"
+              fill
+              sizes="210px"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute right-[5%] top-[900px] w-[170px] h-[250px] opacity-90">
+            <Image
+              src={randomImages}
+              alt="Tattoo"
+              fill
+              sizes="170px"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute left-[20%] top-[1100px] w-[230px] h-[320px] opacity-90">
+            <Image
+              src={randomImages}
+              alt="Tattoo"
+              fill
+              sizes="230px"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute right-[35%] top-[1150px] w-[200px] h-[280px] opacity-90">
+            <Image
+              src={randomImages}
+              alt="Tattoo"
+              fill
+              sizes="200px"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute left-[33%] top-[1600px] w-[200px] h-[280px] opacity-90">
+            <Image
+              src={randomImages}
+              alt="Tattoo"
+              fill
+              sizes="200px"
+              className="object-cover"
+            />
+          </div>
         </div>
-        <div className="absolute left-[35%] top-[750px] w-[150px] md:w-[200px] h-[220px] md:h-[280px] opacity-90">
-          <Image
-            src={randomImages}
-            alt="Tattoo"
-            fill
-            sizes="(max-width: 768px) 150px, 200px"
-            className="object-cover"
-          />
-        </div>
-        <div className="absolute right-[25%] top-[600px] w-[160px] md:w-[210px] h-[240px] md:h-[300px] opacity-90">
-          <Image
-            src={randomImages}
-            alt="Tattoo"
-            fill
-            sizes="(max-width: 768px) 160px, 210px"
-            className="object-cover"
-          />
-        </div>
-        <div className="absolute right-[5%] top-[900px] w-[130px] md:w-[170px] h-[200px] md:h-[250px] opacity-90">
-          <Image
-            src={randomImages}
-            alt="Tattoo"
-            fill
-            sizes="(max-width: 768px) 130px, 170px"
-            className="object-cover"
-          />
-        </div>
-        <div className="absolute left-[20%] top-[1100px] w-[180px] md:w-[230px] h-[250px] md:h-[320px] opacity-90">
-          <Image
-            src={randomImages}
-            alt="Tattoo"
-            fill
-            sizes="(max-width: 768px) 180px, 230px"
-            className="object-cover"
-          />
-        </div>
-        <div className="absolute right-[35%] top-[1150px] w-[150px] md:w-[200px] h-[230px] md:h-[280px] opacity-90">
-          <Image
-            src={randomImages}
-            alt="Tattoo"
-            fill
-            sizes="(max-width: 768px) 150px, 200px"
-            className="object-cover"
-          />
-        </div>
-        <div className="absolute left-[33%] top-[1600px] w-[160px] md:w-[200px] h-[230px] md:h-[280px] opacity-90">
-          <Image
-            src={randomImages}
-            alt="Tattoo"
-            fill
-            sizes="(max-width: 768px) 160px, 200px"
-            className="object-cover"
-          />
-        </div>
-      </div>
-    </SectionWrapper>
-  );
+      </SectionWrapper>
+    </div>
+  </>
+);
 };
 
 export default SecondSection;

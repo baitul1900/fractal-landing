@@ -10,7 +10,7 @@ import playbtn from "../../public/images/home/play-btn.png";
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
 
-const MobileHero = () => {
+const MobileHero = ({ onOpenModal }) => {
   const handleReservation = (e) => {
     e.preventDefault();
     scrollToId(pages.contactUs);
@@ -65,7 +65,10 @@ const MobileHero = () => {
 
           {/* Play Reels & Rating */}
           <div className="flex items-center justify-between mt-auto pt-8 mb-4">
-            <button className="flex items-center gap-2 group">
+            <button
+              onClick={onOpenModal}
+              className="flex items-center gap-2 group"
+            >
               <Image
                 src={playbtn}
                 alt="Play Button"

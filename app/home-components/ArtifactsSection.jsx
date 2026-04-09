@@ -65,14 +65,14 @@ const ArtifactsSection = () => {
       >
         <div className="flex flex-col gap-16 md:gap-32">
           {/* Header stays in container */}
-          <div className="container mx-auto px-6 md:px-10 lg:px-16">
+          <div className="container mx-auto px-0 md:px-10 lg:px-16">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
               <div className="md:col-span-12 lg:col-span-7">
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
-                  className="text-white text-[32px] font-semibold font-[var(--font-founders)] uppercase leading-[38px] tracking-[-1.92px]"
+                  className="text-[#FAFAFA] md:text-white text-[32px] font-semibold font-[var(--font-founders)] uppercase leading-[52px] md:leading-[38px] tracking-[-1.92px]"
                 >
                   The artifacts
                 </motion.h2>
