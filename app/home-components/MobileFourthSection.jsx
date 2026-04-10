@@ -7,15 +7,15 @@ import artistImage from "../../public/images/home/photo_fractal-dua.webp";
 
 const MobileFourthSection = () => {
   return (
-    <section className="lg:hidden w-full bg-[#ABA59F] py-16 px-6 flex flex-col items-center">
+    <section className="lg:hidden w-full bg-[#DDD2C4] py-16 px-6 flex flex-col items-center">
       {/* Eliezer Costa Section */}
       <div className="w-full flex flex-col mb-12">
-        <h2 className="text-[32px] font-medium font-[var(--font-founders)] uppercase leading-tight text-black flex flex-col">
-          <span>ELIEZER COSTA</span>
-          <span className="font-light -mt-1 opacity-70">MANAGER & DESIGNER</span>
+        <h2 className="text-[32px] font-medium font-[var(--font-founders)] uppercase  text-black flex flex-col ">
+          <span className="text-end leading-[0px]">ELIEZER COSTA</span>
+          <span className="font-light text-end -mt-1 opacity-70">MANAGER & DESIGNER</span>
         </h2>
 
-        <p className="mt-6 text-black text-lg font-normal font-[var(--font-founders)] leading-[26px] opacity-90">
+        <p className="mt-6 text-black text-[20px] font-normal font-[var(--font-founders)] leading-[24px]">
           With a background in graphic design and photography, Eliezer leads
           the creative direction of the project. He shapes the visual language,
           refines the narrative structure, and guides the conceptual development
@@ -57,18 +57,18 @@ const MobileFourthSection = () => {
           src={artistImage}
           alt="Artists"
           fill
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
 
       {/* Nanook Section */}
       <div className="w-full flex flex-col">
-        <h2 className="text-[32px] font-medium font-[var(--font-founders)] uppercase leading-tight text-black flex flex-col">
-          <span>NANOOK</span>
+        <h2 className="text-[32px] font-medium font-[var(--font-founders)] uppercase text-black flex flex-col">
+          <span className="leading-[0px]">NANOOK</span>
           <span className="font-light -mt-1 opacity-70">TATTOO ARTIST</span>
         </h2>
 
-        <p className="mt-6 text-black text-lg font-normal font-[var(--font-founders)] leading-[26px] opacity-90">
+        <p className="mt-6 text-black text-[20px] font-normal font-[var(--font-founders)] leading-[24px]">
           With more than a decade of experience, Nanook explored multiple styles
           before refining his own language within the craft. His journey through
           design, drawing, music, and sculpture informs his technical sensitivity
