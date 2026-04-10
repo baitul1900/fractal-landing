@@ -198,13 +198,13 @@ const FifthSection = () => {
   return (
     <section
       id="process"
-      className="bg-[#050505] text-white w-full py-20 md:py-32 h-auto px-6 md:px-10 lg:px-16"
+      className="bg-[#050505] text-white w-full py-6 md:py-32 h-auto px-6 md:px-10 lg:px-16"
       style={{ background: "#0a0a0a" }}
     >
       <div className="container mx-auto max-w-[1440px]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0">
           {/* Left Column: Title */}
-          <div className="lg:col-span-3 pb-8 lg:pb-0">
+          <div className="lg:col-span-3 md:pb-8 lg:pb-0">
             <h2 className="text-white text-[28px] md:text-[32px] font-semibold lg:sticky lg:top-32 leading-[38px] font-[var(--font-founders)]">
               Our Process
             </h2>
@@ -215,41 +215,47 @@ const FifthSection = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="py-10 md:py-10 flex flex-col md:flex-row items-start gap-8 lg:gap-12 bg-[#0f0e0e] px-6 md:px-10"
+                className="py-2 md:py-10 flex flex-col md:flex-row items-start gap-6 md:gap-12 bg-[#0f0e0e] px-6 md:px-10"
               >
-                {/* Icon Placeholder */}
-                <div className="flex-shrink-0 w-16 md:w-[82px] flex items-center justify-center text-white">
-                  {step.Icon ? (
-                    <step.Icon />
-                  ) : (
-                    <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center border border-white/20 rounded-full text-white/60">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                        <polyline points="2 17 12 22 22 17"></polyline>
-                        <polyline points="2 12 12 17 22 12"></polyline>
-                      </svg>
-                    </div>
-                  )}
+                {/* Icon + Mobile Title Wrapper */}
+                <div className="flex md:contents items-center md:gap-6 gap-2 w-full md:w-auto">
+                  {/* Icon Placeholder */}
+                  <div className="flex-shrink-0 w-[24px] md:w-[82px] flex items-center justify-center text-white">
+                    {step.Icon ? (
+                      <step.Icon />
+                    ) : (
+                      <div className="w-6 h-6 md:w-16 md:h-16 flex items-center justify-center border border-white/20 rounded-full text-white/60">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                          <polyline points="2 17 12 22 22 17"></polyline>
+                          <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Step Title for Mobile (Hidden on Desktop) */}
+                  <h3 className="md:hidden text-[#C5C5C5] text-[22px] font-medium font-[var(--font-founders)] leading-[24px] whitespace-normal">
+                    {step.title.replace("\n", " ")}
+                  </h3>
                 </div>
 
-                {/* Step Content Wrapper */}
+                {/* Step Content Wrapper (Desktop Title + Description) */}
                 <div className="flex flex-col md:flex-row flex-grow items-start gap-4 md:gap-8 lg:gap-16 w-full">
-                  {/* Step Title */}
-                  <h3 className="text-white text-[26px] md:text-[32px] font-medium md:w-[280px] shrink-0 whitespace-pre-line leading-[40px] font-[var(--font-founders)]">
+                  {/* Step Title for Desktop (Hidden on Mobile) */}
+                  <h3 className="hidden md:block text-white text-[26px] md:text-[32px] font-medium md:w-[280px] shrink-0 whitespace-pre-line leading-[40px] font-[var(--font-founders)]">
                     {step.title}
                   </h3>
 
                   {/* Step Description */}
-                  <p className="text-white text-[16px] md:text-[18px] font-normal leading-[24px] w-full font-[var(--font-founders)]">
+                  <p className="text-[#A2A2A2] md:text-white text-[16px] md:text-[18px] font-normal leading-[20px] md:leading-[24px] w-full font-[var(--font-founders)]">
                     {step.description}
                   </p>
                 </div>
