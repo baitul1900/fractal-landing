@@ -46,48 +46,48 @@ const CustomFooter = () => {
   }, [text, isDeleting, loopNum, typingSpeed, phrases]);
 
   return (
-    <footer className="custom-footer w-full h-auto min-h-[600px] lg:h-[950px] px-6 md:px-10 lg:px-16 relative font-[var(--font-founders)] py-20 lg:py-0">
-      <div className="container mx-auto max-w-[1440px] pt-16 md:pt-14 h-full flex flex-col justify-start relative z-10">
+    <footer className="custom-footer w-full h-auto min-h-[600px] lg:h-[950px] px-6 md:px-10 lg:px-16 relative font-[var(--font-founders)] py-4 lg:py-0">
+      <div className="container mx-auto max-w-[1440px] pt-1 md:pt-14 h-full flex flex-col justify-start relative z-10">
         {/* Merged Seventh Section Typography block */}
-        <div className="flex flex-col justify-center mb-16 md:mb-24">
-          <h2 className="text-white text-[48px] md:text-[60px] lg:text-[72px] font-medium leading-[48px] md:leading-[60px] lg:leading-[72px] tracking-[-2.276px] mb-2 font-[var(--font-founders)]">
+        <div className="flex flex-col justify-center mb-12 md:mb-24 px-1">
+          <h2 className="text-white text-[42px] md:text-[60px] lg:text-[72px] font-medium leading-[44px] md:leading-[60px] lg:leading-[72px] tracking-[-1.5px] md:tracking-[-2.276px] mb-1 font-[var(--font-founders)]">
             Lets Create
           </h2>
-          <h3 className="text-[#828282] text-[48px] md:text-[60px] lg:text-[72px] font-medium leading-[48px] md:leading-[60px] lg:leading-[72px] tracking-[-2.276px] min-h-[80px] font-[var(--font-founders)]">
+          <h3 className="text-[#828282] text-[42px] md:text-[60px] lg:text-[72px] font-medium leading-[44px] md:leading-[60px] lg:leading-[72px] tracking-[-1.5px] md:tracking-[-2.276px] min-h-[90px] md:min-h-[80px] font-[var(--font-founders)]">
             something {text}
             <span
-              className="w-[4px] md:w-[6px] h-[64px] bg-[#828282] inline-block ml-2 animate-pulse align-middle opacity-80"
-              style={{ transform: "translateY(-4px)" }}
+              className="w-[3px] md:w-[6px] h-[40px] md:h-[64px] bg-[#828282] inline-block ml-2 animate-pulse align-middle opacity-80"
+              style={{ transform: "translateY(-2px)" }}
             ></span>
           </h3>
         </div>
 
-        {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-4 mb-6 border-b border-[#FFFFFF]">
+        {/* Top Section: Email & Call Me */}
+        <div className="grid grid-cols-2 md:grid-cols-3 md:gap-y-10 gap-y-4 gap-x-4 pb-1 md:pb-4 mb-6">
           {/* Email */}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-2 md:gap-3">
             <span className="text-[#828282] text-[14px]">Email</span>
             <a
               href="mailto:fractal@art.design"
-              className="text-white text-[18px] md:text-[20px] font-medium hover:text-[#bbb] transition-colors"
+              className="text-white text-[16px] md:text-[20px] font-medium hover:text-[#bbb] transition-colors break-words"
             >
               fractal@art.design
             </a>
           </div>
 
           {/* Call Me */}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-2 md:gap-3">
             <span className="text-[#828282] text-[14px]">Call Me</span>
             <a
               href="#"
-              className="text-white text-[18px] md:text-[20px] font-medium hover:text-[#bbb] transition-colors"
+              className="text-white text-[16px] md:text-[20px] font-medium hover:text-[#bbb] transition-colors"
             >
               Book Now
             </a>
           </div>
 
-          {/* Socials */}
-          <div className="flex flex-col gap-3 md:items-end">
+          {/* Socials - Spans 2 columns on mobile, 1 on md */}
+          <div className="col-span-2 md:col-span-1 flex flex-col gap-3 md:items-end">
             <div className="w-full flex md:justify-end">
               <span className="text-[#828282] text-[14px] w-full max-w-[280px] text-left">
                 Social
@@ -168,50 +168,58 @@ const CustomFooter = () => {
           </div>
         </div>
 
+        {/* Separator Line */}
+        <div className="w-full h-px bg-white/20 mb-2 md:mb-16"></div>
+
         {/* Bottom Section: Menu & Copyright */}
-        <div className="mt-2 flex justify-between items-end w-full">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end w-full gap-2 md:gap-0">
           {/* Menu Section */}
-          <div>
-            <span className="text-[#828282] text-[14px] mb-3 md:mb-4 block">
+          <div className="w-full md:w-auto">
+            <span className="text-[#828282] text-[14px] mb-2 md:mb-6 block">
               Menu
             </span>
-            <div className="grid grid-cols-2 gap-x-12 gap-y-3 md:gap-y-4 max-w-[280px]">
+            <div className="grid grid-cols-2 gap-x-12 gap-y-2 md:gap-y-5 max-w-[320px]">
               <a
                 href="#about"
                 onClick={(e) => handleScroll(e, "#about")}
-                className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
+                className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
                 About us
               </a>
               <a
                 href="#process"
                 onClick={(e) => handleScroll(e, "#process")}
-                className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
+                className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
                 Process
               </a>
               <a
                 href={pages.contactUs}
                 onClick={(e) => handleScroll(e, pages.contactUs)}
-                className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
+                className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
                 Reservation
               </a>
               <a
                 href="#artists"
                 onClick={(e) => handleScroll(e, "#artists")}
-                className="text-white text-[16px] md:text-[18px] font-medium hover:text-[#bbb] transition-colors"
+                className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
-                Artist
+                Artists
               </a>
             </div>
           </div>
 
-          {/* Copyright */}
-          <div className="text-white font-medium text-[14px] md:text-[16px] tracking-wider z-20 shrink-0">
-            © 2026 FRACTAL
+          {/* Copyright - On mobile, this will be above FRACTAL */}
+          <div className="w-full md:w-auto flex flex-col lg:items-start items-end  gap-2 md:gap-4 relative">
+            <div className="text-white/60 font-medium text-[14px] md:text-[16px] tracking-wider md:mb-4">
+              © 2026 FRACTAL
+            </div>
           </div>
         </div>
+
+        {/* Big FRACTAL Text at the bottom */}
+
       </div>
     </footer>
   );
