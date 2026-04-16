@@ -2,18 +2,47 @@
 
 import Image from "next/image";
 import randomImages from "../../public/images/home/random-tatto-images.webp";
+import { motion } from "framer-motion";
 
 const MobileSecondSection = () => {
   return (
-    <section className="lg:hidden mt-[49px] relative w-full flex flex-col items-center second-section bg-cover bg-center bg-no-repeat">
-      {/* Title section */}
-      <div className="flex flex-col items-center px-4 mb-20">
-        <div className="w-full text-center text-[#FFE6D0] text-[36px] font-medium font-[var(--font-founders)] uppercase leading-[30px] tracking-[-3.524px]">
-          Our work
-          <br /> is not about ornament.
-          <br /> It is about alignment.
+    <section className="lg:hidden mt-[49px] relative w-full second-section bg-cover bg-center bg-no-repeat overflow-visible">
+      <div className="sticky top-[15vh] left-0 w-full flex flex-col items-center px-6 z-20 mix-blend-difference pointer-events-none mb-10">
+        <div className="w-full text-center text-[#FFE6D0] text-[28px] sm:text-[32px] font-medium font-[var(--font-founders)] uppercase leading-[32px] sm:leading-[36px] tracking-[-1px] flex flex-col items-center">
+          <div className="overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, y: "100%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            >
+              Our work
+            </motion.div>
+          </div>
+          <div className="overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, y: "100%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            >
+              is not about ornament.
+            </motion.div>
+          </div>
+          <div className="overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, y: "100%" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            >
+              It is about alignment.
+            </motion.div>
+          </div>
         </div>
-        <div className="mt-4">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-6"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -26,20 +55,27 @@ const MobileSecondSection = () => {
               fill="#FFE6D0"
             />
           </svg>
-        </div>
+        </motion.div>
       </div>
 
       {/* Image Strip section */}
-      <div className="flex flex-col items-center gap-10 w-full overflow-hidden pb-20">
+      <div className="flex flex-col items-center gap-10 w-full overflow-hidden pb-20 relative z-10 mt-20">
         {[...Array(6)].map((_, i) => (
-          <div key={i} className="relative w-[265px] h-[345px] opacity-90">
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 0.9, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative w-[265px] h-[345px]"
+          >
             <Image
               src={randomImages}
               alt={`Tattoo ${i + 1}`}
               fill
-              className="object-cover"
+              className="object-cover "
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
