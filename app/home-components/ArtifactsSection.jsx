@@ -204,7 +204,7 @@ const ArtifactsSection = () => {
         <motion.div
           className="flex whitespace-nowrap w-fit"
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 80 }}
         >
           {/* We repeat the array sufficiently to always fill the screen and seamlessly loop */}
           {[...Array(10)].map((_, i) => (
