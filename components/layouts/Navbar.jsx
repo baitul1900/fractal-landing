@@ -112,15 +112,15 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
               ))}
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className={styles.mobileButtonContainer}
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <a 
-                href={pages.contactUs} 
-                onClick={(e) => handleScroll(e, pages.contactUs, toggleMenu)} 
+              <a
+                href={pages.contactUs}
+                onClick={(e) => handleScroll(e, pages.contactUs, toggleMenu)}
                 className={styles.reservationCard}
               >
                 <svg
@@ -206,7 +206,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="/" className={styles.logoLink}>
             {/* Replace this SVG with your new logo */}
-            <Image src={logoImage} alt="Logo" priority />
+            <Image src={logoImage} alt="Logo" width={80} height={80} priority />
           </a>
 
           {/* Desktop nav */}
