@@ -10,42 +10,24 @@ const ArtifactsSection = () => {
     e.preventDefault();
     scrollToId(pages.contactUs);
   };
-  const artifacts = [
-    {
-      title: "Archive 01",
-      description: "Linear studies on human anatomy and geometry.",
-      image: "/images/home/random-tatto-images.webp",
-    },
-    {
-      title: "Archive 02",
-      description: "Spiritual narratives through contemporary ink.",
-      image: "/images/home/tatto-image.webp",
-    },
-    {
-      title: "Archive 03",
-      description: "Experimental alignment and visual poetry.",
-      image: "/images/home/random-tatto-images.webp",
-    },
-    {
-      title: "Archive 04",
-      description: "Ancestral patterns meeting modern form.",
-      image: "/images/home/tatto-image.webp",
-    },
-    {
-      title: "Archive 05",
-      description: "The intersection of shadow and substance.",
-      image: "/images/home/random-tatto-images.webp",
-    },
-    {
-      title: "Archive 06",
-      description: "Mythological echoes in permanent ink.",
-      image: "/images/home/tatto-image.webp",
-    },
+  const sliderImages = [
+    "16.webp", "DSC01048.webp", "4k_1.webp", "4k_4-1.webp", "4k_4.webp", "5-1.webp", "5-2.webp", "5.webp", "7.webp",
+    "DSC02720.webp", "DSC03186.webp", "DSC03205.webp", "DSC03389.webp",
+    "DSC03419.webp", "DSC03665.webp", "DSC04019.webp", "DSC04054.webp", "DSC04148.webp", "eight.webp",
+    "five.webp", "four.webp", "ig1.webp", "ig2 (5).webp", "ig2-2.webp", "ig2-22.webp", "ig2-3.webp",
+    "ig2-4.webp", "ig2.webp", "ig3 (5).webp", "ig3-1.webp", "ig3-2.webp", "ig3-3.webp", "ig3-4.webp",
+    "ig3.webp", "ig4-1.webp", "ig4-2.webp", "ig4.webp", "ig5-1.webp", "ig5-2.webp", "ig5-3.webp",
+    "ig5.webp", "ig6-1-1.webp", "ig6-2-1.webp", "ig6.webp", "ig7.webp", "ig8.webp", "ig9.webp",
+    "one.webp", "seven.webp", "six.webp", "three.webp", "two.webp"
   ];
 
+  const artifacts = sliderImages.map((img, index) => ({
+    title: `Archive ${String(index + 1).padStart(2, "0")}`,
+    description: "A unique fragment of contemporary tattoo practice.",
+    image: `/images/slider-images/${img}`,
+  }));
+
   const repeatedArtifacts = [
-    ...artifacts,
-    ...artifacts,
     ...artifacts,
     ...artifacts,
   ];
@@ -158,7 +140,7 @@ const ArtifactsSection = () => {
       </SectionWrapper>
 
       {/* Fluid Horizontal Scroll Section */}
-      <div ref={targetRef} className="relative h-[300vh]">
+      <div ref={targetRef} className="relative h-[600vh]">
         <div className="sticky top-0 md:h-[87vh] h-[67vh] flex items-center overflow-hidden">
           <motion.div
             style={{ x }}
@@ -173,10 +155,10 @@ const ArtifactsSection = () => {
                 heightClass = "h-[95%]";
                 alignClass = "self-center";
               } else if (pattern === 2) {
-                heightClass = "h-[70%]";
+                heightClass = "h-[80%]";
                 alignClass = "self-end";
               } else if (pattern === 0 || pattern === 3) {
-                heightClass = "h-[65%]";
+                heightClass = "h-[75%]";
                 alignClass = "self-center";
               }
 
@@ -204,7 +186,7 @@ const ArtifactsSection = () => {
         <motion.div
           className="flex whitespace-nowrap w-fit"
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 80 }}
         >
           {/* We repeat the array sufficiently to always fill the screen and seamlessly loop */}
           {[...Array(10)].map((_, i) => (

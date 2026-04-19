@@ -20,20 +20,15 @@ import { scrollToId } from "../../util/scroll";
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const heroRef = useRef(null);
+
 
   const handleReservation = (e) => {
     e.preventDefault();
     scrollToId(pages.contactUs);
   };
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end end"],
-  });
 
-  const logoY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const logoScale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
-  const logoOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
+
+
 
   const aboutRef = useRef(null);
   const { scrollYProgress: aboutScroll } = useScroll({
@@ -53,7 +48,6 @@ const Hero = () => {
       {/* Desktop Version Rendering (untouched) */}
       <div className="hidden lg:block">
         <section
-          ref={heroRef}
           className="relative min-h-screen w-full home-hero flex flex-col justify-center overflow-hidden"
         >
           {/* Container to restrict content width but allow background to span full width */}
@@ -67,8 +61,7 @@ const Hero = () => {
             </div>
 
             {/* Massive Center Text */}
-            <motion.div
-              style={{ y: logoY, scale: logoScale, opacity: logoOpacity }}
+            <div
               className="flex flex-col items-start justify-start w-full py-0  md:pl-[98px] pointer-events-none pr-[123px] mb-[84px]"
             >
               <Image
@@ -77,7 +70,7 @@ const Hero = () => {
                 className="w-auto h-auto"
                 priority
               />
-            </motion.div>
+            </div>
 
             <div className="flex justify-between">
               <div className="absolute top-[43.2%] left-[7%] transform">

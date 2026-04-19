@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import fractal from "../../public/images/home/FRACTAL.webp";
 import aboutHeroOne from "../../public/images/home/about-hero-1.webp";
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
-import playbtn from "../../public/images/home/play-btn.png";
+import playbtn from "../../public/images/home/play-btn.webp";
 
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
