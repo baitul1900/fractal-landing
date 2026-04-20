@@ -94,23 +94,11 @@ const CustomFooter = () => {
               </span>
             </div>
             <div className="flex items-center gap-3 w-full max-w-[280px]">
-              {/* X / Twitter */}
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full flex items-center justify-center text-white hover:text-black hover:bg-[#C99D85] transition-opacity  bg-[#1A1A1A]"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </a>
               {/* Instagram */}
               <a
-                href="#"
+                href="https://www.instagram.com/fractalttt"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-[#C99D85] hover:text-black transition-colors bg-[#1A1A1A]"
               >
                 <svg
@@ -126,42 +114,15 @@ const CustomFooter = () => {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-              {/* Dribbble */}
+              {/* Pinterest */}
               <a
-                href="#"
+                href="https://www.pinterest.com/elicostart/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-[#C99D85] hover:text-black transition-colors bg-[#1A1A1A]"
               >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>
-                </svg>
-              </a>
-              {/* Behance */}
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-[#C99D85] hover:text-black transition-colors bg-[#1A1A1A]"
-              >
-                <span className="font-bold text-[14px]">Bē</span>
-              </a>
-              {/* LinkedIn */}
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-[#C99D85] hover:text-black transition-colors bg-[#1A1A1A]"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C10.09 13 13 10.09 13 6.5C13 2.91 10.09 0 6.5 0ZM1 6.5C1.00037 5.34123 1.36671 4.21218 2.04676 3.27395C2.72681 2.33571 3.68582 1.63624 4.78695 1.27532C5.88808 0.914407 7.07507 0.910495 8.17856 1.26414C9.28204 1.61779 10.2456 2.31093 10.9319 3.24466C11.6181 4.17839 11.9919 5.305 11.9999 6.46374C12.0079 7.62248 11.6497 8.75415 10.9764 9.69727C10.3032 10.6404 9.34927 11.3468 8.25077 11.7156C7.15228 12.0845 5.96535 12.097 4.85933 11.7513C5.14132 11.3089 5.36537 10.8321 5.526 10.3327L5.87 9.01467C6.01218 9.21783 6.20291 9.3822 6.42485 9.49282C6.64678 9.60343 6.89285 9.65678 7.14067 9.648C8.83067 9.648 10.0187 8.112 10.0187 6.204C10.0187 4.37133 8.522 3.002 6.60267 3.002C4.21133 3.002 2.94133 4.60867 2.94133 6.35467C2.94133 7.17 3.37267 8.17933 4.06533 8.504C4.168 8.55133 4.23533 8.504 4.25133 8.42867C4.26733 8.35333 4.362 7.974 4.40533 7.79933C4.41222 7.77179 4.41223 7.74298 4.40537 7.71543C4.39851 7.68788 4.38499 7.66243 4.366 7.64133C4.1035 7.27306 3.96482 6.83089 3.97 6.37867C3.96881 6.05416 4.03343 5.73279 4.15997 5.43397C4.28651 5.13516 4.47233 4.8651 4.7062 4.64014C4.94007 4.41518 5.21714 4.23998 5.52064 4.12514C5.82415 4.0103 6.14779 3.95821 6.472 3.972C6.77565 3.95424 7.07967 3.99996 7.36467 4.10626C7.64966 4.21255 7.90937 4.37708 8.12723 4.58935C8.34508 4.80163 8.5163 5.05698 8.62996 5.33912C8.74361 5.62126 8.79721 5.92399 8.78733 6.228C8.78733 7.724 8.02733 8.76533 7.046 8.76533C6.91922 8.77499 6.79198 8.75397 6.67503 8.70407C6.55808 8.65417 6.45487 8.57684 6.37411 8.47863C6.29336 8.38042 6.23744 8.2642 6.21108 8.13982C6.18472 8.01543 6.18869 7.88653 6.22267 7.764C6.27867 7.53067 6.35333 7.29 6.42533 7.05533C6.55667 6.63 6.682 6.22533 6.682 5.91933C6.69564 5.81986 6.68764 5.71862 6.65854 5.62252C6.62945 5.52642 6.57994 5.43774 6.51342 5.36254C6.44689 5.28734 6.36491 5.2274 6.27307 5.1868C6.18124 5.14621 6.08173 5.12592 5.98133 5.12733C5.42667 5.12733 4.97933 5.70533 4.97933 6.47333C4.97533 6.74467 5.026 7.014 5.13 7.26533L4.47667 10.036C4.39722 10.5597 4.39722 11.0923 4.47667 11.616C4.046 11.4456 3.63874 11.2211 3.26467 10.948C2.3457 10.2775 1.65571 9.34007 1.28867 8.26333C1.09639 7.69537 0.998862 7.09963 1 6.5Z" fill="currentColor"/>
                 </svg>
               </a>
             </div>
@@ -211,7 +172,7 @@ const CustomFooter = () => {
           </div>
 
           {/* Copyright - On mobile, this will be above FRACTAL */}
-          <div className="w-full md:w-auto flex flex-col lg:items-start items-end  gap-2 md:gap-4 relative">
+          <div className="w-full md:w-auto flex flex-col lg:items-end items-end  gap-2 md:gap-4 relative">
             <div className="text-white/60 font-medium text-[14px] md:text-[16px] tracking-wider md:mb-4">
               © 2026 FRACTAL
             </div>
