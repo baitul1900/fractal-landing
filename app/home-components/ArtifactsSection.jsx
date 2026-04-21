@@ -11,20 +11,14 @@ const ArtifactsSection = () => {
     scrollToId(pages.contactUs);
   };
   const sliderImages = [
-    "16.webp", "DSC01048.webp", "4k_1.webp", "4k_4-1.webp", "4k_4.webp", "5-1.webp", "5-2.webp", "5.webp", "7.webp",
-    "DSC02720.webp", "DSC03186.webp", "DSC03205.webp", "DSC03389.webp",
-    "DSC03419.webp", "DSC03665.webp", "DSC04019.webp", "DSC04054.webp", "DSC04148.webp", "eight.webp",
-    "five.webp", "four.webp", "ig1.webp", "ig2 (5).webp", "ig2-2.webp", "ig2-22.webp", "ig2-3.webp",
-    "ig2-4.webp", "ig2.webp", "ig3 (5).webp", "ig3-1.webp", "ig3-2.webp", "ig3-3.webp", "ig3-4.webp",
-    "ig3.webp", "ig4-1.webp", "ig4-2.webp", "ig4.webp", "ig5-1.webp", "ig5-2.webp", "ig5-3.webp",
-    "ig5.webp", "ig6-1-1.webp", "ig6-2-1.webp", "ig6.webp", "ig7.webp", "ig8.webp", "ig9.webp",
-    "one.webp", "seven.webp", "six.webp", "three.webp", "two.webp"
+    "1.webp", "3_4k.webp", "7.webp", "8.webp", "DSC01048 copia.webp",
+    "DSC03205.webp", "DSC03389.webp", "DSC04148.webp", "ig3.webp", "ig5-1.webp"
   ];
 
   const artifacts = sliderImages.map((img, index) => ({
     title: `Archive ${String(index + 1).padStart(2, "0")}`,
     description: "A unique fragment of contemporary tattoo practice.",
-    image: `/images/slider-images/${img}`,
+    image: `/images/artifacts-images/${img}`,
   }));
 
   const repeatedArtifacts = [
