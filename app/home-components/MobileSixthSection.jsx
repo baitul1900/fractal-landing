@@ -38,7 +38,7 @@ const MobileSixthSection = ({ archives }) => {
           <div
             key={item.id}
             onClick={() => toggleReveal(item.id)}
-            className="keen-slider__slide group relative overflow-hidden rounded-2xl w-full aspect-[4/5] cursor-pointer bg-[#18181A]"
+            className="keen-slider__slide group relative overflow-hidden rounded-2xl w-full aspect-[1/1.1] cursor-pointer bg-[#18181A]"
           >
             {/* Default Image Background */}
             <Image
