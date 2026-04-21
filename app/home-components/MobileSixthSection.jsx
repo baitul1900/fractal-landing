@@ -55,62 +55,77 @@ const MobileSixthSection = ({ archives }) => {
                 revealedId === item.id ? "opacity-0" : "opacity-100"
               }`}
             >
-              <div className="w-10 h-10 rounded-full bg-white overflow-hidden flex-shrink-0">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-10 h-10 rounded-full bg-[#222] overflow-hidden flex-shrink-0">
+                {item.userImage ? (
+                  <Image
+                    src={item.userImage}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-white/40 text-xs font-bold uppercase">
+                    {item.name.charAt(0)}
+                  </div>
+                )}
               </div>
               <div className="flex flex-col">
                 <span className="text-white text-[15px] font-medium leading-[20px] font-[var(--font-founders)]">
                   {item.name}
                 </span>
-                <span className="text-white/60 text-[13px] leading-[18px] font-[var(--font-founders)]">
-                  Age: {item.age}
-                </span>
               </div>
             </div>
 
-            {/* Reveal Overlay */}
+            {/* Reveal Overlay (Screenshot Design) */}
             <div
-              className={`absolute inset-x-0 bottom-0 bg-[#161616] p-6 flex flex-col justify-start transform transition-transform duration-[800ms] ease-[cubic-bezier(0.23,1,0.32,1)] w-full h-full z-10 border border-[#222] rounded-2xl ${
-                revealedId === item.id ? "translate-y-0" : "translate-y-[101%]"
+              className={`absolute inset-0 bg-[#121212] p-6 flex flex-col justify-between transform transition-transform duration-[1000ms] ease-[cubic-bezier(0.25,1,0.5,1)] w-full h-full z-10 border border-[#222] rounded-2xl ${
+                revealedId === item.id ? "translate-y-0" : "translate-y-full"
               }`}
             >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-white">
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover"
-                  />
+              <div>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-[#222]">
+                    {item.userImage ? (
+                      <Image
+                        src={item.userImage}
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-white/40 text-xs font-bold uppercase">
+                        {item.name.charAt(0)}
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[#FFF] text-[20px] font-normal leading-[20px] font-[var(--font-founders)]">
+                      {item.name}
+                    </span>
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} width="10" height="10" viewBox="0 0 24 24" fill="#FFB800">
+                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-white text-[15px] font-medium leading-[22px] font-[var(--font-founders)]">
-                    {item.name}
-                  </span>
-                  <span className="text-white/50 text-[13px] leading-[18px] font-[var(--font-founders)]">
-                    Age: {item.age}
-                  </span>
-                </div>
+                <p className="text-[#FFE6D0] text-[16px] leading-[20px] font-normal font-[var(--font-founders)] line-clamp-10">
+                  {item.quote}
+                </p>
               </div>
-              <p className="text-white/80 text-[15px] leading-[22px] font-normal font-[var(--font-founders)]">
-                "{item.quote}"
-              </p>
 
-              {/* Close indicator/button for better UX on mobile */}
+              <div className="mt-4 pt-4 border-t border-white/10">
+                <h4 className="text-white text-[14px] font-medium mb-1 font-[var(--font-founders)]">
+                  Service
+                </h4>
+                <p className="text-[#FFF] text-[16px] leading-[20px] font-normal font-[var(--font-founders)]">
+                  {item.service}
+                </p>
+              </div>
+
+              {/* Close indicator */}
               <div className="absolute top-4 right-4 text-white/40">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 6L6 18M6 6l12 12" />
                 </svg>
               </div>
