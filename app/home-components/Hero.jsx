@@ -253,7 +253,7 @@ const Hero = () => {
                 autoPlay
                 controls
                 className="w-full h-full object-cover"
-                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                src="/images/home/modal-video.mp4"
               >
                 Your browser does not support the video tag.
               </video>
