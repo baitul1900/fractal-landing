@@ -17,7 +17,7 @@ const MobileSecondSection = () => {
   return (
     <section className="lg:hidden mt-[49px] relative w-full second-section bg-cover bg-center bg-no-repeat overflow-visible">
       <div className="sticky top-[15vh] left-0 w-full flex flex-col items-center px-6 z-20 mix-blend-difference pointer-events-none mb-10">
-        <div className="w-full text-center text-[#FFE6D0] text-[28px] sm:text-[32px] font-medium font-[var(--font-founders)] uppercase leading-[32px] sm:leading-[36px] tracking-[-1px] flex flex-col items-center">
+        <div className="w-full text-center text-[#FFE6D0] text-[28px] sm:text-[32px] font-medium font-[var(--font-founders)] uppercase leading-[32px] sm:leading-[36px] tracking-[-2.5px] sm:tracking-[-3px] [word-spacing:-0.1em] flex flex-col items-center">
           <div className="overflow-hidden">
             <motion.div
               initial={{ opacity: 0, y: "100%" }}
