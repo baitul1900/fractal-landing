@@ -27,10 +27,10 @@ const styles = {
     "fixed inset-0 z-[60] bg-black/60 backdrop-blur-md md:hidden flex flex-col items-center px-4 pt-24 font-[var(--font-founders)]",
   closeButton:
     "absolute top-6 right-6 text-white p-2 transition-colors",
-  mobileLinksContainer: "flex flex-col w-full bg-white rounded-[24px] p-6 mb-4",
-  mobileLink: "text-black text-[18px] font-bold block py-4 border-b border-gray-100 last:border-b-0 uppercase font-[var(--font-founders)]",
+  mobileLinksContainer: "flex flex-col w-full bg-[#FFE6D0] rounded-[24px] p-6 mb-4",
+  mobileLink: "text-black text-[18px] font-bold block py-4 border-b border-black/10 last:border-b-0 uppercase font-[var(--font-founders)]",
   mobileButtonContainer: "w-full",
-  reservationCard: "w-full bg-white rounded-full py-5 px-6 flex items-center justify-center gap-3 text-black font-bold uppercase text-[18px] font-[var(--font-founders)]",
+  reservationCard: "w-full bg-[#FFE6D0] rounded-full py-5 px-6 flex items-center justify-center gap-3 text-black font-bold uppercase text-[18px] font-[var(--font-founders)]",
   header:
     "fixed left-0 w-full z-[70] top-0",
   container:
