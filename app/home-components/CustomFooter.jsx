@@ -139,7 +139,7 @@ const CustomFooter = () => {
             <span className="text-[#828282] text-[14px] mb-2 md:mb-6 block">
               Menu
             </span>
-            <div className="grid grid-cols-2 gap-x-12 gap-y-2 md:gap-y-5 max-w-[320px]">
+            <div className="grid grid-cols-4 gap-x-2 gap-y-2 md:gap-y-5 max-w-[420px]">
               <a
                 href="#about"
                 onClick={(e) => handleScroll(e, "#about")}
@@ -155,25 +155,27 @@ const CustomFooter = () => {
                 Process
               </a>
               <a
-                href={pages.contactUs}
-                onClick={(e) => handleScroll(e, pages.contactUs)}
-                className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
-              >
-                Reservation
-              </a>
-              <a
                 href="#artists"
                 onClick={(e) => handleScroll(e, "#artists")}
                 className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
                 Artists
               </a>
+
+              <a
+                href={pages.contactUs}
+                onClick={(e) => handleScroll(e, pages.contactUs)}
+                className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
+              >
+                Reservation
+              </a>
+
             </div>
           </div>
 
           {/* Copyright - On mobile, this will be above FRACTAL */}
           <div className="w-full md:w-auto flex flex-col lg:items-end items-end  gap-2 md:gap-4 relative">
-            <div className="text-white/60 font-medium text-[14px] md:text-[16px] tracking-wider md:mb-4">
+            <div className="text-white/60 font-medium text-[14px] md:text-[16px] tracking-wider md:mb-0">
               © 2026 FRACTAL
             </div>
           </div>

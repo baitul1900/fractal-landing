@@ -7,6 +7,10 @@ import aboutHeroOne from "../../public/images/home/about-hero-1.webp";
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
 import playbtn from "../../public/images/home/play-btn.webp";
 
+// Review images for the 4.9 rating section
+import attila from "../../public/images/review-images/attila.webp";
+import rania from "../../public/images/review-images/rania.webp";
+
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
 
@@ -78,18 +82,20 @@ const MobileHero = ({ onOpenModal }) => {
 
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
-                <div className="w-8 h-8 rounded-full border border-black bg-gray-600 overflow-hidden">
-                  <img
-                    src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix"
+                <div className="w-8 h-8 rounded-full border border-black overflow-hidden relative">
+                  <Image
+                    src={attila}
                     alt="user"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-                <div className="w-8 h-8 rounded-full border border-black bg-gray-500 overflow-hidden relative z-10">
-                  <img
-                    src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka"
+                <div className="w-8 h-8 rounded-full border border-black overflow-hidden relative z-10">
+                  <Image
+                    src={rania}
                     alt="user"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
