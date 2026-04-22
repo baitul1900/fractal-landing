@@ -1,8 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import randomImages from "../../public/images/home/random-tatto-images.webp";
 import { motion } from "framer-motion";
+
+// Floating Images
+import img1 from "../../public/images/slider-images/16.webp";
+import img2 from "../../public/images/slider-images/4k_1.webp";
+import img3 from "../../public/images/slider-images/DSC03186.webp";
+import img4 from "../../public/images/slider-images/eight.webp";
+import img5 from "../../public/images/slider-images/ig7.webp";
+import img6 from "../../public/images/slider-images/one.webp";
+
+const images = [img1, img2, img3, img4, img5, img6];
 
 const MobileSecondSection = () => {
   return (
@@ -60,7 +69,7 @@ const MobileSecondSection = () => {
 
       {/* Image Strip section */}
       <div className="flex flex-col items-center gap-10 w-full overflow-hidden pb-20 relative z-10 mt-20">
-        {[...Array(6)].map((_, i) => (
+        {images.map((img, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, scale: 0.9 }}
@@ -70,7 +79,7 @@ const MobileSecondSection = () => {
             className="relative w-[265px] h-[345px]"
           >
             <Image
-              src={randomImages}
+              src={img}
               alt={`Tattoo ${i + 1}`}
               fill
               className="object-cover "
