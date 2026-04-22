@@ -6,9 +6,10 @@ import bigIcon from "../../public/images/home/hero-big-text-logo.webp";
 import heroTextImage from "../../public/images/home/hero-text-image.webp";
 import playbtn from "../../public/images/home/play-btn.webp";
 
-// Mockup image placeholders for the 4.9 rating section
-const avatar1 = "/images/avatars/avatar1.webp"; // These might not exist yet, I'll use placeholders if needed
-const avatar2 = "/images/avatars/avatar2.webp";
+// Review images for the 4.9 rating section
+import attila from "../../public/images/review-images/attila.webp";
+import pedro from "../../public/images/review-images/pedro.webp";
+import rania from "../../public/images/review-images/rania.webp";
 
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
@@ -120,16 +121,20 @@ const Hero = () => {
               <div className="flex flex-col items-end gap-12">
                 <div className="flex items-center gap-4">
                   <div className="flex -space-x-3">
-                    <div className="w-10 h-10 rounded-full border-2 border-black bg-gray-600 overflow-hidden">
-                      <img
-                        src="https://api.dicebear.com/7.x/avataaars/svg?seed=A"
+                    <div className="w-10 h-10 rounded-full border-2 border-black overflow-hidden relative">
+                      <Image
+                        src={attila}
                         alt="user"
+                        fill
+                        className="object-cover"
                       />
                     </div>
-                    <div className="w-10 h-10 rounded-full border-2 border-black bg-gray-500 overflow-hidden">
-                      <img
-                        src="https://api.dicebear.com/7.x/avataaars/svg?seed=B"
+                    <div className="w-10 h-10 rounded-full border-2 border-black overflow-hidden relative">
+                      <Image
+                        src={rania}
                         alt="user"
+                        fill
+                        className="object-cover"
                       />
                     </div>
                   </div>
