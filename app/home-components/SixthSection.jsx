@@ -4,7 +4,6 @@ import tattooImg from "../../public/images/home/random-tatto-images.webp";
 import MobileSixthSection from "./MobileSixthSection";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-
 // Review Images
 import attila from "../../public/images/review-images/attila.webp";
 import pedro from "../../public/images/review-images/pedro.webp";
@@ -140,7 +139,7 @@ const SixthSection = () => {
               {archives.map((item) => (
                 <div
                   key={item.id}
-                  className="keen-slider__slide group relative overflow-hidden rounded-[32px] w-full aspect-[1/1.1] cursor-pointer bg-[#18181A] border border-[#222]"
+                  className="keen-slider__slide group relative overflow-hidden rounded-[32px] w-full aspect-[1/1.4] cursor-pointer bg-[#18181A] border border-[#222]"
                 >
                   {/* Default Image Background */}
                   <Image
