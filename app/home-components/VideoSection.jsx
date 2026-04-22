@@ -38,7 +38,7 @@ const VideoSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[#FFE6D0] text-[40px] md:text-[80px] lg:text-[116px] font-medium font-[var(--font-founders)] uppercase leading-[1.1] md:leading-[90px] lg:leading-[100px] tracking-[-2px] md:tracking-[-8px] lg:tracking-[-11px]"
+          className="text-[#FFE6D0] text-[40px] md:text-[80px] lg:text-[116px] font-medium font-[var(--font-founders)] uppercase leading-[1.1] md:leading-[90px] lg:leading-[100px] tracking-[-2px] md:tracking-[-6px] lg:tracking-[-11.6px]"
         >
           Our work
           <br className="hidden md:block" /> is not about ornament.
