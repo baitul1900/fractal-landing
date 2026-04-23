@@ -140,7 +140,7 @@ const MobileHero = () => {
 
         {/* Images List */}
         <div className="flex flex-col gap-6">
-          <div className="relative w-full aspect-[4/5] rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-[2/3] rounded-sm overflow-hidden">
             <Image
               src={aboutHeroOne}
               alt="Tattoo Session"
@@ -148,7 +148,7 @@ const MobileHero = () => {
               className="object-cover"
             />
           </div>
-          <div className="relative w-full aspect-[4/5] rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-[2/3] rounded-sm overflow-hidden">
             <Image
               src={aboutHeroTwo}
               alt="Tattoo Art"
