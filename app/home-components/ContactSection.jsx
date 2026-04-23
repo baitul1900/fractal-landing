@@ -144,10 +144,13 @@ const ContactSection = () => {
             </span>
           </a>
 
-          <p className="text-[#A2A2A2] md:text-[#7E7E7E] text-[16px] font-normal leading-normal mt-3 md:mt-6 font-[var(--font-founders)] max-w-[500px]">
-            Jay founded Stokt in 2012 after spending the early part of his
-            career in agencies. His ambition has always been to bring movement
-            into traditionally static brand systems.
+          <p className="text-[#A2A2A2] md:text-[#7E7E7E] text-[16px] font-normal leading-[24px] mt-3 md:mt-6 font-[var(--font-founders)] max-w-[700px] whitespace-pre-line">
+            {`We are primarily based in Seville — a city shaped by art, history, and culture in the south of
+Spain. However, our work extends beyond a single place. We regularly travel across Europe
+and the United States, bringing our process to different locations.
+
+Our upcoming cities and available dates are continuously shared on Instagram.
+Stay connected to follow the journey.`}
           </p>
         </div>
 
