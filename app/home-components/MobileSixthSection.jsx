@@ -109,17 +109,8 @@ const MobileSixthSection = ({ archives }) => {
                     </div>
                   </div>
                 </div>
-                <p className="text-[#FFE6D0] text-[16px] leading-[20px] font-normal font-[var(--font-founders)] line-clamp-10">
+                <p className="text-[#FFE6D0] text-[16px] leading-[20px] font-normal font-[var(--font-founders)] whitespace-pre-line">
                   {item.quote}
-                </p>
-              </div>
-
-              <div className="mt-4 pt-4 border-t border-white/10">
-                <h4 className="text-white text-[14px] font-medium mb-1 font-[var(--font-founders)]">
-                  Service
-                </h4>
-                <p className="text-[#FFF] text-[16px] leading-[20px] font-normal font-[var(--font-founders)]">
-                  {item.service}
                 </p>
               </div>
 

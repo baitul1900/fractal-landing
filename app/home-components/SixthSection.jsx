@@ -4,105 +4,117 @@ import tattooImg from "../../public/images/home/random-tatto-images.webp";
 import MobileSixthSection from "./MobileSixthSection";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+
 // Review Images
-import attila from "../../public/images/review-images/attila.webp";
-import pedro from "../../public/images/review-images/pedro.webp";
-import rania from "../../public/images/review-images/rania.webp";
-import gomezReview from "../../public/images/review-images/gomez-review.webp";
-import pedroReview from "../../public/images/review-images/pedro-review.webp";
-import rainaReview from "../../public/images/review-images/raina-review.webp";
-import zicReview from "../../public/images/review-images/zic-review.webp";
+import andreaReview from "../../public/images/review-images/Andrea.webp";
+import borjaReview from "../../public/images/review-images/Borja.webp";
+import daniReview from "../../public/images/review-images/Dani.webp";
+import daniloReview from "../../public/images/review-images/Danilo.webp";
+import elenaReview from "../../public/images/review-images/Elena.webp";
+import geraldineReview from "../../public/images/review-images/Geraldine.webp";
+import joseReview from "../../public/images/review-images/José.webp";
+import martaReview from "../../public/images/review-images/Marta.webp";
+import michaelReview from "../../public/images/review-images/Michael.webp";
+import robertoReview from "../../public/images/review-images/Roberto.webp";
 
 const SixthSection = () => {
   const archives = [
     {
       id: 1,
-      name: "Attila Guthi",
+      name: "Danilo",
       rating: 5,
-      quote: "Eli's design was perfect for me, only had to ask for 1 modification. He really listened to what I want and took it into consideration that I want the whole sleeve done when making the design. Nanook's precision, linework and shading is world class. He really takes the time to perfectly do his job. I am glad I chose them.",
-      service: "Fine line tattoos, Tattoo design, Male tattoos, Tattoos.",
-      image: tattooImg,
-      userImage: attila,
+      quote: "I was looking for a meticulous and perfectionist tattoo artist. I searched for several months. They get deeply involved in the design and take care of every tiny detail. The precision of the lines is incredible. Throughout the whole process I felt at home—the treatment was unbeatable, and the studio and cleanliness were impeccable. An amazing experience! 100% recommended.",
+      image: daniloReview,
+      userImage: null,
     },
     {
       id: 2,
-      name: "Rania SB",
+      name: "Michael Frank",
       rating: 5,
-      quote: "No puedo estar más agradecida con el resultado. Han convertido mi espalda en una auténtica obra de arte. El nivel de detalle, la precisión y la delicadeza del trabajo son increíbles. Además, el trato tanto Nanook como Eli fue impecable ,son profesionales, cercanos y atentos en todo momento, haciéndome sentir cómoda durante toda la sesión. Sin duda una experiencia excelente y totalmente recomendable que seguramente volveré a repetir.",
-      service: "Fine line tattoos, Tattoo design, Male tattoos, Tattoos.",
-      image: rainaReview,
-      userImage: rania,
+      quote: `What a brilliant team! I had my calf tattooed when Elicostart & Nanook were in my home town of Stuttgart. The consultations beforehand were absolutely brilliant and inspiring; I was completely blown away by the design based on my thoughts that we discussed in a video call.
+
+The two-day tattoo session was great fun; the tattoo was done with so much love and precision. I’m incredibly proud of my new tattoo and can wholeheartedly recommend them when it comes to amazing tattoos with a great story behind them.`,
+      image: michaelReview,
+      userImage: null,
     },
     {
       id: 3,
-      name: "JORGE GOMEZ ALONSO",
+      name: "José Tomás Molina",
       rating: 5,
-      quote: "Me tatué hace dos semanas con ellos y solo puedo decir que todo increíble y perfecto. Trato, profesionalidad, detalle, implicación, elegancia y un largo etcétera de cosas positivas que me he llevado en esos 3 días maravillosos. Era la primera vez que me tatuaba y sin duda la segunda será con ellos también. Me llevo dos amigos en estos 3 días increíble experiencia e increíble pieza que tengo en mi brazo para siempre.",
-      service: "Fine line tattoos",
-      image: gomezReview,
+      quote: `I couldn’t be happier with their work. From the very first moment I contacted them, they gave me a lot of confidence and I felt very comfortable with them. Their level of dedication is incredible—they perfectly captured all the ideas I had for my tattoo, paying attention to even the smallest detail to offer the best possible result. These are the details that make the difference.
+They made you feel at all times as if you were among friends, and despite being there all day, it was very enjoyable.`,
+      image: joseReview,
       userImage: null,
     },
     {
       id: 4,
-      name: "Sergio alarcon selma",
+      name: "Andrea Martínez",
       rating: 5,
-      quote: "Desde hace unos años,tenía la necesidad de rendir omenaje en mi piel a una persona muy especial . Me puse en contacto con Eli le expliqué que quería expresar en mi tatuaje, La historia que debía de reflejar en él. El pone su pasión y hace un diseño dándole forma a todo lo que yo le expresé. Llega el momento de Nanook, El pone su Alma, busca una conexión , creando un vínculo a la hora de plasmar ese diseño. Gracias 🫂",
-      service: "Tattoo cover-ups & reworkings, Fine line tattoos, Tattoo design",
-      image: tattooImg,
+      quote: `I’m at a loss for words to describe how incredible they are. I went from Málaga to Seville to get tattooed by them for two consecutive days, and it was amazing. Super professional, approachable, and with an incredible vibe from the very first minute.  
+I got my entire back tattooed, and doing it with them has been the best decision I’ve made. 
+They are perfectionists to the max, taking care of every detail.
+Thank you from the bottom of my heart for your talent and for treating me so kindly.`,
+      image: andreaReview,
       userImage: null,
     },
     {
       id: 5,
-      name: "Jose López",
+      name: "Marta Rivas",
       rating: 5,
-      quote: "Contacte con Eli y Nanook por qué buscaba diseños de la temática que ellos hacían, y descubrí que hacerse un tatuaje tiene mucho más de lo que parece. Eli supo transmitir las vivencias de tu vida en un diseño y que se amoldará a la persona, y Nanook supo cobrarle vida en la piel de una forma tan singular.No puedo estar más contento del resultado del tatuaje, y solo puedo estar agradecido por su trabajo. Recomiendo 100% a esta pareja. Volveré sin dudarlo.",
-      service: "Fine line tattoos, Tattoo design",
-      image: tattooImg,
+      quote: `I got a tattoo almost 20 days ago and I’m already looking for the moment to go back! What a team of professionals, friends, and artists. They are the exact definition of precision, perfection… harmony. Without a doubt, the experience and the way it’s lived—with their timing, its complexity, that on-the-spot communication that makes a design that was already spectacular become even better—doesn’t just make you want to come back, it makes you not want to leave.
+
+I got a design on my back, I spent two days with them, and I was sad to leave! I felt so comfortable and at ease—they are the absolute best, no doubt.`,
+      image: martaReview,
       userImage: null,
     },
     {
       id: 6,
-      name: "Yolanda",
+      name: "Borja Ruiz",
       rating: 5,
-      quote: "From the first moment I spoke with Eli, she instilled in me the confidence I needed to entrust her with my project. That connection was key in encouraging me to take the plunge and get this tattoo. As for Nanook, little needs to be said: the result is of exceptional quality. Her professionalism, dedication, and precision are evident in every stroke. Thank you for this experience; I hope to work with you again soon!",
-      service: "Fine line tattoos, Tattoo design, Female tattoos, Tattoos",
-      image: tattooImg,
+      quote: `Everything went smoothly—an incredible approach to customer care and an amazing willingness to listen to your ideas and give them meaning in a design. I only had to explain my idea a little, and Eli was already designing it in his head and figuring out how everything could fit together.  
+A unique piece you’ll never regret.  
+An incredible experience before, during, and after the session. I will definitely work with them again.`,
+      image: borjaReview,
       userImage: null,
     },
     {
       id: 7,
-      name: "Elena Sánchez Medina",
+      name: "Elena Sánchez",
       rating: 5,
-      quote: "Volé desde Málaga hasta Barcelona y sin duda lo que viví con Eli y Nanook hizo que mereciera la pena sin duda. No es un tatuaje más, no es una experiencia más, es algo que no se le parece a nada. Eli capta a la perfección tu esencia en una pieza única en el mundo, como somos cada persona, y Nanook te da esa confianza necesaria para estar en presencia y que no importe nada más. Este dúo único eleva el mundo del tattoo a otro nivel. Gracias por todo chicos🙏❤️✨",
-      service: "Fine line tattoos, Tattoo design, Female tattoos, Tattoos",
-      image: tattooImg,
+      quote: `I flew from Málaga to Barcelona and without a doubt what I experienced with Eli and Nanook made it completely worth it. It’s not just another tattoo, it’s not just another experience. It’s something unlike anything else. Eli perfectly captures your essence in a one-of-a-kind piece in the world, just like each of us, and Nanook gives you that necessary confidence to be fully present and not worry about anything else. This unique duo takes the tattoo world to another level. Thank you for everything, guys.`,
+      image: elenaReview,
+      userImage: null,
+    },
+
+    {
+      id: 8,
+      name: "Dani Pérez",
+      rating: 5,
+      quote: `I had spent 10 years wanting to get a tattoo. I saw the way they work and didn’t hesitate to take the leap.
+
+Getting a tattoo with them isn’t just about putting ink on your body. It’s about living an experience in every sense.
+Everything is handled with the utmost attention to detail, focusing on the human side so you feel as comfortable as possible, dedicating all the time needed to make the tattoo perfect.`,
+      image: daniReview,
       userImage: null,
     },
     {
-      id: 8,
-      name: "Pedro Acedo",
-      rating: 5,
-      quote: "para mí , no es solo un tatuaje sino una forma de ver la vida , y gracias a Eli y a Nanook la vida se ve mucho mas colorida , esa confianza que transmiten , la formalidad y el trato. Para mi eso es fundamental , pero la facilidad q tienen para hacerlo todo facil y cómodo no tiene explicación ninguna... Muchas gracias a los dos por lo bien q haceis el trabajo",
-      service: "Fine line tattoos, Tattoo design, Female tattoos, Tattoos",
-      image: pedroReview,
-      userImage: pedro,
-    },
-    {
       id: 9,
-      name: "Vic Zaba",
+      name: "Geraldine Ponte",
       rating: 5,
-      quote: "Increíble trabajo, de verdad. La precisión en los detalles, el juego de sombras y la combinación de elements hacen que este tatuaje sea una obra de arte. Se nota la dedicación y el talento en cada línea. Más que un tatuaje, es un diseño con alma, con una composición que transmite profundidad y equilibrio. Gracias a Eliezer y a Nanook por hacer algo tan especial y único. ¡Totalmente recomendado!",
-      service: "Tattoos, Tattoo design",
-      image: zicReview,
+      quote: `I flew from Mallorca to get tattooed by them and, honestly, it was the best decision I could have made. You can tell the great professionalism they work with. They listen to you carefully and finds the best way to bring your idea to life. Technique, dedication, and talent make the whole process a unique experience. 
+I spent almost 12 hours with them and, even though I met them that same day, you can immediately tell they are an incredible team.`,
+      image: geraldineReview,
       userImage: null,
     },
     {
       id: 10,
-      name: "Alberto Campos",
+      name: "Roberto Gallardo",
       rating: 5,
-      quote: "Mi experiencia desde el primer momento fue inmejorable, aún estando en otra ciudad tuve mucha facilidad para comunicarme. Desde es primer momento pude explicarme con total libertad y mi idea fue entendida a la perfección. Me sentí muy agusto en el estudio, tanto por la atención recibida como por la profesionalidad y la atención a los detalles. El resultado, increíble, superó mis expectativas. Sin lugar a dudas volvería a repetir la experiencia",
-      service: "Tattoos, Tattoo design",
-      image: tattooImg,
+      quote: `I fulfilled my dreams.
+I needed to find a way to make my project a reality: getting tattooed to tell a story, my story. They quickly identified my feelings, interpreted my vision with clarity, and guided me to a result that exceeded my expectations… suddenly, everything made sense.
+Now I am one more member of this wonderful team. I take with me much more than what my skin bears from both of them: I take a part of them, and I know they will be there when I need them.
+This duo is unbeatable.`,
+      image: robertoReview,
       userImage: null,
     },
   ];
@@ -165,7 +177,7 @@ const SixthSection = () => {
                   </div>
 
                   {/* Hover Reveal (Screenshot Design) */}
-                  <div className="absolute inset-0 bg-[#121212] p-8 md:p-10 flex flex-col justify-between transform translate-y-full transition-transform duration-[1000ms] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:translate-y-0 z-10 border border-[#222]">
+                  <div className="absolute inset-0 bg-[#121212] p-8 md:p-10 flex flex-col transform translate-y-full transition-transform duration-[1000ms] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:translate-y-0 z-10 border border-[#222]">
                     <div>
                       <div className="flex items-center gap-4 mb-6">
                         <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-[#222]">
@@ -188,14 +200,9 @@ const SixthSection = () => {
                           </div>
                         </div>
                       </div>
-                      <p className="text-[#FFE6D0] text-[16px] leading-[20px] font-normal font-[var(--font-founders)] line-clamp-10">
+                      <p className="text-[#FFE6D0] text-[16px] leading-[22px] font-normal font-[var(--font-founders)] whitespace-pre-line">
                         {item.quote}
                       </p>
-                    </div>
-
-                    <div className="mt-8 pt-8 border-t border-white/10">
-                      <h4 className="text-white text-[20px] font-medium mb-3 font-[var(--font-founders)]">Service</h4>
-                      <p className="text-[#FFF] text-[16px] leading-[20px] font-normal font-[var(--font-founders)]">{item.service}</p>
                     </div>
                   </div>
                 </div>
