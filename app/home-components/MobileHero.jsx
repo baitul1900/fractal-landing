@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import fractal from "../../public/images/home/FRACTAL.webp";
 import aboutHeroOne from "../../public/images/home/about-hero-1.webp";
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
-import playbtn from "../../public/images/home/play-btn.webp";
+
 
 // Review images for the 4.9 rating section
 import attila from "../../public/images/review-images/attila.webp";
@@ -14,7 +14,7 @@ import rania from "../../public/images/review-images/rania.webp";
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
 
-const MobileHero = ({ onOpenModal }) => {
+const MobileHero = () => {
   const handleReservation = (e) => {
     e.preventDefault();
     scrollToId(pages.contactUs);
@@ -69,16 +69,7 @@ const MobileHero = ({ onOpenModal }) => {
 
           {/* Play Reels & Rating */}
           <div className="flex items-center justify-between mt-auto pt-8 mb-4">
-            <button
-              onClick={onOpenModal}
-              className="flex items-center gap-2 group"
-            >
-              <Image
-                src={playbtn}
-                alt="Play Button"
-                className="w-[120px] h-auto"
-              />
-            </button>
+
 
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">

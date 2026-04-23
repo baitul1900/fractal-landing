@@ -4,7 +4,7 @@ import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
 import fractal from "../../public/images/home/FRACTAL.webp";
 import bigIcon from "../../public/images/home/hero-big-text-logo.webp";
 import heroTextImage from "../../public/images/home/hero-text-image.webp";
-import playbtn from "../../public/images/home/play-btn.webp";
+
 
 // Review images for the 4.9 rating section
 import attila from "../../public/images/review-images/attila.webp";
@@ -20,7 +20,7 @@ import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
 
 const Hero = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
 
   const handleReservation = (e) => {
@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <>
       {/* Mobile Version Rendering */}
-      <MobileHero onOpenModal={() => setIsModalOpen(true)} />
+      <MobileHero />
 
       {/* Desktop Version Rendering (untouched) */}
       <div className="hidden lg:block">
@@ -89,19 +89,7 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <div className="absolute top-[44.2%] right-[10%] transform">
-                <button
-                  type="button"
-                  onClick={() => setIsModalOpen(true)}
-                  className="cursor-pointer"
-                >
-                  <Image
-                    src={playbtn}
-                    alt="Play Button"
-                    className="w-auto h-auto"
-                  />
-                </button>
-              </div>
+
             </div>
 
             {/* Bottom Section Layout */}
@@ -238,61 +226,7 @@ const Hero = () => {
 
       </div>
 
-      {/* Modal - Moved outside the desktop-only div to be visible on all devices */}
-      <AnimatePresence>
-        {isModalOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 backdrop-blur-md flex flex-col items-center justify-center z-[100] p-6"
-          >
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative w-full max-w-[1000px] aspect-video bg-[#222] rounded-[32px] overflow-hidden shadow-2xl"
-            >
-              <video
-                autoPlay
-                controls
-                className="w-full h-full object-cover"
-                src="/images/home/modal-video.mp4"
-              >
-                Your browser does not support the video tag.
-              </video>
-            </motion.div>
 
-            {/* Close Button below the video container */}
-            <motion.button
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 20, opacity: 0 }}
-              transition={{ delay: 0.2 }}
-              onClick={() => setIsModalOpen(false)}
-              className="mt-8 w-12 h-12 rounded-full border border-white/20 bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors group"
-              aria-label="Close modal"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="transition-transform group-hover:rotate-90"
-              >
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </motion.button>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 };
