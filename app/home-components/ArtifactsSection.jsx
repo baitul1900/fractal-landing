@@ -141,20 +141,8 @@ const ArtifactsSection = () => {
             className="flex gap-0 h-[50vh] md:h-[60vh] items-stretch"
           >
             {repeatedArtifacts.map((artifact, index) => {
-              const pattern = index % 4;
-              let heightClass = "h-[100%]";
-              let alignClass = "self-center";
-
-              if (pattern === 1) {
-                heightClass = "h-[95%]";
-                alignClass = "self-center";
-              } else if (pattern === 2) {
-                heightClass = "h-[80%]";
-                alignClass = "self-end";
-              } else if (pattern === 0 || pattern === 3) {
-                heightClass = "h-[75%]";
-                alignClass = "self-center";
-              }
+              const heightClass = "h-full";
+              const alignClass = "self-center";
 
               return (
                 <div
