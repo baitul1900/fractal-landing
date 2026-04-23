@@ -17,14 +17,14 @@ const MobileSecondSection = () => {
   return (
     <section className="lg:hidden mt-[49px] relative w-full second-section bg-cover bg-center bg-no-repeat overflow-visible">
       <div className="sticky top-[15vh] left-0 w-full flex flex-col items-center px-6 z-20 mix-blend-difference pointer-events-none mb-10">
-        <div className="w-full text-center text-[#FFE6D0] text-[28px] sm:text-[32px] font-medium font-[var(--font-founders)] uppercase leading-[32px] sm:leading-[36px] tracking-[-1.5px] sm:tracking-[-2px] flex flex-col items-center">
+        <div className="w-full text-center text-[#FFE6D0] text-[28px] sm:text-[32px] font-normal font-[var(--font-founders)] uppercase leading-[32px] sm:leading-[36px] tracking-[-0.5px] [word-spacing:0.2em] flex flex-col items-center">
           <div className="overflow-hidden">
             <motion.div
               initial={{ opacity: 0, y: "100%" }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              Our work
+              Connecting with
             </motion.div>
           </div>
           <div className="overflow-hidden">
@@ -33,18 +33,10 @@ const MobileSecondSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
-              is not about ornament.
+              our reality
             </motion.div>
           </div>
-          <div className="overflow-hidden">
-            <motion.div
-              initial={{ opacity: 0, y: "100%" }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            >
-              It is about alignment.
-            </motion.div>
-          </div>
+
         </div>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

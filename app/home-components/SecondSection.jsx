@@ -2,19 +2,7 @@ import SectionWrapper from "@/components/layouts/SectionWrapper";
 import Image from "next/image";
 import MobileSecondSection from "./MobileSecondSection";
 
-// Floating Images
-import img1 from "../../public/images/slider-images/16.webp";
-import img2 from "../../public/images/slider-images/4k_1.webp";
-import img3 from "../../public/images/slider-images/DSC03186.webp";
-import img4 from "../../public/images/slider-images/eight.webp";
-import img5 from "../../public/images/slider-images/ig7.webp";
-import img6 from "../../public/images/slider-images/one.webp";
-import img7 from "../../public/images/slider-images/two.webp";
-import img8 from "../../public/images/slider-images/DSC03205.webp";
-import img9 from "../../public/images/slider-images/DSC03389.webp";
-import img10 from "../../public/images/slider-images/DSC03419.webp";
-import img11 from "../../public/images/slider-images/DSC03665.webp";
-import img12 from "../../public/images/slider-images/DSC04019.webp";
+
 
 const SecondSection = () => {
   return (
@@ -23,10 +11,9 @@ const SecondSection = () => {
       <div className="hidden lg:block">
         <SectionWrapper className="mt-[60px] pt-[149px] second-section relative">
           <div className="sticky top-[10vh] flex flex-col items-center justify-center w-full z-20 gap-10 mix-blend-difference pointer-events-none">
-            <div className="w-full max-w-[938px] px-4 md:px-0 text-center text-[#FFE6D0] md:text-[60px] lg:text-[80px] font-normal font-[var(--font-founders)] uppercase md:leading-[64px] lg:leading-[76px] md:tracking-[-4px] lg:tracking-[-8px]">
-              Our work
-              <br className="hidden md:block" /> is not about ornament.
-              <br className="hidden md:block" /> It is about alignment.
+            <div className="w-full max-w-[938px] px-4 md:px-0 text-center text-[#FFE6D0] md:text-[60px] lg:text-[80px] font-normal font-[var(--font-founders)] uppercase md:leading-[64px] lg:leading-[78px] md:tracking-[-1.5px] lg:tracking-[-8px] [word-spacing:0.2em]">
+              Connecting with
+              <br className="hidden md:block" /> our reality
             </div>
             <div>
               <svg
@@ -46,122 +33,13 @@ const SecondSection = () => {
             {/* Reservation Button - Sticking with text/icon */}
           </div>
 
-          {/* Floating images background layer */}
-          <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 flex flex-col items-center lg:pt-[5%]">
-            {/* Row 1 */}
-            <div className="absolute left-[8%] top-[500px] w-[180px] h-[260px] opacity-90">
-              <Image
-                src={img1}
-                alt="Tattoo"
-                fill
-                sizes="180px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute left-[35%] top-[750px] w-[200px] h-[280px] opacity-90">
-              <Image
-                src={img2}
-                alt="Tattoo"
-                fill
-                sizes="200px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute right-[25%] top-[600px] w-[210px] h-[300px] opacity-90">
-              <Image
-                src={img3}
-                alt="Tattoo"
-                fill
-                sizes="210px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute right-[5%] top-[900px] w-[170px] h-[250px] opacity-90">
-              <Image
-                src={img4}
-                alt="Tattoo"
-                fill
-                sizes="170px"
-                className="object-cover"
-              />
-            </div>
-
-            {/* Row 2 */}
-            <div className="absolute left-[20%] top-[1100px] w-[230px] h-[320px] opacity-90">
-              <Image
-                src={img5}
-                alt="Tattoo"
-                fill
-                sizes="230px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute right-[35%] top-[1150px] w-[200px] h-[280px] opacity-90">
-              <Image
-                src={img6}
-                alt="Tattoo"
-                fill
-                sizes="200px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute left-[33%] top-[1600px] w-[200px] h-[280px] opacity-90">
-              <Image
-                src={img7}
-                alt="Tattoo"
-                fill
-                sizes="200px"
-                className="object-cover"
-              />
-            </div>
-
-            {/* New Images (Small versions) */}
-            <div className="absolute left-[5%] top-[1700px] w-[190px] h-[270px] opacity-90">
-              <Image
-                src={img8}
-                alt="Tattoo"
-                fill
-                sizes="190px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute right-[10%] top-[1600px] w-[210px] h-[290px] opacity-90">
-              <Image
-                src={img9}
-                alt="Tattoo"
-                fill
-                sizes="210px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute left-[25%] top-[2000px] w-[180px] h-[250px] opacity-90">
-              <Image
-                src={img10}
-                alt="Tattoo"
-                fill
-                sizes="180px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute right-[20%] top-[2100px] w-[220px] h-[310px] opacity-90">
-              <Image
-                src={img11}
-                alt="Tattoo"
-                fill
-                sizes="220px"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute left-[45%] top-[2300px] w-[200px] h-[280px] opacity-90">
-              <Image
-                src={img12}
-                alt="Tattoo"
-                fill
-                sizes="200px"
-                className="object-cover"
-              />
-            </div>
-          </div>
+          {/* Second Background Layer */}
+          <div
+            className="absolute -top-30 left-0 w-full h-full pointer-events-none z-10 bg-no-repeat bg-top bg-cover"
+            style={{
+              backgroundImage: `url('/images/home/second-section-2nd-layer-bg.webp')`,
+            }}
+          />
         </SectionWrapper>
       </div>
     </>
