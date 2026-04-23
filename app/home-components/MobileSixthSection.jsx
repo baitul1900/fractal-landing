@@ -38,7 +38,7 @@ const MobileSixthSection = ({ archives }) => {
           <div
             key={item.id}
             onClick={() => toggleReveal(item.id)}
-            className="keen-slider__slide group relative overflow-hidden rounded-2xl w-full aspect-[1/1.6] cursor-pointer bg-[#18181A]"
+            className="keen-slider__slide group relative overflow-hidden rounded-2xl w-full aspect-[1/1.8] cursor-pointer bg-[#18181A]"
           >
             {/* Default Image Background */}
             <Image
@@ -77,12 +77,12 @@ const MobileSixthSection = ({ archives }) => {
 
             {/* Reveal Overlay (Screenshot Design) */}
             <div
-              className={`absolute inset-0 bg-[#121212] p-6 flex flex-col justify-between transform transition-transform duration-[1000ms] ease-[cubic-bezier(0.25,1,0.5,1)] w-full h-full z-10 border border-[#222] rounded-2xl ${
+              className={`absolute inset-0 bg-[#121212] p-6 flex flex-col transform transition-transform duration-[1000ms] ease-[cubic-bezier(0.25,1,0.5,1)] w-full h-full z-10 border border-[#222] rounded-2xl ${
                 revealedId === item.id ? "translate-y-0" : "translate-y-full"
               }`}
             >
-              <div>
-                <div className="flex items-center gap-4 mb-6">
+              <div className="flex flex-col h-full">
+                <div className="flex items-center gap-3 mb-4 flex-shrink-0">
                   <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-[#222]">
                     {item.userImage ? (
                       <Image
@@ -97,7 +97,7 @@ const MobileSixthSection = ({ archives }) => {
                     )}
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-[#FFF] text-[20px] font-normal leading-[20px] font-[var(--font-founders)]">
+                    <span className="text-[#FFF] text-[18px] font-normal leading-[18px] font-[var(--font-founders)]">
                       {item.name}
                     </span>
                     <div className="flex items-center gap-1">
@@ -109,9 +109,12 @@ const MobileSixthSection = ({ archives }) => {
                     </div>
                   </div>
                 </div>
-                <p className="text-[#FFE6D0] text-[16px] leading-[20px] font-normal font-[var(--font-founders)] whitespace-pre-line">
-                  {item.quote}
-                </p>
+                
+                <div className="flex-grow overflow-y-auto scrollbar-hide">
+                  <p className="text-[#FFE6D0] text-[15px] leading-[20px] font-normal font-[var(--font-founders)] whitespace-pre-line pb-4">
+                    {item.quote}
+                  </p>
+                </div>
               </div>
 
               {/* Close indicator */}

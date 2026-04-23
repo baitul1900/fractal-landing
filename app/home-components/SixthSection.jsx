@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import tattooImg from "../../public/images/home/random-tatto-images.webp";
+
 import MobileSixthSection from "./MobileSixthSection";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";

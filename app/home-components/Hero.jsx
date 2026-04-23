@@ -8,7 +8,7 @@ import playbtn from "../../public/images/home/play-btn.webp";
 
 // Review images for the 4.9 rating section
 import attila from "../../public/images/review-images/attila.webp";
-import pedro from "../../public/images/review-images/pedro.webp";
+
 import rania from "../../public/images/review-images/rania.webp";
 
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
