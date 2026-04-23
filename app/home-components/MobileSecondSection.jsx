@@ -16,8 +16,15 @@ const images = [img1, img2, img3, img4, img5, img6];
 const MobileSecondSection = () => {
   return (
     <section className="lg:hidden mt-[49px] relative w-full second-section bg-cover bg-center bg-no-repeat overflow-visible">
+      {/* Second Background Layer */}
+      <div
+        className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 bg-no-repeat bg-top bg-cover"
+        style={{
+          backgroundImage: `url('/images/home/second-layer-second-mobile.webp')`,
+        }}
+      />
       <div className="sticky top-[15vh] left-0 w-full flex flex-col items-center px-6 z-20 mix-blend-difference pointer-events-none mb-10">
-        <div className="w-full text-center text-[#FFE6D0] text-[28px] sm:text-[32px] font-normal font-[var(--font-founders)] uppercase leading-[32px] sm:leading-[36px] tracking-[-0.5px] [word-spacing:0.2em] flex flex-col items-center">
+        <div className="w-full text-center text-[#FFE6D0] text-[34px] sm:text-[44px] font-medium font-[var(--font-founders)] uppercase leading-[38px] sm:leading-[48px] tracking-[-3px] [word-spacing:0.2em] flex flex-col items-center">
           <div className="overflow-hidden">
             <motion.div
               initial={{ opacity: 0, y: "100%" }}
