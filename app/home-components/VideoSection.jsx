@@ -40,9 +40,8 @@ const VideoSection = () => {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-[#FFE6D0] text-[40px] md:text-[80px] lg:text-[116px] font-medium font-[var(--font-founders)] uppercase leading-[1.1] md:leading-[90px] lg:leading-[100px] tracking-[-2px] md:tracking-[-6px] lg:tracking-[-11.6px]"
         >
-          Our work
-          <br className="hidden md:block" /> is not about ornament.
-          <br className="hidden md:block" /> It is about alignment.
+          Discover our
+          <br className="hidden md:block" /> reality
         </motion.h2>
 
         <motion.div
