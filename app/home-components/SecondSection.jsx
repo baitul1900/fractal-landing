@@ -35,7 +35,7 @@ const SecondSection = () => {
 
           {/* Second Background Layer */}
           <div
-            className="absolute -top-30 left-0 w-full h-full pointer-events-none z-10 bg-no-repeat bg-top bg-cover"
+            className="absolute top-0 left-0 w-full h-full pointer-events-none z-10 bg-no-repeat bg-top bg-[length:100%_auto]"
             style={{
               backgroundImage: `url('/images/home/second-section-2nd-layer-bg.webp')`,
             }}
