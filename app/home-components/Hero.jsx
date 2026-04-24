@@ -11,8 +11,8 @@ import attila from "../../public/images/review-images/attila.webp";
 
 import rania from "../../public/images/review-images/rania.webp";
 
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import { useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 import MobileHero from "./MobileHero";
 
@@ -31,15 +31,7 @@ const Hero = () => {
 
 
 
-  const aboutRef = useRef(null);
-  const { scrollYProgress: aboutScroll } = useScroll({
-    target: aboutRef,
-    offset: ["start end", "end start"],
-  });
 
-  const imgY1 = useTransform(aboutScroll, [0, 1], [100, -100]);
-  const imgY2 = useTransform(aboutScroll, [0, 1], [150, -150]);
-  const aboutRotate = useTransform(aboutScroll, [0, 1], [2, -2]);
 
   return (
     <>
@@ -113,7 +105,6 @@ const Hero = () => {
 
         {/* About Us Section with Black Background */}
         <section
-          ref={aboutRef}
           className="relative bg-black w-full pb-32 overflow-hidden md:mt-[-100px] perspective-1000"
           id="about"
         >
@@ -161,9 +152,8 @@ const Hero = () => {
               </a>
             </motion.div>
 
-            <div className="flex gap-6 w-full md:w-auto">
-              <motion.div
-                style={{ y: imgY1, rotateZ: aboutRotate }}
+            <div className="flex gap-6 w-full md:w-auto items-start">
+              <div
                 className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[2/3] overflow-hidden rounded-sm group/img shadow-2xl"
               >
                 <Image
@@ -174,9 +164,8 @@ const Hero = () => {
                   className="object-cover transition-transform duration-700 group-hover/img:scale-110 "
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover/img:bg-transparent transition-colors duration-500"></div>
-              </motion.div>
-              <motion.div
-                style={{ y: imgY2, rotateZ: aboutRotate }}
+              </div>
+              <div
                 className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[2/3] overflow-hidden rounded-sm group/img shadow-2xl"
               >
                 <Image
@@ -187,7 +176,7 @@ const Hero = () => {
                   className="object-cover transition-transform duration-700 group-hover/img:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover/img:bg-transparent transition-colors duration-500"></div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
