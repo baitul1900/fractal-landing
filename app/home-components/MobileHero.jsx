@@ -67,40 +67,6 @@ const MobileHero = () => {
             </p>
           </div>
 
-          {/* Play Reels & Rating */}
-          <div className="flex items-center justify-between mt-auto pt-8 mb-4">
-
-
-            <div className="flex items-center gap-2">
-              <div className="flex -space-x-2">
-                <div className="w-8 h-8 rounded-full border border-black overflow-hidden relative">
-                  <Image
-                    src={attila}
-                    alt="user"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="w-8 h-8 rounded-full border border-black overflow-hidden relative z-10">
-                  <Image
-                    src={rania}
-                    alt="user"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="text-left leading-tight">
-                <div className="flex items-center gap-1">
-                  <span className="text-peach text-sm font-bold">4.9</span>
-                  <span className="text-yellow-500 text-[10px]">★</span>
-                </div>
-                <p className="text-peach text-[8px] opacity-60 uppercase font-bold whitespace-nowrap">
-                  1k+ Satisfied Users
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

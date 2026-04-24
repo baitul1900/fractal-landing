@@ -106,39 +106,7 @@ const Hero = () => {
               </div>
 
               {/* Right Column: Rating */}
-              <div className="flex flex-col items-end gap-12">
-                <div className="flex items-center gap-4">
-                  <div className="flex -space-x-3">
-                    <div className="w-10 h-10 rounded-full border-2 border-black overflow-hidden relative">
-                      <Image
-                        src={attila}
-                        alt="user"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="w-10 h-10 rounded-full border-2 border-black overflow-hidden relative">
-                      <Image
-                        src={rania}
-                        alt="user"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="text-left">
-                    <div className="flex items-center gap-1">
-                      <span className="text-[#FFE3C9] text-xl font-bold">
-                        4.9
-                      </span>
-                      <span className="text-yellow-500 text-lg">★</span>
-                    </div>
-                    <p className="text-[#FFE3C9] text-[10px] font-medium opacity-60 uppercase tracking-tighter">
-                      1k+ Satisfied Users
-                    </p>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </section>
