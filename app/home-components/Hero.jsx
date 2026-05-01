@@ -6,10 +6,6 @@ import bigIcon from "../../public/images/home/hero-big-text-logo.webp";
 import heroTextImage from "../../public/images/home/hero-text-image.webp";
 
 
-// Review images for the 4.9 rating section
-import attila from "../../public/images/review-images/attila.webp";
-
-import rania from "../../public/images/review-images/rania.webp";
 
 import { motion } from "framer-motion";
 import { useRef } from "react";

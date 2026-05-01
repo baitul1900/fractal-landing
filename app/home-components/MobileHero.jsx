@@ -7,9 +7,6 @@ import aboutHeroOne from "../../public/images/home/about-hero-1.webp";
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
 
 
-// Review images for the 4.9 rating section
-import attila from "../../public/images/review-images/attila.webp";
-import rania from "../../public/images/review-images/rania.webp";
 
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
