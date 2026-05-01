@@ -30,7 +30,7 @@ const foundersGrotesk = localFont({
 
 
 export const metadata = {
-  title: "Fractal - Body Archives",
+  title: "FRACTAL™ | Contemporary Tattoo Concept",
   description: "Fractal is a contemporary tattoo practice based in Seville, Spain.",
 };
 
