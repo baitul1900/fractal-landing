@@ -1,0 +1,98 @@
+{
+  "navbar": {
+    "about_us": "SOBRE NOSOTROS",
+    "artists": "ARTISTAS",
+    "process": "PROCESO",
+    "reservation": "RESERVAR"
+  },
+  "hero": {
+    "top_text": "TATUAR NO ES SOLO LO QUE HACEMOS, ES QUIÉNES SOMOS — NUESTRO TRABAJO SE CREA CON PASIÓN Y PROPÓSITO.",
+    "create_archives": "CREAMOS ARCHIVOS CORPORALES",
+    "concept_based": "FRACTAL™ ES UN CONCEPTO DE TATUAJE BASADO EN SEVILLA, ESPAÑA, Y QUE VIAJA POR EL MUNDO",
+    "about_us": "Sobre Nosotros",
+    "about_desc": "FRACTAL es una práctica de tatuaje contemporáneo que combina narrativa, espiritualidad y arte visual. Con sede en Sevilla, España, creamos piezas únicas impulsadas por historias a través de la colaboración y la libertad creativa."
+  },
+  "second_section": {
+    "connecting": "Conectando con",
+    "reality": "nuestra realidad"
+  },
+  "video_section": {
+    "our_work": "Nuestro trabajo",
+    "not_about": "no se trata de ornamentos.",
+    "about_alignment": "Se trata de alineación."
+  },
+  "artifacts": {
+    "archive": "Archivo",
+    "unique_fragment": "Un fragmento único de la práctica del tatuaje contemporáneo.",
+    "the_artifacts": "Los artefactos",
+    "each_piece": "Cada pieza que ves aquí no fue diseñada para decorar, sino para representar.",
+    "these_works": "Estas obras son fragmentos de viajes personales: momentos de transformación, recuerdo, rebelión o despertar traducidos a lenguaje visual."
+  },
+  "fourth_section": {
+    "eliezer_role": "GERENTE Y DISEÑADOR",
+    "eliezer_desc": "Con formación en diseño gráfico y fotografía, Eliezer lidera la dirección creativa del proyecto. Moldea el lenguaje visual, afina la estructura narrativa y guía el desarrollo conceptual detrás de cada pieza.\n\nSu enfoque radica en la comunicación: comprender a las personas, escuchar con atención y traducir procesos internos en composiciones simbólicas coherentes. Supervisa la marca, el diálogo y el marco estratégico que sostiene el proyecto.",
+    "nanook_role": "TATUADOR",
+    "nanook_desc": "Con más de una década de experiencia, Nanook exploró múltiples estilos antes de perfeccionar su propio lenguaje dentro del oficio. Su recorrido por el diseño, el dibujo, la música y la escultura informan su sensibilidad técnica y precisión artística.\n\nEs responsable de refinar y perfeccionar la ejecución de cada pieza, asegurando que el concepto y la artesanía sigan siendo inseparables."
+  },
+  "fifth_section": {
+    "our_process": "Nuestro Proceso",
+    "detailed_consultation": "Consulta\nDetallada",
+    "detailed_consultation_desc": "Nos tomamos el tiempo para entender qué quieres expresar y, lo que es igual de importante, por qué. Este paso nos permite evaluar la alineación, asegurándonos de que tu intención resuene con los valores y la visión de FRACTAL. Creemos algo honesto, coherente y significativo para ambas partes.",
+    "anatomical_analysis": "Análisis\nAnatómico",
+    "anatomical_analysis_desc": "Necesitamos una composición que se adapte naturalmente a tu estructura. El flujo, la tensión y el movimiento del cuerpo guían la ubicación, asegurando que la pieza se sienta integrada en lugar de impuesta.",
+    "crafting_artifact": "Creación del\nArtefacto",
+    "crafting_artifact_desc": "Tu historia se traduce en una composición simbólica que equilibra referencias clásicas, geometría y diseño contemporáneo. Cada línea y elemento está posicionado para respetar el flujo natural de tu cuerpo, creando profundidad más allá de la estética.",
+    "concept_review": "Revisión de\nConcepto",
+    "concept_review_desc": "Antes de la ejecución, te explicamos el razonamiento creativo detrás de la pieza: explicando el simbolismo, la composición y las decisiones estructurales. Esto asegura que el artefacto se comprenda por completo, no solo que se acepte.",
+    "precise_execution": "Ejecución\nPrecisa",
+    "precise_execution_desc": "Durante la sesión de tatuaje, cada detalle se coloca con intención y refinamiento técnico. La precisión, el equilibrio y la elegancia guían el proceso, asegurando que el resultado final refleje tanto la profundidad conceptual como la excelencia artesanal."
+  },
+  "sixth_section": {
+    "body_archives": "Archivos Corporales",
+    "quote_danilo": "Buscaba un tatuador minucioso y perfeccionista. Busqué durante varios meses. Se involucran profundamente en el diseño y cuidan cada pequeño detalle. La precisión de las líneas es increíble. Durante todo el proceso me sentí como en casa: el trato fue inmejorable, y el estudio y la limpieza fueron impecables. ¡Una experiencia increíble! 100% recomendado.",
+    "quote_michael": "¡Qué equipo tan brillante! Me tatué la pantorrilla cuando Elicostart y Nanook estaban en mi ciudad natal, Stuttgart. Las consultas previas fueron absolutamente brillantes e inspiradoras; me quedé completamente impresionado por el diseño basado en mis pensamientos que discutimos en una videollamada.\n\nLa sesión de tatuaje de dos días fue muy divertida; el tatuaje se hizo con mucho amor y precisión. Estoy increíblemente orgulloso de mi nuevo tatuaje y puedo recomendarlos de todo corazón cuando se trata de tatuajes increíbles con una gran historia detrás de ellos.",
+    "quote_jose": "No podría estar más feliz con su trabajo. Desde el primer momento en que los contacté, me dieron mucha confianza y me sentí muy cómodo con ellos. Su nivel de dedicación es increíble: capturaron perfectamente todas las ideas que tenía para mi tatuaje, prestando atención a cada pequeño detalle para ofrecer el mejor resultado posible. Estos son los detalles que marcan la diferencia.\nTe hicieron sentir en todo momento como si estuvieras entre amigos y, a pesar de estar allí todo el día, fue muy agradable.",
+    "quote_andrea": "Me faltan palabras para describir lo increíbles que son. Fui de Málaga a Sevilla a tatuarme con ellos dos días seguidos y fue increíble. Súper profesionales, accesibles y con una vibra increíble desde el primer minuto. \nMe tatué toda la espalda y hacerlo con ellos ha sido la mejor decisión que he tomado.\nSon perfeccionistas al máximo, cuidando cada detalle.\nGracias de todo corazón por su talento y por tratarme con tanta amabilidad.",
+    "quote_marta": "¡Me tatué hace casi 20 días y ya estoy buscando el momento para volver! Qué equipo de profesionales, amigos y artistas. Son la definición exacta de precisión, perfección... armonía. Sin duda, la experiencia y la forma en que se vive —con su ritmo, su complejidad, esa comunicación en el momento que hace que un diseño que ya era espectacular se vuelva aún mejor— no solo te hace querer volver, sino que hace que no quieras irte.\n\n¡Me hice un diseño en la espalda, pasé dos días con ellos y me dio tristeza irme! Me sentí tan cómoda y a gusto: son absolutamente los mejores, sin duda.",
+    "quote_borja": "Todo salió a la perfección: un increíble enfoque hacia el cliente y una increíble disposición a escuchar tus ideas y darles sentido en un diseño. Solo tuve que explicar un poco mi idea y Eli ya lo estaba diseñando en su cabeza y descubriendo cómo todo podría encajar. \nUna pieza única de la que nunca te arrepentirás.\nUna experiencia increíble antes, durante y después de la sesión. Sin duda volveré a trabajar con ellos.",
+    "quote_elena": "Volé de Málaga a Barcelona y sin duda lo que viví con Eli y Nanook valió completamente la pena. No es solo otro tatuaje, no es solo otra experiencia. Es algo diferente a todo lo demás. Eli captura perfectamente tu esencia en una pieza única en el mundo, igual que cada uno de nosotros, y Nanook te da esa confianza necesaria para estar plenamente presente y no preocuparte por nada más. Este dúo único lleva el mundo del tatuaje a otro nivel. Gracias por todo, chicos.",
+    "quote_dani": "Llevaba 10 años queriendo hacerme un tatuaje. Vi su forma de trabajar y no dudé en dar el salto.\n\nHacerte un tatuaje con ellos no se trata solo de poner tinta en tu cuerpo. Se trata de vivir una experiencia en todos los sentidos.\nTodo se maneja con la máxima atención al detalle, enfocándose en el lado humano para que te sientas lo más cómodo posible, dedicando todo el tiempo necesario para que el tatuaje sea perfecto.",
+    "quote_geraldine": "Volé desde Mallorca para tatuarme con ellos y, honestamente, fue la mejor decisión que pude tomar. Se nota la gran profesionalidad con la que trabajan. Te escuchan con atención y encuentran la mejor forma de dar vida a tu idea. Técnica, dedicación y talento hacen de todo el proceso una experiencia única.\nPasé casi 12 horas con ellos y, aunque los conocí ese mismo día, de inmediato te das cuenta de que son un equipo increíble.",
+    "quote_roberto": "Cumplí mis sueños.\nNecesitaba encontrar una forma de hacer mi proyecto realidad: tatuarme para contar una historia, mi historia. Rápidamente identificaron mis sentimientos, interpretaron mi visión con claridad y me guiaron a un resultado que superó mis expectativas... de repente, todo tenía sentido.\nAhora soy un miembro más de este maravilloso equipo. Me llevo mucho más de lo que mi piel lleva de ambos: me llevo una parte de ellos y sé que estarán allí cuando los necesite.\nEste dúo es inmejorable."
+  },
+  "contact": {
+    "sent_success": "¡Enviado con Éxito!",
+    "sent_desc": "Gracias por comunicarte. Hemos recibido tu solicitud de reserva y nos pondremos en contacto contigo en breve.",
+    "close": "CERRAR",
+    "where_to_find": "Dónde",
+    "find_us": "Encontrarnos",
+    "location_desc": "Estamos ubicados principalmente en Sevilla, una ciudad moldeada por el arte, la historia y la cultura en el sur de\nEspaña. Sin embargo, nuestro trabajo se extiende más allá de un solo lugar. Viajamos regularmente por Europa\ny los Estados Unidos, llevando nuestro proceso a diferentes lugares.\n\nNuestras próximas ciudades y fechas disponibles se comparten continuamente en Instagram.\nMantente conectado para seguir el viaje.",
+    "full_name": "Nombre Completo *",
+    "city": "Ciudad",
+    "body_placement": "Ubicación en el cuerpo",
+    "email": "Correo electrónico *",
+    "phone": "Teléfono *",
+    "inspiration": "Inspiración",
+    "description": "Descripción",
+    "sending": "ENVIANDO...",
+    "send_reservation": "ENVIAR RESERVA",
+    "reservation": "RESERVAR",
+    "error_msg": "¡Ups! Algo salió mal. Por favor verifica tu conexión o la configuración de EmailJS."
+  },
+  "footer": {
+    "lets_create": "Vamos a crear",
+    "something": "algo",
+    "permanent": "permanente juntos.",
+    "amazing": "increíble hoy.",
+    "meaningful": "significativo aquí.",
+    "email": "Correo",
+    "call_me": "Llámame",
+    "book_now": "Reserva Ahora",
+    "social": "Redes",
+    "menu": "Menú",
+    "about_us": "Sobre nosotros",
+    "process": "Proceso",
+    "artists": "Artistas",
+    "reservation": "Reserva"
+  }
+}

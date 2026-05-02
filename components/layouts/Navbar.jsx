@@ -19,6 +19,8 @@ import logoImage from "@/public/images/logo/logo.webp";
 import { pages } from "@/util/route";
 import { scrollToId } from "../../util/scroll";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 const styles = {
   baseLink:
     "text-[#FFE3C9] text-base font-normal leading-6 hover:text-[#ffe6d0] transition-colors duration-200 py-2 md:py-0 font-[var(--font-founders)]",
@@ -42,12 +44,6 @@ const styles = {
   menuButtonOpen: "",
 };
 
-const navItems = [
-  { name: "ABOUT US", href: ABOUT },
-  { name: "ARTISTS", href: ARTISTS },
-  { name: "PROCESS", href: PROCESS },
-];
-
 const handleScroll = (e, href, onHit) => {
   if (href.startsWith("#")) {
     e.preventDefault();
@@ -67,15 +63,19 @@ const NavLink = ({ name, href, onHit, className = "" }) => (
   </a>
 );
 
-const NavLinks = () => (
-  <nav className={styles.nav}>
-    {navItems.map((item) => (
-      <NavLink key={item.name} {...item} />
-    ))}
-  </nav>
-);
+const NavLinks = () => {
+  const { t } = useLanguage();
+  return (
+    <nav className={styles.nav}>
+      <NavLink name={t("navbar.about_us")} href={ABOUT} />
+      <NavLink name={t("navbar.artists")} href={ARTISTS} />
+      <NavLink name={t("navbar.process")} href={PROCESS} />
+    </nav>
+  );
+};
 
 const MobileMenu = ({ isOpen, toggleMenu }) => {
+  const { lang, setLang, t } = useLanguage();
   const menuVariants = {
     closed: { opacity: 0, y: -20 },
     open: { opacity: 1, y: 0 },
@@ -102,14 +102,26 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.1 }}
             >
-              {navItems.map((item, index) => (
-                <NavLink
-                  key={item.name}
-                  {...item}
-                  className={styles.mobileLink}
-                  onHit={toggleMenu}
-                />
-              ))}
+              <NavLink name={t("navbar.about_us")} href={ABOUT} className={styles.mobileLink} onHit={toggleMenu} />
+              <NavLink name={t("navbar.artists")} href={ARTISTS} className={styles.mobileLink} onHit={toggleMenu} />
+              <NavLink name={t("navbar.process")} href={PROCESS} className={styles.mobileLink} onHit={toggleMenu} />
+              
+              {/* Mobile Language Switcher */}
+              <div className="flex items-center gap-2 pt-4 uppercase font-[var(--font-founders)] text-[18px] font-bold text-black/40">
+                <button 
+                  onClick={() => setLang("ES")}
+                  className={clsx("transition-colors duration-200", lang === "ES" ? "text-black" : "hover:text-black")}
+                >
+                  ES
+                </button>
+                <span className="text-black/20">/</span>
+                <button 
+                  onClick={() => setLang("EN")}
+                  className={clsx("transition-colors duration-200", lang === "EN" ? "text-black" : "hover:text-black")}
+                >
+                  EN
+                </button>
+              </div>
             </motion.div>
 
             <motion.div
@@ -150,6 +162,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { lang, setLang, t, mounted } = useLanguage();
   const pathname = usePathname();
 
   // Close menu when route changes
@@ -213,6 +226,27 @@ export default function Navbar() {
           <NavLinks />
 
           <div className={styles.rightActions}>
+            {/* Desktop Language Switcher */}
+            <div className="hidden lg:flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 mr-6 opacity-60">
+              {mounted && (
+                <>
+                  <button 
+                    onClick={() => setLang("ES")}
+                    className={clsx("transition-colors duration-200", lang === "ES" ? "text-white opacity-100 font-medium" : "hover:text-white hover:opacity-100")}
+                  >
+                    ES
+                  </button>
+                  <span className="opacity-50">/</span>
+                  <button 
+                    onClick={() => setLang("EN")}
+                    className={clsx("transition-colors duration-200", lang === "EN" ? "text-white opacity-100 font-medium" : "hover:text-white hover:opacity-100")}
+                  >
+                    EN
+                  </button>
+                </>
+              )}
+            </div>
+
             <a
               href={pages.contactUs}
               onClick={(e) => handleScroll(e, pages.contactUs)}
@@ -233,7 +267,7 @@ export default function Navbar() {
                   />
                 </g>
               </svg>
-              RESERVATION
+              {t("navbar.reservation")}
             </a>
 
             <button

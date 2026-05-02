@@ -12,8 +12,10 @@ import img5 from "../../public/images/slider-images/ig7.webp";
 import img6 from "../../public/images/slider-images/one.webp";
 
 const images = [img1, img2, img3, img4, img5, img6];
+import { useLanguage } from "@/context/LanguageContext";
 
 const MobileSecondSection = () => {
+  const { t } = useLanguage();
   return (
     <section className="lg:hidden mt-[49px] relative w-full second-section bg-cover bg-center bg-no-repeat overflow-visible">
       {/* Second Background Layer */}
@@ -31,7 +33,7 @@ const MobileSecondSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              Connecting with
+              {t("second_section.connecting")}
             </motion.div>
           </div>
           <div className="overflow-hidden">
@@ -40,7 +42,7 @@ const MobileSecondSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
-              our reality
+              {t("second_section.reality")}
             </motion.div>
           </div>
 

@@ -10,8 +10,10 @@ import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
 
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
+import { useLanguage } from "@/context/LanguageContext";
 
 const MobileHero = () => {
+  const { t } = useLanguage();
   const handleReservation = (e) => {
     e.preventDefault();
     scrollToId(pages.contactUs);
@@ -25,8 +27,7 @@ const MobileHero = () => {
         <div className="relative z-10 flex flex-col h-full">
           {/* Top Floating Text */}
           <div className="w-full max-w-[320px] text-[16px] leading-[20px] text-peach uppercase font-medium mb-3 font-[var(--font-founders)]">
-            TATTOOING IS NOT JUST WHAT WE DO, THIS IS WHO WE ARE — OUR WORK IS
-            CRAFTED WITH PASSION AND PURPOSE.
+            {t("hero.top_text")}
           </div>
 
           {/* Big Fractal Logo */}
@@ -55,12 +56,11 @@ const MobileHero = () => {
 
           {/* Heading Section */}
           <div className="mt-16 mb-12">
-            <h2 className="text-[22px] font-medium leading-[24px] uppercase text-peach mb-4 font-[var(--font-founders)]">
-              WE CREATE BODY <br /> ARCHIVES
+            <h2 className="text-[22px] font-medium leading-[24px] uppercase text-peach mb-4 font-[var(--font-founders)] w-[200px]">
+              {t("hero.create_archives")}
             </h2>
             <p className="text-[16px] leading-[18px] text-peach uppercase font-medium max-w-[280px] font-[var(--font-founders)]">
-              FRACTAL™ IS A TATTOO CONCEPT BASED IN SEVILLE, SPAIN & TRAVELING
-              AROUND THE WORLD
+              {t("hero.concept_based")}
             </p>
           </div>
 
@@ -71,13 +71,10 @@ const MobileHero = () => {
       <div className="px-6 pb-1 flex flex-col gap-10">
         <div>
           <h3 className="text-[26px] font-medium uppercase mb-2 tracking-[-1.92px] leading-[30px] text-white font-[var(--font-founders)]">
-            ABOUT US
+            {t("hero.about_us")}
           </h3>
           <p className="text-[16px] leading-[20px] font-normal text-white mb-3 font-[var(--font-founders)]">
-            FRACTAL is a contemporary tattoo practice blending narrative,
-            spirituality, and visual art. Based in Seville, Spain, we create
-            unique, story-driven pieces through collaboration and creative
-            freedom.
+            {t("hero.about_desc")}
           </p>
 
           <a
@@ -97,7 +94,7 @@ const MobileHero = () => {
                 fill="black"
               />
             </svg>
-            RESERVATION
+            {t("navbar.reservation")}
           </a>
         </div>
 

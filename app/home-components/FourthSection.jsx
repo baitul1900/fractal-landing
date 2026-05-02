@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import artistImage from "../../public/images/home/photo_fractal-dua.webp";
 import MobileFourthSection from "./MobileFourthSection";
+import { useLanguage } from "@/context/LanguageContext";
 
 const TattooHeading = ({ children, className }) => {
   return (
@@ -42,6 +43,7 @@ const TattooText = ({ children, className }) => {
 };
 
 const FourthSection = () => {
+  const { t } = useLanguage();
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -74,20 +76,11 @@ const FourthSection = () => {
                 Eliezer Costa
               </TattooHeading>
               <TattooHeading className="text-4xl font-[var(--font-founders)] uppercase leading-[52px] text-end font-light">
-                MANAGER & DESIGNER
+                {t("fourth_section.eliezer_role")}
               </TattooHeading>
               <div className="w-[485px] md:mt-1.5 text-start ml-auto">
-                <TattooText className="text-black text-xl font-normal font-[var(--font-founders)] leading-7">
-                  With a background in graphic design and photography, Eliezer leads
-                  the creative direction of the project. He shapes the visual
-                  language, refines the narrative structure, and guides the
-                  conceptual development behind each piece.
-                  <br />
-                  <br />
-                  His focus lies in communication — understanding people, listening
-                  carefully, and translating inner processes into coherent symbolic
-                  compositions. He oversees the brand, the dialogue, and the
-                  strategic framework that sustains the project.
+                <TattooText className="text-black text-xl font-normal font-[var(--font-founders)] leading-7 whitespace-pre-line">
+                  {t("fourth_section.eliezer_desc")}
                 </TattooText>
               </div>
 
@@ -121,19 +114,11 @@ const FourthSection = () => {
                 NANOOK
               </TattooHeading>
               <TattooHeading className="text-4xl font-[var(--font-founders)] uppercase leading-[52px] text-start font-light">
-                TATTOO ARTIST
+                {t("fourth_section.nanook_role")}
               </TattooHeading>
               <div className="md:mt-1.5 text-end">
-                <TattooText className="text-black text-xl font-normal font-[var(--font-founders)] leading-7">
-                  With more than a decade of experience, Nanook explored multiple
-                  styles before refining his own language within the craft. His
-                  journey through design, drawing, music, and sculpture informs his
-                  technical sensitivity and artistic precision.
-                  <br />
-                  <br />
-                  He is responsible for refining and perfecting the execution of
-                  each piece — ensuring that concept and craftsmanship remain
-                  inseparable.
+                <TattooText className="text-black text-xl font-normal font-[var(--font-founders)] leading-7 whitespace-pre-line">
+                  {t("fourth_section.nanook_desc")}
                 </TattooText>
               </div>
 

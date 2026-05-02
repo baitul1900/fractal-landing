@@ -1,11 +1,12 @@
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const FifthSection = () => {
+  const { t } = useLanguage();
   const steps = [
     {
-      title: "Detailed\nConsultation",
-      description:
-        "We take the time to understand what you want to express and, just as importantly, why. This step allows us to evaluate alignment — ensuring that your intention resonates with the values and vision of FRACTAL. Let's create something honest, coherent, and meaningful for both sides.",
+      title: t("fifth_section.detailed_consultation"),
+      description: t("fifth_section.detailed_consultation_desc"),
       Icon: () => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,9 +39,8 @@ const FifthSection = () => {
       ),
     },
     {
-      title: "Anatomical\nAnalysis",
-      description:
-        "We need a composition that adapts naturally to your structure. The flow, tension, and movement of the body guide the placement, ensuring the piece feels integrated rather than imposed.",
+      title: t("fifth_section.anatomical_analysis"),
+      description: t("fifth_section.anatomical_analysis_desc"),
       Icon: () => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,9 +81,8 @@ const FifthSection = () => {
       ),
     },
     {
-      title: "Crafting the\nArtifact",
-      description:
-        "Your story is translated into a symbolic composition that balances classical references, geometry, and contemporary design. Every line and element is positioned to respect your natural body flow, creating depth beyond aesthetics.",
+      title: t("fifth_section.crafting_artifact"),
+      description: t("fifth_section.crafting_artifact_desc"),
       Icon: () => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -116,9 +115,8 @@ const FifthSection = () => {
       ),
     },
     {
-      title: "Concept\nReview",
-      description:
-        "Before execution, we walk you through the creative reasoning behind the piece — explaining symbolism, composition, and structural decisions. This ensures that the artifact is fully understood, not just accepted.",
+      title: t("fifth_section.concept_review"),
+      description: t("fifth_section.concept_review_desc"),
       Icon: () => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -159,9 +157,8 @@ const FifthSection = () => {
       ),
     },
     {
-      title: "Precise\nExecution",
-      description:
-        "During the tattoo session, every detail is placed with intention and technical refinement. Precision, balance, and elegance guide the process — ensuring that the final result reflects both conceptual depth and artisanal excellence.",
+      title: t("fifth_section.precise_execution"),
+      description: t("fifth_section.precise_execution_desc"),
       Icon: () => (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +203,7 @@ const FifthSection = () => {
           {/* Left Column: Title */}
           <div className="lg:col-span-3 md:pb-8 lg:pb-0">
             <h2 className="text-white text-[28px] md:text-[32px] font-semibold lg:sticky lg:top-32 leading-[38px] font-[var(--font-founders)]">
-              Our Process
+              {t("fifth_section.our_process")}
             </h2>
           </div>
 

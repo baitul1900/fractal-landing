@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
+import { useLanguage } from "@/context/LanguageContext";
 
 const CustomFooter = () => {
+  const { t } = useLanguage();
   const handleScroll = (e, id) => {
     e.preventDefault();
     scrollToId(id);
@@ -13,7 +15,7 @@ const CustomFooter = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(100);
 
-  const phrases = ["permanent together.", "amazing today.", "meaningful here."];
+  const phrases = [t("footer.permanent"), t("footer.amazing"), t("footer.meaningful")];
 
   useEffect(() => {
     let timer;
@@ -51,10 +53,10 @@ const CustomFooter = () => {
         {/* Merged Seventh Section Typography block */}
         <div className="flex flex-col justify-center mb-12 md:mb-24 px-1">
           <h2 className="text-white text-[42px] md:text-[60px] lg:text-[72px] font-medium leading-[44px] md:leading-[60px] lg:leading-[72px] tracking-[-1.5px] md:tracking-[-2.276px] mb-1 font-[var(--font-founders)]">
-            Lets Create
+            {t("footer.lets_create")}
           </h2>
           <h3 className="text-[#828282] text-[42px] md:text-[60px] lg:text-[72px] font-medium leading-[44px] md:leading-[60px] lg:leading-[72px] tracking-[-1.5px] md:tracking-[-2.276px] min-h-[90px] md:min-h-[80px] font-[var(--font-founders)]">
-            something {text}
+            {t("footer.something")} {text}
             <span
               className="w-[3px] md:w-[6px] h-[40px] md:h-[64px] bg-[#828282] inline-block ml-2 animate-pulse align-middle opacity-80"
               style={{ transform: "translateY(-2px)" }}
@@ -66,7 +68,7 @@ const CustomFooter = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 md:gap-y-10 gap-y-4 gap-x-4 pb-1 md:pb-4 mb-6">
           {/* Email */}
           <div className="flex flex-col gap-2 md:gap-3">
-            <span className="text-[#828282] text-[14px]">Email</span>
+            <span className="text-[#828282] text-[14px]">{t("footer.email")}</span>
             <a
               href="mailto:fractal@art.design"
               className="text-white text-[16px] md:text-[20px] font-medium hover:text-[#bbb] transition-colors break-words"
@@ -77,12 +79,12 @@ const CustomFooter = () => {
 
           {/* Call Me */}
           <div className="flex flex-col gap-2 md:gap-3">
-            <span className="text-[#828282] text-[14px]">Call Me</span>
+            <span className="text-[#828282] text-[14px]">{t("footer.call_me")}</span>
             <a
               href="#"
               className="text-white text-[16px] md:text-[20px] font-medium hover:text-[#bbb] transition-colors"
             >
-              Book Now
+              {t("footer.book_now")}
             </a>
           </div>
 
@@ -90,7 +92,7 @@ const CustomFooter = () => {
           <div className="col-span-2 md:col-span-1 flex flex-col gap-3 md:items-end">
             <div className="w-full flex md:justify-end">
               <span className="text-[#828282] text-[14px] w-full max-w-[280px] text-left">
-                Social
+                {t("footer.social")}
               </span>
             </div>
             <div className="flex items-center gap-3 w-full max-w-[280px]">
@@ -137,7 +139,7 @@ const CustomFooter = () => {
           {/* Menu Section */}
           <div className="w-full md:w-auto">
             <span className="text-[#828282] text-[14px] mb-2 md:mb-6 block">
-              Menu
+              {t("footer.menu")}
             </span>
             <div className="grid grid-cols-4 gap-x-2 gap-y-2 md:gap-y-5 max-w-[420px]">
               <a
@@ -145,21 +147,21 @@ const CustomFooter = () => {
                 onClick={(e) => handleScroll(e, "#about")}
                 className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
-                About us
+                {t("footer.about_us")}
               </a>
               <a
                 href="#process"
                 onClick={(e) => handleScroll(e, "#process")}
                 className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
-                Process
+                {t("footer.process")}
               </a>
               <a
                 href="#artists"
                 onClick={(e) => handleScroll(e, "#artists")}
                 className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
-                Artists
+                {t("footer.artists")}
               </a>
 
               <a
@@ -167,7 +169,7 @@ const CustomFooter = () => {
                 onClick={(e) => handleScroll(e, pages.contactUs)}
                 className="text-white lg:text-[18px] text-[16px] font-medium hover:text-[#C99D85] transition-colors"
               >
-                Reservation
+                {t("footer.reservation")}
               </a>
 
             </div>

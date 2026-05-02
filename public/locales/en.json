@@ -1,0 +1,98 @@
+{
+  "navbar": {
+    "about_us": "ABOUT US",
+    "artists": "ARTISTS",
+    "process": "PROCESS",
+    "reservation": "RESERVATION"
+  },
+  "hero": {
+    "top_text": "TATTOOING IS NOT JUST WHAT WE DO, THIS IS WHO WE ARE — OUR WORK IS CRAFTED WITH PASSION AND PURPOSE.",
+    "create_archives": "WE CREATE BODY ARCHIVES",
+    "concept_based": "FRACTAL™ IS A TATTOO CONCEPT BASED IN SEVILLE, SPAIN & TRAVELING AROUND THE WORLD",
+    "about_us": "About US",
+    "about_desc": "FRACTAL is a contemporary tattoo practice blending narrative, spirituality, and visual art. Based in Seville, Spain, we create unique, story-driven pieces through collaboration and creative freedom."
+  },
+  "second_section": {
+    "connecting": "Connecting with",
+    "reality": "our reality"
+  },
+  "video_section": {
+    "our_work": "Our work",
+    "not_about": "is not about ornament.",
+    "about_alignment": "It is about alignment."
+  },
+  "artifacts": {
+    "archive": "Archive",
+    "unique_fragment": "A unique fragment of contemporary tattoo practice.",
+    "the_artifacts": "The artifacts",
+    "each_piece": "Each piece you see here was not designed to decorate, but to represent.",
+    "these_works": "These works are fragments of personal journeys — moments of transformation, remembrance, rebellion, or awakening translated into visual language."
+  },
+  "fourth_section": {
+    "eliezer_role": "MANAGER & DESIGNER",
+    "eliezer_desc": "With a background in graphic design and photography, Eliezer leads the creative direction of the project. He shapes the visual language, refines the narrative structure, and guides the conceptual development behind each piece.\n\nHis focus lies in communication — understanding people, listening carefully, and translating inner processes into coherent symbolic compositions. He oversees the brand, the dialogue, and the strategic framework that sustains the project.",
+    "nanook_role": "TATTOO ARTIST",
+    "nanook_desc": "With more than a decade of experience, Nanook explored multiple styles before refining his own language within the craft. His journey through design, drawing, music, and sculpture informs his technical sensitivity and artistic precision.\n\nHe is responsible for refining and perfecting the execution of each piece — ensuring that concept and craftsmanship remain inseparable."
+  },
+  "fifth_section": {
+    "our_process": "Our Process",
+    "detailed_consultation": "Detailed\nConsultation",
+    "detailed_consultation_desc": "We take the time to understand what you want to express and, just as importantly, why. This step allows us to evaluate alignment — ensuring that your intention resonates with the values and vision of FRACTAL. Let's create something honest, coherent, and meaningful for both sides.",
+    "anatomical_analysis": "Anatomical\nAnalysis",
+    "anatomical_analysis_desc": "We need a composition that adapts naturally to your structure. The flow, tension, and movement of the body guide the placement, ensuring the piece feels integrated rather than imposed.",
+    "crafting_artifact": "Crafting the\nArtifact",
+    "crafting_artifact_desc": "Your story is translated into a symbolic composition that balances classical references, geometry, and contemporary design. Every line and element is positioned to respect your natural body flow, creating depth beyond aesthetics.",
+    "concept_review": "Concept\nReview",
+    "concept_review_desc": "Before execution, we walk you through the creative reasoning behind the piece — explaining symbolism, composition, and structural decisions. This ensures that the artifact is fully understood, not just accepted.",
+    "precise_execution": "Precise\nExecution",
+    "precise_execution_desc": "During the tattoo session, every detail is placed with intention and technical refinement. Precision, balance, and elegance guide the process — ensuring that the final result reflects both conceptual depth and artisanal excellence."
+  },
+  "sixth_section": {
+    "body_archives": "Body Archives",
+    "quote_danilo": "I was looking for a meticulous and perfectionist tattoo artist. I searched for several months. They get deeply involved in the design and take care of every tiny detail. The precision of the lines is incredible. Throughout the whole process I felt at home—the treatment was unbeatable, and the studio and cleanliness were impeccable. An amazing experience! 100% recommended.",
+    "quote_michael": "What a brilliant team! I had my calf tattooed when Elicostart & Nanook were in my home town of Stuttgart. The consultations beforehand were absolutely brilliant and inspiring; I was completely blown away by the design based on my thoughts that we discussed in a video call.\n\nThe two-day tattoo session was great fun; the tattoo was done with so much love and precision. I’m incredibly proud of my new tattoo and can wholeheartedly recommend them when it comes to amazing tattoos with a great story behind them.",
+    "quote_jose": "I couldn’t be happier with their work. From the very first moment I contacted them, they gave me a lot of confidence and I felt very comfortable with them. Their level of dedication is incredible—they perfectly captured all the ideas I had for my tattoo, paying attention to even the smallest detail to offer the best possible result. These are the details that make the difference.\nThey made you feel at all times as if you were among friends, and despite being there all day, it was very enjoyable.",
+    "quote_andrea": "I’m at a loss for words to describe how incredible they are. I went from Málaga to Seville to get tattooed by them for two consecutive days, and it was amazing. Super professional, approachable, and with an incredible vibe from the very first minute.  \nI got my entire back tattooed, and doing it with them has been the best decision I’ve made. \nThey are perfectionists to the max, taking care of every detail.\nThank you from the bottom of my heart for your talent and for treating me so kindly.",
+    "quote_marta": "I got a tattoo almost 20 days ago and I’m already looking for the moment to go back! What a team of professionals, friends, and artists. They are the exact definition of precision, perfection… harmony. Without a doubt, the experience and the way it’s lived—with their timing, its complexity, that on-the-spot communication that makes a design that was already spectacular become even better—doesn’t just make you want to come back, it makes you not want to leave.\n\nI got a design on my back, I spent two days with them, and I was sad to leave! I felt so comfortable and at ease—they are the absolute best, no doubt.",
+    "quote_borja": "Everything went smoothly—an incredible approach to customer care and an amazing willingness to listen to your ideas and give them meaning in a design. I only had to explain my idea a little, and Eli was already designing it in his head and figuring out how everything could fit together.  \nA unique piece you’ll never regret.  \nAn incredible experience before, during, and after the session. I will definitely work with them again.",
+    "quote_elena": "I flew from Málaga to Barcelona and without a doubt what I experienced with Eli and Nanook made it completely worth it. It’s not just another tattoo, it’s not just another experience. It’s something unlike anything else. Eli perfectly captures your essence in a one-of-a-kind piece in the world, just like each of us, and Nanook gives you that necessary confidence to be fully present and not worry about anything else. This unique duo takes the tattoo world to another level. Thank you for everything, guys.",
+    "quote_dani": "I had spent 10 years wanting to get a tattoo. I saw the way they work and didn’t hesitate to take the leap.\n\nGetting a tattoo with them isn’t just about putting ink on your body. It’s about living an experience in every sense.\nEverything is handled with the utmost attention to detail, focusing on the human side so you feel as comfortable as possible, dedicating all the time needed to make the tattoo perfect.",
+    "quote_geraldine": "I flew from Mallorca to get tattooed by them and, honestly, it was the best decision I could have made. You can tell the great professionalism they work with. They listen to you carefully and finds the best way to bring your idea to life. Technique, dedication, and talent make the whole process a unique experience. \nI spent almost 12 hours with them and, even though I met them that same day, you can immediately tell they are an incredible team.",
+    "quote_roberto": "I fulfilled my dreams.\nI needed to find a way to make my project a reality: getting tattooed to tell a story, my story. They quickly identified my feelings, interpreted my vision with clarity, and guided me to a result that exceeded my expectations… suddenly, everything made sense.\nNow I am one more member of this wonderful team. I take with me much more than what my skin bears from both of them: I take a part of them, and I know they will be there when I need them.\nThis duo is unbeatable."
+  },
+  "contact": {
+    "sent_success": "Sent Successfully!",
+    "sent_desc": "Thank you for reaching out. We have received your reservation request and will get back to you shortly.",
+    "close": "CLOSE",
+    "where_to_find": "Where to",
+    "find_us": "Find Us",
+    "location_desc": "We are primarily based in Seville — a city shaped by art, history, and culture in the south of\nSpain. However, our work extends beyond a single place. We regularly travel across Europe\nand the United States, bringing our process to different locations.\n\nOur upcoming cities and available dates are continuously shared on Instagram.\nStay connected to follow the journey.",
+    "full_name": "Full Name *",
+    "city": "City",
+    "body_placement": "Body Placement",
+    "email": "Email *",
+    "phone": "Phone *",
+    "inspiration": "Inspiration",
+    "description": "Description",
+    "sending": "SENDING...",
+    "send_reservation": "SEND RESERVATION",
+    "reservation": "RESERVATION",
+    "error_msg": "Oops! Something went wrong. Please check your connection or EmailJS setup."
+  },
+  "footer": {
+    "lets_create": "Lets Create",
+    "something": "something",
+    "permanent": "permanent together.",
+    "amazing": "amazing today.",
+    "meaningful": "meaningful here.",
+    "email": "Email",
+    "call_me": "Call Me",
+    "book_now": "Book Now",
+    "social": "Social",
+    "menu": "Menu",
+    "about_us": "About us",
+    "process": "Process",
+    "artists": "Artists",
+    "reservation": "Reservation"
+  }
+}

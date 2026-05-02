@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const foundersGrotesk = localFont({
   src: [
@@ -49,10 +50,12 @@ export default function RootLayout({ children }) {
         className={`${foundersGrotesk.variable} antialiased font-[var(--font-founders)]`}
         suppressHydrationWarning
       >
-        <SmoothScroll>
-          <Navbar />
-          {children}
-        </SmoothScroll>
+        <LanguageProvider>
+          <SmoothScroll>
+            <Navbar />
+            {children}
+          </SmoothScroll>
+        </LanguageProvider>
       </body>
     </html>
   );

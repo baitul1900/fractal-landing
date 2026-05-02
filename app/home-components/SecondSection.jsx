@@ -1,10 +1,11 @@
 import SectionWrapper from "@/components/layouts/SectionWrapper";
 import Image from "next/image";
 import MobileSecondSection from "./MobileSecondSection";
-
+import { useLanguage } from "@/context/LanguageContext";
 
 
 const SecondSection = () => {
+  const { t } = useLanguage();
   return (
     <>
       <MobileSecondSection />
@@ -12,8 +13,8 @@ const SecondSection = () => {
         <SectionWrapper className="mt-[60px] pt-[149px] second-section relative">
           <div className="sticky top-[10vh] flex flex-col items-center justify-center w-full z-20 gap-10 mix-blend-difference pointer-events-none">
             <div className="w-full max-w-[938px] px-4 md:px-0 text-center text-[#FFE6D0] md:text-[60px] lg:text-[80px] font-medium font-[var(--font-founders)] uppercase md:leading-[64px] lg:leading-[78px] md:tracking-[-1.5px] lg:tracking-[-8px] [word-spacing:0.2em]">
-              Connecting with
-              <br className="hidden md:block" /> our reality
+              {t("second_section.connecting")}
+              <br className="hidden md:block" /> {t("second_section.reality")}
             </div>
             <div>
               <svg

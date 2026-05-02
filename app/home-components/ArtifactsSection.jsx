@@ -4,8 +4,10 @@ import { useRef } from "react";
 import SectionWrapper from "@/components/layouts/SectionWrapper";
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
+import { useLanguage } from "@/context/LanguageContext";
 
 const ArtifactsSection = () => {
+  const { t } = useLanguage();
   const handleReservation = (e) => {
     e.preventDefault();
     scrollToId(pages.contactUs);
@@ -16,8 +18,8 @@ const ArtifactsSection = () => {
   ];
 
   const artifacts = sliderImages.map((img, index) => ({
-    title: `Archive ${String(index + 1).padStart(2, "0")}`,
-    description: "A unique fragment of contemporary tattoo practice.",
+    title: `${t("artifacts.archive")} ${String(index + 1).padStart(2, "0")}`,
+    description: t("artifacts.unique_fragment"),
     image: `/images/artifacts-images/${img}`,
   }));
 
@@ -50,7 +52,7 @@ const ArtifactsSection = () => {
                   transition={{ duration: 0.8 }}
                   className="text-[#FAFAFA] md:text-white text-[32px] font-semibold font-[var(--font-founders)] uppercase leading-[52px] md:leading-[38px] tracking-[-1.92px]"
                 >
-                  The artifacts
+                  {t("artifacts.the_artifacts")}
                 </motion.h2>
               </div>
               <div className="md:col-span-12 lg:col-span-5 flex flex-col items-start lg:gap-8 gap-0 mt-4 lg:mt-0">
@@ -60,8 +62,7 @@ const ArtifactsSection = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="text-[#FFE6D0] text-lg md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight"
                 >
-                  Each piece you see here was not designed to decorate, but to
-                  represent.
+                  {t("artifacts.each_piece")}
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -69,9 +70,7 @@ const ArtifactsSection = () => {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="text-[#FFE6D0] text-lg md:text-base font-medium font-[var(--font-founders)] uppercase opacity-60 leading-tight lg:mt-0 mt-3.5"
                 >
-                  These works are fragments of personal journeys — moments of
-                  transformation, remembrance, rebellion, or awakening
-                  translated into visual language.
+                  {t("artifacts.these_works")}
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}

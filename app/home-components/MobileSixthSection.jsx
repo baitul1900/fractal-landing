@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { useLanguage } from "@/context/LanguageContext";
 
 const MobileSixthSection = ({ archives }) => {
+  const { t } = useLanguage();
   const [revealedId, setRevealedId] = useState(null);
 
   const [sliderRef] = useKeenSlider({
@@ -30,7 +32,7 @@ const MobileSixthSection = ({ archives }) => {
   return (
     <section className="lg:hidden bg-[#0a0a0a] text-white w-full py-16 px-6 overflow-hidden">
       <h2 className="text-white text-[28px] md:text-[32px] font-semibold leading-tight mb-8 font-[var(--font-founders)]">
-        Body Archives
+        {t("sixth_section.body_archives")}
       </h2>
 
       <div ref={sliderRef} className="keen-slider !overflow-visible">

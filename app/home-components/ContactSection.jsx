@@ -2,8 +2,10 @@ import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
+import { useLanguage } from "@/context/LanguageContext";
 
 const SuccessModal = ({ isOpen, onClose }) => {
+  const { t } = useLanguage();
   return (
     <AnimatePresence>
       {isOpen && (
@@ -36,16 +38,16 @@ const SuccessModal = ({ isOpen, onClose }) => {
               </svg>
             </div>
             <h3 className="text-[#FAFAFA] text-[32px] font-bold mb-4 font-[var(--font-founders)]">
-              Sent Successfully!
+              {t("contact.sent_success")}
             </h3>
             <p className="text-[#A2A2A2] text-[18px] mb-8 font-[var(--font-founders)] leading-relaxed">
-              Thank you for reaching out. We have received your reservation request and will get back to you shortly.
+              {t("contact.sent_desc")}
             </p>
             <button
               onClick={onClose}
               className="w-full bg-[#FFE6D0] text-black rounded-full py-4 font-bold uppercase tracking-wider hover:bg-white transition-colors font-[var(--font-founders)]"
             >
-              CLOSE
+              {t("contact.close")}
             </button>
           </motion.div>
         </div>
@@ -55,6 +57,7 @@ const SuccessModal = ({ isOpen, onClose }) => {
 };
 
 const ContactSection = () => {
+  const { t } = useLanguage();
   const formRef = useRef();
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState(null); // 'success', 'error'
@@ -112,9 +115,9 @@ const ContactSection = () => {
         {/* Top Content */}
         <div className="mb-4 md:mb-20 max-w-2xl">
           <h2 className="text-[#FAFAFA] text-[42px] md:text-[52px] font-semibold md:font-bold leading-[40px] md:leading-[56px] tracking-[-1.8px] font-[var(--font-founders)]">
-            Where to
+            {t("contact.where_to_find")}
             <br className="hidden md:block" /> {" "}
-            Find Us
+            {t("contact.find_us")}
           </h2>
 
           <a
@@ -145,12 +148,7 @@ const ContactSection = () => {
           </a>
 
           <p className="text-[#A2A2A2] md:text-[#7E7E7E] text-[16px] font-normal leading-[24px] mt-3 md:mt-6 font-[var(--font-founders)] max-w-[700px] whitespace-pre-line">
-            {`We are primarily based in Seville — a city shaped by art, history, and culture in the south of
-Spain. However, our work extends beyond a single place. We regularly travel across Europe
-and the United States, bringing our process to different locations.
-
-Our upcoming cities and available dates are continuously shared on Instagram.
-Stay connected to follow the journey.`}
+            {t("contact.location_desc")}
           </p>
         </div>
 
@@ -164,7 +162,7 @@ Stay connected to follow the journey.`}
             {/* Row 1 */}
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5 focus-within:border-[#FFE6D0] transition-colors">
               <label className="text-white shrink-0 font-normal lg:text-[20px] text-[18px] leading-5 lg:leading-[20px] font-[var(--font-founders)]">
-                Full Name *
+                {t("contact.full_name")}
               </label>
               <input
                 type="text"
@@ -177,7 +175,7 @@ Stay connected to follow the journey.`}
 
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5 focus-within:border-[#FFE6D0] transition-colors">
               <label className="text-white shrink-0 font-normal lg:text-[20px] text-[18px] leading-5 lg:leading-[20px] font-[var(--font-founders)]">
-                City
+                {t("contact.city")}
               </label>
               <input
                 type="text"
@@ -190,7 +188,7 @@ Stay connected to follow the journey.`}
             {/* Row 2 */}
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5 focus-within:border-[#FFE6D0] transition-colors">
               <label className="text-white shrink-0 font-normal lg:text-[20px] text-[18px] leading-5 lg:leading-[20px] font-[var(--font-founders)]">
-                Body Placement
+                {t("contact.body_placement")}
               </label>
               <input
                 type="text"
@@ -202,7 +200,7 @@ Stay connected to follow the journey.`}
 
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5 focus-within:border-[#FFE6D0] transition-colors">
               <label className="text-white shrink-0 font-normal lg:text-[20px] text-[18px] leading-5 lg:leading-[20px] font-[var(--font-founders)]">
-                Email *
+                {t("contact.email")}
               </label>
               <input
                 type="email"
@@ -216,7 +214,7 @@ Stay connected to follow the journey.`}
             {/* Row 3 */}
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5 focus-within:border-[#FFE6D0] transition-colors">
               <label className="text-white shrink-0 font-normal lg:text-[20px] text-[18px] leading-5 lg:leading-[20px] font-[var(--font-founders)]">
-                Phone *
+                {t("contact.phone")}
               </label>
               <input
                 type="tel"
@@ -229,7 +227,7 @@ Stay connected to follow the journey.`}
 
             <div className="flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5 focus-within:border-[#FFE6D0] transition-colors">
               <label className="text-white shrink-0 font-normal lg:text-[20px] text-[18px] leading-5 lg:leading-[20px] font-[var(--font-founders)]">
-                Inspiration
+                {t("contact.inspiration")}
               </label>
               <input
                 type="text"
@@ -242,7 +240,7 @@ Stay connected to follow the journey.`}
             {/* Row 4 - Full Width */}
             <div className="md:col-span-2 flex items-center border-b border-[#333] pb-3 md:pb-4 gap-5 focus-within:border-[#FFE6D0] transition-colors">
               <label className="text-white shrink-0 font-normal lg:text-[20px] text-[18px] leading-5 lg:leading-[20px] font-[var(--font-founders)]">
-                Description
+                {t("contact.description")}
               </label>
               <input
                 type="text"
@@ -257,7 +255,7 @@ Stay connected to follow the journey.`}
               <div className="flex-1">
                 {status === "error" && (
                   <p className="text-red-400 font-[var(--font-founders)] text-[16px]">
-                    Oops! Something went wrong. Please check your connection or EmailJS setup.
+                    {t("contact.error_msg")}
                   </p>
                 )}
               </div>
@@ -278,7 +276,7 @@ Stay connected to follow the journey.`}
                   <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" />
                 </svg>
                 <span className="text-[14px] font-[var(--font-founders)] font-semibold tracking-widest uppercase border-b border-white pb-1 group-hover:border-[#FFE6D0] transition-colors">
-                  {isSending ? "SENDING..." : "SEND RESERVATION"}
+                  {isSending ? t("contact.sending") : t("contact.send_reservation")}
                 </span>
               </button>
 
@@ -297,7 +295,7 @@ Stay connected to follow the journey.`}
                 >
                   <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" />
                 </svg>
-                {isSending ? "SENDING..." : "RESERVATION"}
+                {isSending ? t("contact.sending") : t("contact.reservation")}
               </button>
             </div>
           </form>
