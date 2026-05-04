@@ -1,0 +1,30 @@
+# Robots.txt for FRACTAL™ Tattoo Studio
+# Allow all web crawlers to access the site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fractal-tattoo.com/sitemap.xml
+
+# Crawl-delay (optional, for slower crawling if needed)
+# Crawl-delay: 1
+
+# Disallow access to admin areas (if any)
+# Disallow: /admin/
+# Disallow: /api/private/
+
+# Allow access to CSS, JS, and image files
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.webp
+Allow: *.svg
+Allow: *.ico
+
+# Block access to sensitive files
+Disallow: /_next/static/
+Disallow: /api/
+Disallow: *.json

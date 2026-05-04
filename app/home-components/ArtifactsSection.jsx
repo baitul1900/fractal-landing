@@ -16,15 +16,19 @@ const ArtifactsSection = () => {
   };
   const sliderImages = [
     "1.webp",
-    "3_4k.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
     "7.webp",
     "8.webp",
-    "DSC01048 copia.webp",
-    "DSC03205.webp",
-    "DSC03389.webp",
-    "DSC04148.webp",
-    "ig3.webp",
-    "ig5-1.webp",
+    "9.webp",
+    "10.webp",
+    "11.webp",
+    "12.webp",
+    "13.webp",
+    "14.webp",
   ];
 
   const artifacts = sliderImages.map((img, index) => ({
@@ -33,7 +37,7 @@ const ArtifactsSection = () => {
     image: `/images/artifacts-images/${img}`,
   }));
 
-  const repeatedArtifacts = [...artifacts, ...artifacts];
+  const repeatedArtifacts = artifacts;
 
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({

@@ -3,16 +3,33 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-// Floating Images
-import img1 from "../../public/images/slider-images/16.webp";
-import img2 from "../../public/images/slider-images/4k_1.webp";
-import img3 from "../../public/images/slider-images/DSC03186.webp";
-import img4 from "../../public/images/slider-images/eight.webp";
-import img5 from "../../public/images/slider-images/ig7.webp";
-import img6 from "../../public/images/slider-images/one.webp";
-
-const images = [img1, img2, img3, img4, img5, img6];
+// Floating Images (1-12)
+import img1 from "../../public/images/slider-images/1.webp";
+import img2 from "../../public/images/slider-images/2.webp";
+import img3 from "../../public/images/slider-images/3.webp";
+import img4 from "../../public/images/slider-images/4.webp";
+import img5 from "../../public/images/slider-images/5.webp";
+import img6 from "../../public/images/slider-images/6.webp";
+import img7 from "../../public/images/slider-images/7.webp";
+import img9 from "../../public/images/slider-images/9.webp";
+import img10 from "../../public/images/slider-images/10.webp";
+import img11 from "../../public/images/slider-images/11.webp";
+import img12 from "../../public/images/slider-images/12.webp";
 import { useLanguage } from "@/context/LanguageContext";
+
+const images = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img9,
+  img10,
+  img11,
+  img12,
+];
 
 const MobileSecondSection = () => {
   const { t } = useLanguage();
