@@ -91,7 +91,7 @@ const FourthSection = () => {
                   rel="noopener noreferrer"
                   className="w-[110px] mt-3.5 h-4 justify-start text-black text-xl font-normal font-[var(--font-founders)] leading-6 underline cursor-pointer"
                 >
-                  @ELICOSTART
+                  @ELICOSTART run
                 </a>
               </div>
             </motion.div>
