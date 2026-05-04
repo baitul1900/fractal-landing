@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -149,7 +151,11 @@ const SixthSection = () => {
                   <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black/80 to-transparent transition-opacity duration-700 group-hover:opacity-0 flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full overflow-hidden bg-[#222]">
                       {item.userImage ? (
-                        <Image src={item.userImage} alt={item.name} className="w-full h-full object-cover" />
+                        <Image
+                          src={item.userImage}
+                          alt={item.name}
+                          className="w-full h-full object-cover"
+                        />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-white/40 text-xs font-bold uppercase">
                           {item.name.charAt(0)}
@@ -167,7 +173,11 @@ const SixthSection = () => {
                       <div className="flex items-center gap-4 mb-6">
                         <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-[#222]">
                           {item.userImage ? (
-                            <Image src={item.userImage} alt={item.name} className="w-full h-full object-cover" />
+                            <Image
+                              src={item.userImage}
+                              alt={item.name}
+                              className="w-full h-full object-cover"
+                            />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center text-white/40 text-sm font-bold uppercase">
                               {item.name.charAt(0)}
@@ -175,10 +185,18 @@ const SixthSection = () => {
                           )}
                         </div>
                         <div className="flex flex-col gap-1">
-                          <span className="text-[#FFF] text-[20px] font-normal font-[var(--font-founders)] leading-[20px]">{item.name}</span>
+                          <span className="text-[#FFF] text-[20px] font-normal font-[var(--font-founders)] leading-[20px]">
+                            {item.name}
+                          </span>
                           <div className="flex items-center gap-1">
                             {[...Array(5)].map((_, i) => (
-                              <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#FFB800">
+                              <svg
+                                key={i}
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="#FFB800"
+                              >
                                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                               </svg>
                             ))}

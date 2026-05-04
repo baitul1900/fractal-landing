@@ -1,8 +1,9 @@
+"use client";
+
 import SectionWrapper from "@/components/layouts/SectionWrapper";
 import Image from "next/image";
 import MobileSecondSection from "./MobileSecondSection";
 import { useLanguage } from "@/context/LanguageContext";
-
 
 const SecondSection = () => {
   const { t } = useLanguage();

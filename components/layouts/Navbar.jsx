@@ -27,20 +27,20 @@ const styles = {
   nav: "hidden lg:flex space-x-8 lg:space-x-10 items-center",
   mobileMenu:
     "fixed inset-0 z-[60] bg-black/60 backdrop-blur-md md:hidden flex flex-col items-center px-4 pt-24 font-[var(--font-founders)]",
-  closeButton:
-    "absolute top-6 right-6 text-white p-2 transition-colors",
-  mobileLinksContainer: "flex flex-col w-full bg-[#FFE6D0] rounded-[24px] p-6 mb-4",
-  mobileLink: "text-black text-[18px] font-bold block py-4 border-b border-black/10 last:border-b-0 uppercase font-[var(--font-founders)]",
+  closeButton: "absolute top-6 right-6 text-white p-2 transition-colors",
+  mobileLinksContainer:
+    "flex flex-col w-full bg-[#FFE6D0] rounded-[24px] p-6 mb-4",
+  mobileLink:
+    "text-black text-[18px] font-bold block py-4 border-b border-black/10 last:border-b-0 uppercase font-[var(--font-founders)]",
   mobileButtonContainer: "w-full",
-  reservationCard: "w-full bg-[#FFE6D0] rounded-full py-5 px-6 flex items-center justify-center gap-3 text-black font-bold uppercase text-[18px] font-[var(--font-founders)]",
-  header:
-    "fixed left-0 w-full z-[70] top-0",
+  reservationCard:
+    "w-full bg-[#FFE6D0] rounded-full py-5 px-6 flex items-center justify-center gap-3 text-black font-bold uppercase text-[18px] font-[var(--font-founders)]",
+  header: "fixed left-0 w-full z-[70] top-0",
   container:
     "container mx-auto px-6 md:px-10 lg:px-16 py-4 flex justify-between items-center relative h-20",
   logoLink: "flex items-center space-x-2",
   rightActions: "flex items-center gap-2 md:gap-4",
-  menuButton:
-    "lg:hidden text-white p-2 transition-colors",
+  menuButton: "lg:hidden text-white p-2 transition-colors",
   menuButtonOpen: "",
 };
 
@@ -102,22 +102,43 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.1 }}
             >
-              <NavLink name={t("navbar.about_us")} href={ABOUT} className={styles.mobileLink} onHit={toggleMenu} />
-              <NavLink name={t("navbar.artists")} href={ARTISTS} className={styles.mobileLink} onHit={toggleMenu} />
-              <NavLink name={t("navbar.process")} href={PROCESS} className={styles.mobileLink} onHit={toggleMenu} />
-              
+              <NavLink
+                name={t("navbar.about_us")}
+                href={ABOUT}
+                className={styles.mobileLink}
+                onHit={toggleMenu}
+              />
+              <NavLink
+                name={t("navbar.artists")}
+                href={ARTISTS}
+                className={styles.mobileLink}
+                onHit={toggleMenu}
+              />
+              <NavLink
+                name={t("navbar.process")}
+                href={PROCESS}
+                className={styles.mobileLink}
+                onHit={toggleMenu}
+              />
+
               {/* Mobile Language Switcher */}
               <div className="flex items-center gap-2 pt-4 uppercase font-[var(--font-founders)] text-[18px] font-bold text-black/40">
-                <button 
+                <button
                   onClick={() => setLang("ES")}
-                  className={clsx("transition-colors duration-200", lang === "ES" ? "text-black" : "hover:text-black")}
+                  className={clsx(
+                    "transition-colors duration-200",
+                    lang === "ES" ? "text-black" : "hover:text-black",
+                  )}
                 >
                   ES
                 </button>
                 <span className="text-black/20">/</span>
-                <button 
+                <button
                   onClick={() => setLang("EN")}
-                  className={clsx("transition-colors duration-200", lang === "EN" ? "text-black" : "hover:text-black")}
+                  className={clsx(
+                    "transition-colors duration-200",
+                    lang === "EN" ? "text-black" : "hover:text-black",
+                  )}
                 >
                   EN
                 </button>
@@ -230,18 +251,28 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-2 text-[#FFE3C9] text-base font-normal font-[var(--font-founders)] leading-6 mr-6 opacity-60">
               {mounted && (
                 <>
-                  <button 
-                    onClick={() => setLang("ES")}
-                    className={clsx("transition-colors duration-200", lang === "ES" ? "text-white opacity-100 font-medium" : "hover:text-white hover:opacity-100")}
+                  <button
+                    onClick={() => setLang("EN")}
+                    className={clsx(
+                      "transition-colors duration-200",
+                      lang === "EN"
+                        ? "text-white opacity-100 font-medium"
+                        : "hover:text-white hover:opacity-100",
+                    )}
                   >
-                    ES
+                    ENG
                   </button>
                   <span className="opacity-50">/</span>
-                  <button 
-                    onClick={() => setLang("EN")}
-                    className={clsx("transition-colors duration-200", lang === "EN" ? "text-white opacity-100 font-medium" : "hover:text-white hover:opacity-100")}
+                  <button
+                    onClick={() => setLang("ES")}
+                    className={clsx(
+                      "transition-colors duration-200",
+                      lang === "ES"
+                        ? "text-white opacity-100 font-medium"
+                        : "hover:text-white hover:opacity-100",
+                    )}
                   >
-                    EN
+                    ESP
                   </button>
                 </>
               )}

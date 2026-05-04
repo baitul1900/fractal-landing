@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";

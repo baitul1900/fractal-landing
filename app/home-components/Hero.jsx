@@ -1,17 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import aboutHeroOne from "../../public/images/home/about-hero-1.webp";
 import aboutHeroTwo from "../../public/images/home/about-hero-2.webp";
 import fractal from "../../public/images/home/FRACTAL.webp";
-import bigIcon from "../../public/images/home/hero-big-text-logo.webp";
-import heroTextImage from "../../public/images/home/hero-text-image.webp";
-
-
-
 import { motion } from "framer-motion";
-import { useRef } from "react";
-
 import MobileHero from "./MobileHero";
-
 import { pages } from "../../util/route";
 import { scrollToId } from "../../util/scroll";
 import { useLanguage } from "@/context/LanguageContext";
@@ -19,17 +13,10 @@ import { useLanguage } from "@/context/LanguageContext";
 const Hero = () => {
   const { t } = useLanguage();
 
-
-
   const handleReservation = (e) => {
     e.preventDefault();
     scrollToId(pages.contactUs);
   };
-
-
-
-
-
 
   return (
     <>
@@ -38,9 +25,7 @@ const Hero = () => {
 
       {/* Desktop Version Rendering (untouched) */}
       <div className="hidden lg:block">
-        <section
-          className="relative min-h-screen w-full home-hero flex flex-col justify-center overflow-hidden"
-        >
+        <section className="relative min-h-screen w-full home-hero flex flex-col justify-center overflow-hidden">
           {/* Container to restrict content width but allow background to span full width */}
           <div className="relative w-full container mx-auto px-6 md:px-10 lg:px-6 pt-32 pb-20 flex flex-col h-full md:pt-[355px] min-h-screen">
             {/* Top Right Text (Absolute to the container) */}
@@ -51,9 +36,7 @@ const Hero = () => {
             </div>
 
             {/* Massive Center Text */}
-            <div
-              className="flex flex-col items-start justify-start w-full py-0  md:pl-[98px] pointer-events-none pr-[123px] mb-[84px]"
-            >
+            <div className="flex flex-col items-start justify-start w-full py-0  md:pl-[98px] pointer-events-none pr-[123px] mb-[84px]">
               <Image
                 src={fractal}
                 alt="Fractal Logo"
@@ -78,7 +61,6 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-
             </div>
 
             {/* Bottom Section Layout */}
@@ -94,7 +76,6 @@ const Hero = () => {
               </div>
 
               {/* Right Column: Rating */}
-             
             </div>
           </div>
         </section>
@@ -140,15 +121,15 @@ const Hero = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <span className="text-sm tracking-[0.2em]">{t("navbar.reservation")}</span>
+                  <span className="text-sm tracking-[0.2em]">
+                    {t("navbar.reservation")}
+                  </span>
                 </div>
               </a>
             </motion.div>
 
             <div className="flex gap-6 w-full md:w-auto items-start">
-              <div
-                className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[2/3] overflow-hidden rounded-sm group/img shadow-2xl"
-              >
+              <div className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[2/3] overflow-hidden rounded-sm group/img shadow-2xl">
                 <Image
                   src={aboutHeroOne}
                   alt="Tattoo Session"
@@ -158,9 +139,7 @@ const Hero = () => {
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover/img:bg-transparent transition-colors duration-500"></div>
               </div>
-              <div
-                className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[2/3] overflow-hidden rounded-sm group/img shadow-2xl"
-              >
+              <div className="relative w-1/2 md:w-[320px] lg:w-[400px] aspect-[2/3] overflow-hidden rounded-sm group/img shadow-2xl">
                 <Image
                   src={aboutHeroTwo}
                   alt="Tattoo Art"
@@ -173,10 +152,7 @@ const Hero = () => {
             </div>
           </div>
         </section>
-
       </div>
-
-
     </>
   );
 };

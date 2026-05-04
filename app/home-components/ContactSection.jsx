@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
@@ -81,22 +83,22 @@ const ContactSection = () => {
           setStatus("success");
           setIsModalOpen(true);
           formRef.current.reset();
-          
+
           // Trigger confetti for the "WOW" effect
           confetti({
             particleCount: 150,
             spread: 70,
             origin: { y: 0.6 },
-            colors: ['#FFE6D0', '#ffffff', '#A2A2A2']
+            colors: ["#FFE6D0", "#ffffff", "#A2A2A2"],
           });
         },
         (error) => {
           console.log("FAILED...", error.text);
           setStatus("error");
-          // Even if it fails because of missing template ID, 
-          // we could show the modal for demo purposes if you want, 
+          // Even if it fails because of missing template ID,
+          // we could show the modal for demo purposes if you want,
           // but better to handle the error properly.
-        }
+        },
       )
       .finally(() => {
         setIsSending(false);
@@ -109,15 +111,17 @@ const ContactSection = () => {
       className="bg-[#050505] text-white w-full py-10 md:py-32 px-6 md:px-10 lg:px-16"
       style={{ background: "#0a0a0a" }}
     >
-      <SuccessModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <SuccessModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
 
       <div className="container mx-auto max-w-[1440px]">
         {/* Top Content */}
         <div className="mb-4 md:mb-20 max-w-2xl">
           <h2 className="text-[#FAFAFA] text-[42px] md:text-[52px] font-semibold md:font-bold leading-[40px] md:leading-[56px] tracking-[-1.8px] font-[var(--font-founders)]">
             {t("contact.where_to_find")}
-            <br className="hidden md:block" /> {" "}
-            {t("contact.find_us")}
+            <br className="hidden md:block" /> {t("contact.find_us")}
           </h2>
 
           <a
@@ -154,7 +158,7 @@ const ContactSection = () => {
 
         {/* Form Box */}
         <div className="bg-[#121212] rounded-[24px] md:rounded-[32px] p-3.5 md:p-12 lg:p-16 w-full text-white">
-          <form 
+          <form
             ref={formRef}
             onSubmit={handleSubmit}
             className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 md:gap-y-14"
@@ -271,12 +275,14 @@ const ContactSection = () => {
                   height="22"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className={`transform -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform ${isSending ? 'animate-bounce' : ''}`}
+                  className={`transform -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform ${isSending ? "animate-bounce" : ""}`}
                 >
                   <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" />
                 </svg>
                 <span className="text-[14px] font-[var(--font-founders)] font-semibold tracking-widest uppercase border-b border-white pb-1 group-hover:border-[#FFE6D0] transition-colors">
-                  {isSending ? t("contact.sending") : t("contact.send_reservation")}
+                  {isSending
+                    ? t("contact.sending")
+                    : t("contact.send_reservation")}
                 </span>
               </button>
 
@@ -291,7 +297,7 @@ const ContactSection = () => {
                   height="20"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className={`transform -rotate-45 ${isSending ? 'animate-bounce' : ''}`}
+                  className={`transform -rotate-45 ${isSending ? "animate-bounce" : ""}`}
                 >
                   <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" />
                 </svg>
@@ -306,5 +312,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
-

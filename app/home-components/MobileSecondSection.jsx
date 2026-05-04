@@ -40,12 +40,15 @@ const MobileSecondSection = () => {
             <motion.div
               initial={{ opacity: 0, y: "100%" }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.8,
+                delay: 0.1,
+                ease: [0.16, 1, 0.3, 1],
+              }}
             >
               {t("second_section.reality")}
             </motion.div>
           </div>
-
         </div>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +86,9 @@ const MobileSecondSection = () => {
               src={img}
               alt={`Tattoo ${i + 1}`}
               fill
-              className="object-cover "
+              sizes="265px"
+              quality={65}
+              className="object-cover"
             />
           </motion.div>
         ))}

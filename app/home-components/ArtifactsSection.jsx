@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
@@ -13,8 +15,16 @@ const ArtifactsSection = () => {
     scrollToId(pages.contactUs);
   };
   const sliderImages = [
-    "1.webp", "3_4k.webp", "7.webp", "8.webp", "DSC01048 copia.webp",
-    "DSC03205.webp", "DSC03389.webp", "DSC04148.webp", "ig3.webp", "ig5-1.webp"
+    "1.webp",
+    "3_4k.webp",
+    "7.webp",
+    "8.webp",
+    "DSC01048 copia.webp",
+    "DSC03205.webp",
+    "DSC03389.webp",
+    "DSC04148.webp",
+    "ig3.webp",
+    "ig5-1.webp",
   ];
 
   const artifacts = sliderImages.map((img, index) => ({
@@ -23,10 +33,7 @@ const ArtifactsSection = () => {
     image: `/images/artifacts-images/${img}`,
   }));
 
-  const repeatedArtifacts = [
-    ...artifacts,
-    ...artifacts,
-  ];
+  const repeatedArtifacts = [...artifacts, ...artifacts];
 
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
